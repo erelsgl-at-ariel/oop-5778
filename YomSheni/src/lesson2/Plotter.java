@@ -35,7 +35,7 @@ public class Plotter extends Application {
 
 	@Override
 	public void start(Stage dummy) throws Exception {
-		// ADD YOUR CODE HERE
+		FunctionPlotter.run();
 	}
 	
 	public static void main(String[] args) {
