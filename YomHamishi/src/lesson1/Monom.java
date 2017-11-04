@@ -11,6 +11,10 @@ package lesson1;
  */
 public class Monom {
 	public Monom(double coefficient2, int power2) {
+		if (power2<0) {
+			RuntimeException ex = new RuntimeException("power must be non-negative");
+			throw ex;
+		}
 		this.coefficient = coefficient2;
 		this.power = power2;
 	}
