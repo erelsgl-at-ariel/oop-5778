@@ -21,8 +21,8 @@ public class FunctionPlotter {
 		
 		// Solution A: use a named class
 		Sine s = new Sine();
-		//plot(s, 0, 10, 1000); // should plot y=sin(x) between 0 and 10
-		s.plot(0, 10, 1000);
+		plot(s, 0, 10, 1000); // should plot y=sin(x) between 0 and 10
+		//s.plot(0, 10, 1000);
 		
 		// Solution B: use an anonymous class
 		Function f = new Function() {
