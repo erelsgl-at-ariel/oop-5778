@@ -4,20 +4,28 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /**
- * a set that can contain duplicates.
- * 
+ * Represents the set of integers between two given integers.
  * @author erelsgl
+ *
  */
-public class Multiset<T> implements Collection<T> {
+public class Range implements Collection<Integer> {
+	
+	private int from;
+	private int to;
+
+	public Range(int from, int to) {
+		this.from = from;
+		this.to = to;
+	}
 
 	@Override
-	public boolean add(T arg0) {
+	public boolean add(Integer arg0) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean addAll(Collection<? extends T> arg0) {
+	public boolean addAll(Collection<? extends Integer> arg0) {
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -47,7 +55,7 @@ public class Multiset<T> implements Collection<T> {
 	}
 
 	@Override
-	public Iterator<T> iterator() {
+	public Iterator<Integer> iterator() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -87,5 +95,6 @@ public class Multiset<T> implements Collection<T> {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
 
 }
