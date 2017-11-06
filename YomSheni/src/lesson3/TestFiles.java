@@ -1,7 +1,6 @@
-package lesson2;
+package lesson3;
 
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -20,27 +19,45 @@ public class TestFiles {
 		}		
 	}
 	
+	
+	/**
+	 * An example of reading a file using Stream<String>
+	 * @param theFile
+	 */
 	static void readFile(Path theFile) {
-		try {
-			Stream<String> lines = Files.lines(theFile);
+		try (Stream<String> lines = Files.lines(theFile)) {
 			lines.forEach(
 				line -> System.out.println(line)
 			);
-			lines.close();
+			//lines.close();  // not needed
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * An example of reading a file using BufferedReader
+	 * @param theFile
+	 */
+	static void readFile2(Path theFile) {
+		try (BufferedReader reader = Files.newBufferedReader(theFile)) {
+			for (;;) {
+				String line = reader.readLine();
+				if (line==null) break;
+				System.out.println(line);
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 	
 	static void writeFile(Path theFile) {
-		try {
-			PrintWriter writer = new PrintWriter(Files.newBufferedWriter(theFile));
+		try (PrintWriter writer = new PrintWriter(Files.newBufferedWriter(theFile))) {
 			writer.println("Hello world");
-			writer.close();
+			// writer.close(); // NOT NEEDED - done automatically by "try"
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
 	}
 	
 	
