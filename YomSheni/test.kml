@@ -1,1 +1,10 @@
-<kml>Hello world</kml>
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Placemark>
+    <name>המקום של אראל</name>
+    <description>זו נקודה לדוגמה בתוך האוניברסיטה.</description>
+    <Point>
+      <coordinates>35.21092111,32.10437109</coordinates>
+    </Point>
+  </Placemark>
+</kml>
