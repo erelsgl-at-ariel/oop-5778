@@ -54,11 +54,11 @@ public class TestInterfaces {
 		List<String> strings = new ArrayList<>();
 		Collections.addAll(strings, "aaa","cc","bbbb","abc");
 
-		Condition condition1 = new StartsWith('a');
+		Condition<String> condition1 = new StartsWith('a');
 		List<String> filteredStrings = filter(strings, condition1);
 		System.out.println(filteredStrings); // aaa,abc (only strings that start with a)
 		
-		Condition condition2 = new Condition() {
+		Condition<String> condition2 = new Condition<>() {
 			public boolean test(String s) {
 				if (s.charAt(0)=='b') return true;
 				else return false;
@@ -67,10 +67,6 @@ public class TestInterfaces {
 		filteredStrings = filter(strings, condition2);
 		System.out.println(filteredStrings); // aaa,abc (only strings that start with a)
 		
-		Condition condition3 = s -> s.charAt(0)=='c'; /* the string starts with  */;
-
-		
-		
-	
+		Condition<String> condition3 = s -> s.charAt(0)=='c'; /* the string starts with  */;
 	}
 }

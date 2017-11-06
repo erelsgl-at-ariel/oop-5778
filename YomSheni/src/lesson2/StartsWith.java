@@ -1,6 +1,6 @@
 package lesson2;
 
-public class StartsWith implements Condition {
+public class StartsWith implements Condition<String> {
 	
 	private char c;
 	public StartsWith(char c) { 
