@@ -1,5 +1,5 @@
 package lesson2;
 
-public interface Condition {
-	boolean test(String s);
+public interface Condition<T> {
+	boolean test(T s);
 }

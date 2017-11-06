@@ -14,17 +14,17 @@ public class TestInterfaces {
 	
 	
 	
-	static List<String> filter(List<String> strings, Condition condition) {
-		List<String> output = new ArrayList<>();  // initialize empty list
+	static <T> List<T> filter(List<T> strings, Condition<T> condition) {
+		List<T> output = new ArrayList<>();  // initialize empty list
 		for (int i=0; i<strings.size(); i++) {
-			String s = strings.get(i);
+			T s = strings.get(i);
 			if (condition.test(s)==true) {
 				output.add(s);
 			}
 		}
 		return output;
 	}
-	
+
 	
 	
 	
