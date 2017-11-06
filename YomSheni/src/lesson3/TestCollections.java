@@ -1,5 +1,6 @@
 package lesson3;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.function.Predicate;
 
@@ -150,9 +151,9 @@ public class TestCollections {
 		
 		// Solution C: use a Consumer
 		phoneBook.forEach( (k,v) -> System.out.println(k+" === "+v) );
-}
+	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 //		testStringCollection();
 //		testIntegerCollection();
 //		testStringList();
