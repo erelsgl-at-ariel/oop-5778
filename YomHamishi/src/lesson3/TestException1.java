@@ -11,7 +11,11 @@ public class TestException1 {
 	
 	static void a() { 
 		p("a1");
-		b();
+		try {
+			b();
+		} catch (NullPointerException ex) {
+			System.out.println(ex);
+		}
 		p("a2");
 	}
 	

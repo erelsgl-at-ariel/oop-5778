@@ -66,17 +66,11 @@ public class Range implements Collection<Integer> {
 		int to   = this.to;
 		return new Iterator<Integer>() {
 			int current = from;
-			
-			@Override
-			public boolean hasNext() {
+			@Override public boolean hasNext() {
 				return current <= to; 
 			}
-
-			@Override
-			public Integer next() {
-				int answer = current;
-				current++;
-				return answer;
+			@Override public Integer next() {
+				return current++;
 			}
 		};
 	}

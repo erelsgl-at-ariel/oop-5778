@@ -21,11 +21,11 @@ public class TestException2 {
 		} catch (ArithmeticException ex) {
 			System.out.println("Did you divide by zero? "+ex);
 		} catch (RuntimeException ex) {
-//			System.out.println("What did you do? "+ex);
-//			Logger.getGlobal().severe(ex.toString());
-			StringWriter w = new StringWriter();
-			ex.printStackTrace(new PrintWriter(w));
-			Logger.getGlobal().severe(w.toString());
+			System.out.println("What did you do? "+ex);
+			Logger.getGlobal().severe(ex.toString());
+//			StringWriter w = new StringWriter();
+//			ex.printStackTrace(new PrintWriter(w));
+//			Logger.getGlobal().severe(w.toString());
 		}
 		p("a2");
 	}
@@ -37,10 +37,11 @@ public class TestException2 {
 	}
 	
 	static void c() {
-		Object x = null;
+//		Object x = null;
 //		String s = x.toString();
-		//int i = 5/0;
+//		int i = 5/0;
 //		throw new IllegalArgumentException("hah!");
-		throw new IllegalColorException("abc");
+//		throw new Error();
+		throw new IllegalColorException("I do not know what is mahagony color");
 	}
 }

@@ -23,16 +23,24 @@ public class TestFiles {
 	/**
 	 * An example of reading a file using Stream<String>
 	 * @param theFile
+	 * @throws IOException 
 	 */
-	static void readFile(Path theFile) {
-		try (Stream<String> lines = Files.lines(theFile)) {
-			lines.forEach(
+	static void readFile(Path theFile) throws IOException {
+		// Wrong solution - might not close the file
+		Stream<String> lines = Files.lines(theFile);
+		lines.forEach(
 				line -> System.out.println(line)
-			);
-			//lines.close();  // not needed
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		);
+		lines.close(); 
+		
+//		// Correct solution - always closes the file
+//		try (Stream<String> lines2 = Files.lines(theFile)) {
+//			lines2.forEach(
+//				line -> System.out.println(line)
+//			);
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 	
 	/**
@@ -78,7 +86,12 @@ public class TestFiles {
 		readFolder(folder);
 
 		Path file = Paths.get("/home/erelsgl/Dropbox/ariel/OOP-JAVA/code/wigle/28.10/WigleWifi_20171029092312.csv");
-		readFile(file);
+		
+		try {
+			readFile(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 		Path outputFile = Paths.get("/home/erelsgl/Dropbox/ariel/OOP-JAVA/code/test.txt");
 		writeFile(outputFile);

@@ -50,6 +50,29 @@ public class TestCollections {
 		testRemove(new PriorityQueue<Integer>( (x,y) -> y-x));
 	}
 	
+	/**
+	 * @param a
+	 * @param b
+	 * @return the intersection of the two collections a and b.
+	 */
+	static <T> Collection<T> intersect(Collection<T> a, Collection<T> b) {
+		Collection<T> result = new HashSet<T>();
+//		for (T item: a)
+//			if (b.contains(item))
+//				result.add(item);
+		result.addAll(a);
+		result.retainAll(b);
+		return result;
+	}
+	
+	static void testIntersect() {
+		List<Integer> a = new ArrayList<>();
+		Collections.addAll(a,  1,2,2,3,3,4);
+		Set<Integer> b = new HashSet<>();
+		Collections.addAll(b,  2,3,3,4,5,5);
+		System.out.println(intersect(a,b));
+	}
+	
 	static void testStringCollection() {
 		Collection<String> c;
 		
@@ -113,6 +136,27 @@ public class TestCollections {
 		
 		System.out.println(String.join("", Collections.nCopies(20, "*")));
 	}
+	
+	/**
+	 * Print, for each letter, how many times it appears in text
+	 */
+	static void count(String text) {
+		Map<Character,Integer> result = new HashMap<>();
+		for (int i=0; i<text.length(); i++) {
+			char c = text.charAt(i);
+
+//			if (result.get(c)==null)
+//				result.put(c, 0);
+//			result.put(c, result.get(c)+1);
+
+			result.put(c, result.getOrDefault(c,0)+1);
+		}
+		System.out.println(result);
+	}
+	
+	static void testCount() {
+		count("aabc");  // prints a=2, b=1, c=1
+	}
 
 	static void testMap() {
 		Map<String,Integer> phoneBook= new HashMap<>();
@@ -151,12 +195,23 @@ public class TestCollections {
 		
 		// Solution C: use a Consumer
 		phoneBook.forEach( (k,v) -> System.out.println(k+" === "+v) );
+		
+		
+		
+		
+		
+		
+		
+		
+		//Map<String,  ArrayList<Measurement>>
 	}
 	
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
-		testStringCollection();
+//		testStringCollection();
 //		testIntegerCollection();
 //		testStringList();
-//		testMap();
+		testMap();
+//		testIntersect();
+//		testCount();
 	}
 }
