@@ -58,7 +58,7 @@ public class TestInterfaces {
 		List<String> filteredStrings = filter(strings, condition1);
 		System.out.println(filteredStrings); // aaa,abc (only strings that start with a)
 		
-		Condition<String> condition2 = new Condition<>() {
+		Condition<String> condition2 = new Condition<String>() {
 			public boolean test(String s) {
 				if (s.charAt(0)=='b') return true;
 				else return false;

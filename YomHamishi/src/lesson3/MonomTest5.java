@@ -7,6 +7,10 @@ import org.junit.jupiter.api.*;
 
 import static org.hamcrest.CoreMatchers.*;
 
+/**
+ * This test requires JUNIT 5.
+ * @author erelsgl
+ */
 class MonomTest {
 	Monom m;
 
