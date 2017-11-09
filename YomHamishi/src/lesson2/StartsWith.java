@@ -1,6 +1,6 @@
 package lesson2;
 
-public class StartsWith implements Predicate {
+public class StartsWith implements Predicate<String> {
 	
 	private char c;
 	public StartsWith(char c) { 

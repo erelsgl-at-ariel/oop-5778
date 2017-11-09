@@ -9,7 +9,7 @@ package lesson2;
  * @author erelsgl
  *
  */
-public class Monom implements Function {
+public class Monom implements DifferentiableFunction {
 
 	private double coefficient;
 	private int power;

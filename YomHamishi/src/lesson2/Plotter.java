@@ -32,7 +32,7 @@ public class Plotter extends Application {
 		stage.setScene(scene);
 		stage.show();
 	}
-
+	
 	@Override
 	public void start(Stage dummy) throws Exception {
 		FunctionPlotter.run();

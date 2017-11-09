@@ -14,12 +14,12 @@ public class TestInterfaces {
 	
 	
 	
-	static List<String> filter(List<String> strings, Predicate condition) {
-		List<String> output = new ArrayList<>();  // initialize empty list
+	static <T> List<T> filter(List<T> strings, Predicate<T> condition) {
+		List<T> output = new ArrayList<>();  // initialize empty list
 		for (int i=0; i<strings.size(); i++) {
-			String s = strings.get(i);
-			if (condition.test(s)) {
-				output.add(s);
+			T item = strings.get(i);
+			if (condition.test(item)) {
+				output.add(item);
 			}
 		}
 		return output;
@@ -51,25 +51,29 @@ public class TestInterfaces {
 //		repeat(20, ()->System.out.print("%"));
 //		repeat(20, ()->System.out.print("^"));
 //		
+//		List<String> strings = new ArrayList<>();
+//		Collections.addAll(strings, "aaa","cc","bbbb","abc");
+//		
+//		System.out.println(strings);
+//		strings.sort(  (o1,o2) -> o1.length() - o2.length() );
+//		System.out.println(strings);
+//		strings.sort(  (o1,o2) -> {
+//			if (o1.equals("bbbb")) return -1;
+//			if (o2.equals("bbbb")) return 1;
+//			return o1.compareTo(o2);
+//		});
+//		System.out.println(strings);
+
 		List<String> strings = new ArrayList<>();
 		Collections.addAll(strings, "aaa","cc","bbbb","abc");
-		
-		System.out.println(strings);
-		strings.sort(  (o1,o2) -> o1.length() - o2.length() );
-		System.out.println(strings);
-		strings.sort(  (o1,o2) -> {
-			if (o1.equals("bbbb")) return -1;
-			if (o2.equals("bbbb")) return 1;
-			return o1.compareTo(o2);
-		});
-		System.out.println(strings);
-/*
-		aStrings = filter (strings, condition???);
-		Predicate condition1 = new StartsWith('a');
+
+		// Solution A: named class "StartsWith"
+		Predicate<String> condition1 = new StartsWith('a');
 		List<String> filteredStrings = filter(strings, condition1);
 		System.out.println(filteredStrings); // aaa,abc (only strings that start with a)
 
-		Predicate condition2 = new Predicate() {
+		// Solution B: anonymous
+		Predicate<String> condition2 = new Predicate<String>() {
 			public boolean test(String s) {
 				if (s.charAt(0)=='b') return true;
 				else return false;
@@ -78,7 +82,17 @@ public class TestInterfaces {
 		filteredStrings = filter(strings, condition2);
 		System.out.println(filteredStrings); // aaa,abc (only strings that start with a)
 		
-		Predicate condition3 = x -> x.charAt(0)=='c';
-	*/
+		// Solution C: anonymous
+		Predicate<String> condition3 = x -> x.charAt(0)=='c';
+	
+		
+		List<Integer> ints = new ArrayList<>();
+		Collections.addAll(ints,  1,2,3,4,5,6,7);
+		Predicate<Integer> condition4 = new Predicate<Integer>() {
+			public boolean test(Integer i) {
+				return (i<3 || i>5);
+			}
+		};
+		System.out.println(filter(ints, condition4));
 	}
 }

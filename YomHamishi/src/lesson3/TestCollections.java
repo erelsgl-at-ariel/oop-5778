@@ -36,7 +36,7 @@ public class TestCollections {
 	}
 	
 	static void testIntegerCollection() {
-		testPrint(new HashSet<>());              // arbitrary order, no duplicates
+		testPrint(new HashSet<Integer>());              // arbitrary order, no duplicates
 		testPrint(new LinkedHashSet<Integer>()); // insertion order, no duplicates 
 		testPrint(new TreeSet<Integer>());       // natural order, no duplicates
 		testPrint(new TreeSet<Integer>( (x,y) -> y-x ));      // reverse order, no duplicates
@@ -154,7 +154,7 @@ public class TestCollections {
 	}
 	
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
-//		testStringCollection();
+		testStringCollection();
 //		testIntegerCollection();
 //		testStringList();
 //		testMap();
