@@ -37,27 +37,42 @@ public class Range implements Collection<Integer> {
 	}
 
 	@Override
-	public boolean contains(Object arg0) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean contains(Object item) {
+		if (item instanceof Integer) {
+			int itemInt = (int)item;
+			return itemInt >= this.from && itemInt<=this.to;
+		} else {
+			return false;
+		}
 	}
 
 	@Override
-	public boolean containsAll(Collection<?> arg0) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean containsAll(Collection<?> coll) {
+		for (Object item: coll) {
+			if (!this.contains(item))
+				return false;
+		}
+		return true;
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return this.to < this.from;
 	}
 
 	@Override
 	public Iterator<Integer> iterator() {
-		// TODO Auto-generated method stub
-		return null;
+		int from = this.from;
+		int to   = this.to;
+		return new Iterator<Integer>() {
+			int current = from;
+			@Override public boolean hasNext() {
+				return current <= to; 
+			}
+			@Override public Integer next() {
+				return current++;
+			}
+		};
 	}
 
 	@Override
@@ -80,8 +95,7 @@ public class Range implements Collection<Integer> {
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.to-this.from+1;
 	}
 
 	@Override
