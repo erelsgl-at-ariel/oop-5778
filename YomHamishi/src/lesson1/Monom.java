@@ -9,7 +9,7 @@ package lesson1;
  * @author erelsgl
  * @since  2017-10
  */
-public class Monom {
+public class Monom implements Function {
 	public Monom(double coefficient2, int power2) {
 		if (power2<0) {
 			RuntimeException ex = new RuntimeException("power must be non-negative");
