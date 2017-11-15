@@ -4,6 +4,7 @@
 <head>
 	<title>Test the Reversing Server</title>
 	<script src='jquery-3.2.1.min.js'></script>
+	<meta charset="utf-8"></meta>
 </head>
 
 <body>
@@ -14,15 +15,11 @@
 	</form>
 
 	<script>
-		var server = window.location.protocol=="file:"? 
-			"http://127.0.0.1":
-			window.location.protocol+"//"+window.location.hostname;
-		var port = "8001"
 		$("button").click(function() {
 			var input = $("input").val();
 			alert("The input is " + input);
 			$.ajax({
-				url: server + ":" + port + "/reverse?" + input,
+				url: "/reverse/" + input,
 				dataType: 'text'
 			}).then(function(output) {
 				alert("The output I got is " + output)
