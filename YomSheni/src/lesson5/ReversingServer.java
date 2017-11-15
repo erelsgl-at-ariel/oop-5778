@@ -3,6 +3,9 @@ package lesson5;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -17,29 +20,41 @@ public class ReversingServer {
     public static void main(String[] args) throws Exception {
     	int port = 8001;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
-        server.createContext("/reverse", new ReversingHandler());
+        server.createContext("/reverse/", request -> {
+        	String path = request.getRequestURI().getPath();
+        	System.out.println("The path is: "+path);
+        	String input = path.replaceAll("/reverse/", "");
+        	System.out.println("   The input is: "+input);
+        	String output = new StringBuilder(input).reverse().toString(); 
+        	System.out.println("   The output is: "+output);
+        	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+        	request.getResponseHeaders().set("Content-Type", "text/plain");
+            request.sendResponseHeaders(200, 0);
+            try (OutputStream os = request.getResponseBody()) {
+            	os.write(output.getBytes());
+            }
+        });
+        
+        server.createContext("/file", request -> {
+        	String fileName = request.getRequestURI().getPath().replaceAll("/file/", "");
+        	System.out.println("Got new file-request: "+fileName);
+        	Path path = Paths.get("client", fileName);
+        	String output = null;
+        	if (Files.exists(path)) {
+        		output = new String(Files.readAllBytes(path));
+        	} else {
+        		output = "File "+path+" not found!";
+        	}
+        	
+        	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+        	request.getResponseHeaders().set("Content-Type", "text/html");
+            request.sendResponseHeaders(200, 0);
+            try (OutputStream os = request.getResponseBody()) {
+            	os.write(output.getBytes());
+            }
+        });
         System.out.println("ReversingServer is up. "+
-        		"To reverse the string abc, go to http://127.0.0.1:"+port+"/reverse?abc");
+        		"To reverse the string abc, go to http://127.0.0.1:"+port+"/reverse/abc");
         server.start();
-    }
-}
-
-
-class ReversingHandler implements HttpHandler {
-    @Override
-    public void handle(HttpExchange request) throws IOException {
-    	String input = request.getRequestURI().getQuery();
-    	System.out.println("Got new input: "+input);
-    	String output = (input==null? 
-    			null: 
-    			new StringBuilder(input).reverse().toString()); 
-    	System.out.println("   The output is: "+output);
-    	
-    	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
-    	request.getResponseHeaders().set("Content-Type", "text/plain");
-        request.sendResponseHeaders(200, 0);
-        OutputStream os = request.getResponseBody();
-        os.write(output.getBytes());
-        os.close();
     }
 }
