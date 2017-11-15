@@ -2,9 +2,7 @@ package lesson5;
 
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
 
 import com.sun.net.httpserver.HttpServer;
 
