@@ -35,7 +35,6 @@ public class ReversingServer {
         	Path path = Paths.get("client", fileName);
         	String output = null;
         	if (Files.exists(path)) {
-        		byte[] bytes = Files.readAllBytes(path);
         		output = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
         	} else {
         		output = "File "+path+" not found!";
@@ -49,7 +48,7 @@ public class ReversingServer {
             }
         });
         System.out.println("ReversingServer is up. "+
-        		"To reverse the string abc, go to http://127.0.0.1:"+port+"/reverse?abc");
+        		"To reverse the string abc, go to http://127.1:"+port+"/reverse?abc");
         server.start();
     }
 }

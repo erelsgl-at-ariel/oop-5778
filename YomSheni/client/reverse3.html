@@ -26,7 +26,7 @@
 				}
 			).then(
 				function(output) {
-					$("div#output").html("The reverse of '"+input+"' is '"+output+"'")
+					$("div#output").append("<div>The reverse of '"+input+"' is '"+output+"'</div>")
 				}
 			);
 			return false
