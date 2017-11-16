@@ -13,15 +13,24 @@
 		Enter a string to reverse: <input></input>
 		<button>Submit</button>
 	</form>
+	
+	<div id='output' style='border: dashed 1px green; margin: 10px; padding: 5px'>
+	</div>
 
 	<script>
-		$("button").click(
-			function() {
-				var input = $("input").val();
-				alert("The input is " + input);
-				return false
-			}
-		)
+		$("button").click(function() {
+			var input = $("input").val();
+			$.ajax(
+				{
+					url: "/reverse?" + input
+				}
+			).then(
+				function(output) {
+					$("div#output").html("The reverse of '"+input+"' is '"+output+"'")
+				}
+			);
+			return false
+		})
 	</script>
 
 </body>

@@ -2,8 +2,11 @@ package lesson5;
 
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
-import java.nio.file.*;
-import java.util.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 import com.sun.net.httpserver.HttpServer;
@@ -18,9 +21,9 @@ public class PlottingServer {
     	int port = 8002;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.createContext("/polynom/", request -> {
-        	String input = request.getRequestURI().getPath().replaceAll("/polynom/", "");
+        	String input = request.getRequestURI().getQuery();
         	List<Double> coefficients =
-        			Arrays.stream(input.split("/"))
+        			Arrays.stream(input.split(","))
 	        	        .map(s -> Double.valueOf(s))
 	        	        .collect(Collectors.toList());         	
         	System.out.println("   The coefficients are: "+coefficients);

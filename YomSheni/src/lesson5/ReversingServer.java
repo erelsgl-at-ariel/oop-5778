@@ -15,10 +15,8 @@ public class ReversingServer {
     public static void main(String[] args) throws Exception {
     	int port = 8001;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
-        server.createContext("/reverse/", request -> {
-        	String path = request.getRequestURI().getPath();
-        	System.out.println("The path is: "+path);
-        	String input = path.replaceAll("/reverse/", "");
+        server.createContext("/reverse", request -> {
+        	String input = request.getRequestURI().getQuery();
         	System.out.println("   The input is: "+input);
         	String output = new StringBuilder(input).reverse().toString(); 
         	System.out.println("   The output is: "+output);
@@ -49,7 +47,7 @@ public class ReversingServer {
             }
         });
         System.out.println("ReversingServer is up. "+
-        		"To reverse the string abc, go to http://127.0.0.1:"+port+"/reverse/abc");
+        		"To reverse the string abc, go to http://127.0.0.1:"+port+"/reverse?abc");
         server.start();
     }
 }
