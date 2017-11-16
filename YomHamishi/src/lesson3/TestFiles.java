@@ -1,6 +1,7 @@
 package lesson3;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -48,7 +49,7 @@ public class TestFiles {
 	 * @param theFile
 	 */
 	static void readFile2(Path theFile) {
-		try (BufferedReader reader = Files.newBufferedReader(theFile)) {
+		try (BufferedReader reader = Files.newBufferedReader(theFile, StandardCharsets.UTF_8)) {
 			for (;;) {
 				String line = reader.readLine();
 				if (line==null) break;
@@ -60,7 +61,7 @@ public class TestFiles {
 	}
 	
 	static void writeFile(Path theFile) {
-		try (PrintWriter writer = new PrintWriter(Files.newBufferedWriter(theFile))) {
+		try (PrintWriter writer = new PrintWriter(Files.newBufferedWriter(theFile, StandardCharsets.UTF_8))) {
 			writer.println("Hello world");
 			// writer.close(); // NOT NEEDED - done automatically by "try"
 		} catch (IOException e) {
@@ -71,7 +72,7 @@ public class TestFiles {
 	
 	static void writeFileKML(Path theFile) {
 		try {
-			PrintWriter writer = new PrintWriter(Files.newBufferedWriter(theFile));
+			PrintWriter writer = new PrintWriter(Files.newBufferedWriter(theFile, StandardCharsets.UTF_8));
 			writer.println("<kml>Hello world</kml>");
 			writer.close();
 		} catch (IOException e) {
