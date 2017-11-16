@@ -10,42 +10,42 @@
 <body>
 
 	<form style='border: solid 1px blue; margin: 10px; padding: 5px'>
-		Enter a number: <input></input>
+		Enter an array of points: 
+<textarea rows='10' cols='50' style='font-size:16px;font-weight:900'>[
+	{"x":5,"y":5},
+	{"x":395,"y":5},
+	{"x":395,"y":195},
+	{"x":5,"y":195}
+]</textarea>
 		<button type="button">Submit</button>
 	</form>
 	
 	<div id='svg'  style='border: dashed 1px green; margin: 10px; padding: 5px'>
-		<svg id='plot' width='400' height='200'>
+		<svg width='400' height='200'>
 		   <rect x="5" y="5" width="390" height="190" style="stroke:green; stroke-width:3; fill:yellow" />
 		</svg>
 	</div>
 
 	<script>
 		svg = $("svg")
-		
+	
 		function point(x,y) {
 			$("svg").append(
-				'<circle cx="' + x + '" cy="' + y + '" r="5" fill="blue" stroke-width="0"/>'
+				'<circle cx="' + x + '" cy="' + y + '" r="5" style="fill:blue; stroke-width:0"/>'
 			)
 		}
 		
 		function repaint() {
 			$("div#svg").html($("div#svg").html());
 		}
-		
-		point(5,5)
-		point(5,195)
-		point(395,195)
-		point(395,5)
 		repaint()
 		
 		$("button").click(function() {
-			var input = $("input").val();
-			$.ajax({
-				url: "/reverse/" + input
-			}).then(function(output) {
-				$("div#output").html("The reverse of '"+input+"' is '"+output+"'")
-			});
+			var input = $("textarea").val();
+			var points = JSON.parse(input)
+			$("circle").remove(); 
+			points.forEach ( p => point(p.x, p.y) ) 
+			repaint()
 			return false
 		})
 	</script>
