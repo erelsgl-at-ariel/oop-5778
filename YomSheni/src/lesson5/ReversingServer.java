@@ -2,6 +2,7 @@ package lesson5;
 
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 
 import com.sun.net.httpserver.HttpServer;
@@ -34,7 +35,8 @@ public class ReversingServer {
         	Path path = Paths.get("client", fileName);
         	String output = null;
         	if (Files.exists(path)) {
-        		output = new String(Files.readAllBytes(path));
+        		byte[] bytes = Files.readAllBytes(path);
+        		output = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
         	} else {
         		output = "File "+path+" not found!";
         	}
