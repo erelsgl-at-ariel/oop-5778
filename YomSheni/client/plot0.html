@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Test the points server</title>
+	<script src='jquery-3.2.1.min.js'></script>
+	<meta charset="utf-8"></meta>
+</head>
+
+<body>
+
+	<form style='border: solid 1px blue; margin: 10px; padding: 5px'>
+		Enter a number: <input></input>
+		<button type="button">Submit</button>
+	</form>
+	
+	<div id='svg'  style='border: dashed 1px green; margin: 10px; padding: 5px'>
+		<svg id='plot' width='400' height='200'>
+		   <rect x="5" y="5" width="390" height="190" style="stroke:green; stroke-width:3; fill:yellow" />
+		</svg>
+	</div>
+
+	<script>
+		svg = $("svg")
+		
+		function point(x,y) {
+			$("svg").append(
+				'<circle cx="' + x + '" cy="' + y + '" r="5" fill="blue" stroke-width="0"/>'
+			)
+		}
+		
+		function repaint() {
+			$("div#svg").html($("div#svg").html());
+		}
+		
+		point(5,5)
+		point(5,195)
+		point(395,195)
+		point(395,5)
+		repaint()
+		
+		$("button").click(function() {
+			var input = $("input").val();
+			$.ajax({
+				url: "/reverse/" + input
+			}).then(function(output) {
+				$("div#output").html("The reverse of '"+input+"' is '"+output+"'")
+			});
+			return false
+		})
+	</script>
+
+</body>
+</html>
