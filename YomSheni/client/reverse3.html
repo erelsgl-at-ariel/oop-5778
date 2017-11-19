@@ -22,7 +22,7 @@
 			var input = $("input").val();
 			$.ajax(
 				{
-					url: "/reverse?" + input
+					"url": encodeURI("/reverse?" + input)
 				}
 			).then(
 				function(output) {
