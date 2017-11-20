@@ -20,7 +20,7 @@
 			alert("The input is " + input);
 			$.ajax(
 				{
-					"url": encodeURI("http://127.1:8001/reverse?" + input)
+					"url": "http://127.0.0.1:8001/reverse?" + input
 				}
 			).then(function(output) 
 				{

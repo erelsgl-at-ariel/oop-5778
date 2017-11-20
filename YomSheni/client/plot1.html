@@ -24,19 +24,17 @@
 	</div>
 
 	<script>
-		var svg = $("svg")
-		var width = parseInt(svg.attr("width"))
-		var height = parseInt(svg.attr("height"))
+		var width = parseInt($("svg").attr("width"))
+		var height = parseInt($("svg").attr("height"))
 	
 		function plotPoint(x,y) {
-			svg.append(
+			$("svg").append(
 				'<circle cx="' + x + '" cy="' + y + '" r="5" style="fill:blue; stroke-width:0"/>'
 			)
 		}
 		
 		function repaint() {
 			$("div#svg").html($("div#svg").html());
-			svg = $("svg")
 		}
 
 		$("button").click(function() {
