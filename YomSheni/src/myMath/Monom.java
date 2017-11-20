@@ -27,16 +27,35 @@ public class Monom implements cont_function{
 	}
 	private static Monom init_from_string(String s) {
 		if(s==null) {throw new RuntimeException("Wrong parameter for the Monom Constractor - should not be NULL!!!");}
-		String[] params = s.split("x");
-		String pow_s = "0";
-		if(params.length>1) {pow_s = params[1].substring(1);}
+		double  coef = 1;
+		int pow = 0;
 		Monom ans = null;
-		double coef = new Double(params[0]);
-		int pow = new Integer(pow_s);
-		ans = new Monom(coef, pow);
+		if(s.contains("x")) {
+			int ind = s.indexOf("x");
+			String co = s.substring(0, ind);
+			
+			try{
+				double c = Double.parseDouble(co);
+				coef = c;
+			}
+			catch(Exception e) {coef = 1;}
+			if(s.length()>ind+2) {
+				String po = s.substring(ind+2);
+				try{
+					int p = Integer.parseInt(po);
+					pow = p;
+				}
+				catch(Exception e) {pow = 0;}
+			}
+		}
+		else {  // just number ==> power = 0;
+			coef = Double.parseDouble(s);
+		}
 		
+		ans = new Monom(coef, pow);	
 		return ans;
 	}
+	
 	public int get_power() {return this._power;}
 	public double get_coefficient() {return _coefficient;}
 	
