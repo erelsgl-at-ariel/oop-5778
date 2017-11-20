@@ -18,12 +18,13 @@ public class ReversingServer {
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.createContext("/reverse", request -> {
         	String input = request.getRequestURI().getQuery();
-        	System.out.println("   The input is: "+input);
+        	System.out.println("The input is: "+input);
         	String output = new StringBuilder(input).reverse().toString(); 
         	System.out.println("   The output is: "+output);
+        	
         	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
         	request.getResponseHeaders().set("Content-Type", "text/plain");
-            request.sendResponseHeaders(200, 0);
+            request.sendResponseHeaders(200 /* OK */, 0);
             try (OutputStream os = request.getResponseBody()) {
             	os.write(output.getBytes());
             }
@@ -34,10 +35,10 @@ public class ReversingServer {
         	System.out.println("Got new file-request: "+fileName);
         	Path path = Paths.get("client", fileName);
         	String output = null;
-        	if (Files.exists(path)) {
+        	try {
         		output = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
-        	} else {
-        		output = "File "+path+" not found!";
+        	} catch (Exception ex) {
+        		output = "Error: "+ex;
         	}
         	
         	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
@@ -48,7 +49,7 @@ public class ReversingServer {
             }
         });
         System.out.println("ReversingServer is up. "+
-        		"To reverse the string abc, go to http://127.1:"+port+"/reverse?abc");
+        		"To reverse the string abc, go to http://127.0.0.1:"+port+"/reverse?abc");
         server.start();
     }
 }
