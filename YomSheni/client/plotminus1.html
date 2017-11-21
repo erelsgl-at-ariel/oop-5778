@@ -10,13 +10,9 @@
 <body>
 
 	<form style='border: solid 1px blue; margin: 10px; padding: 5px'>
-		Enter an array of points: 
-<textarea rows='10' cols='50' style='font-size:16px;font-weight:900'>[
-	{"x":5,"y":5},
-	{"x":395,"y":5},
-	{"x":395,"y":195},
-	{"x":5,"y":195}
-]</textarea>
+		Enter a point:
+		<input id="x"/>
+		<input id="y"/>
 		<button type="button">Submit</button>
 	</form>
 	
@@ -28,27 +24,6 @@
 	</div>
 
 	<script>
-		var point = {
-				"x": 50,
-				"y": 30
-		};
-		var arrayOfPoints = [
-			{
-				"x": 50,
-				"y": 30
-			},
-			{
-				"x": 70,
-				"y": 20
-			}
-		]
-		//arrayOfPoints.forEach(function(point) {
-		//	alert(point.x+","+point.y)
-		//})
-		
-		// alert(JSON.stringify(arrayOfPoints))
-		
-		
 		function plotPoint(x,y) {
 			$("svg").append(
 				'<circle cx="' + x + '" cy="' + y + '" r="5" style="fill:blue; stroke-width:0"/>'
@@ -61,11 +36,10 @@
 		
 
 		$("button").click(function() {
-			var input = $("textarea").val();
-			var points = JSON.parse(input)
-			$("div#svg circle").remove()
-			points.forEach ( p => plotPoint(p.x, p.y) ) 
-			$("div#svg").html($("div#svg").html());
+			var x = $("input#x").val();
+			var y = $("input#y").val();
+			plotPoint(x,y)
+			repaint();
 			return false
 		})
 	</script>
