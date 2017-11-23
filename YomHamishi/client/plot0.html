@@ -64,7 +64,10 @@
 			var input = $("textarea").val();
 			var points = JSON.parse(input)
 			$("div#svg circle").remove()
-			points.forEach ( p => plotPoint(p.x, p.y) ) 
+			points.forEach ( 
+					p => 
+					plotPoint(p.x, p.y) 
+			) 
 			$("div#svg").html($("div#svg").html());
 			return false
 		})
