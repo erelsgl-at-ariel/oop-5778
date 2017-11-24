@@ -1,4 +1,4 @@
-# &rlm; סיכומים לקורס "מבוא לתיכנות מונחה עצמים" &lrm;
+# סיכומים לקורס "מבוא לתיכנות מונחה עצמים" &rlm;
 
 The **odt** files are text summaries of the lessons. 
 They were created with LibreOffice Writer. 
