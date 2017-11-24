@@ -2,12 +2,12 @@
 
 &#x202b; בתיקיה זו ישנם קבצים משלושה סוגים:
 
-The **odt** files are text summaries of the lessons. 
-They were created with LibreOffice Writer. 
-You may be able to open them also with Microsoft Word (not tested).
+* &#x202b; קבצי **odt** הם סיכומים מפורטים של השיעורים.
+הם נוצרו בתוכנת "ליברה-אופיס".
+ייתכן שאפשר לפתוח אותם גם ב"וורד" - לא בדקתי.
 
-The **odp** files are presentations.
-They were created with LibreOffice Impress.
-You may be able to open them also with Microsoft Powerpoint.
+* &#x202b; קבצי **odp** הם מצגות.
+הם נוצרו בתוכנת "ליברה-אופיס",
+ייתכן שאפשר לפתוח אותם גם ב"פאוור-פוינט".
 
-The **pdf** files are exports of the presentations.
+* &#x202b; קבצי **pdf** זהים לקבצי המצגות.
