@@ -6,9 +6,14 @@ import java.util.*;
 /**
  * An exact solution to the partition problem -- partition a set of numbers to two subsets with almost-equal sum.
  * 
+ * This version allows the process to be interrupted.
+ * This allows it to run as an "any-time algorithm".
+ * 
+ * Uses the thread "interrupt" method.
+ * 
  * @author erelsgl
  */
-public class Partition {
+public class PartitionWithInterruption0 {
 	
 	/**
 	 * Return a subset of "values" determined by the binary representation of "index".
@@ -52,7 +57,8 @@ public class Partition {
 		int bestIndex = 0;
 		double smallestDiff = Double.MAX_VALUE;
 		for (int index=0; index<numOfPartitions; ++index) {
-			Thread.yield();
+			if (Thread.interrupted()) 
+				break;
 			double sum1 = subsetSumByBinaryRepresentation(values, index);
 			double sum0 = subsetSumByBinaryRepresentation(values, ~index);
 			double diff = Math.abs(sum1-sum0);
@@ -71,17 +77,41 @@ public class Partition {
 	
 	
 	/**
-	 * This main program tests how much time it takes to partition arrays of increasing lengths.
+	 * This main program tests what happens when we interrupt the process after increasing amounts of time.
+	 * @throws InterruptedException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		List<Double> values = new ArrayList<>();
-		for (int i=1; i<=31; ++i) {
-			values.add(Math.random());  
-			Instant start = Instant.now();
-			Partition.best(values);
-			double durationInMillis = Duration.between(start, Instant.now()).toMillis(); 
-			System.out.println("Partitioning an array with "+i+" values takes "+durationInMillis+" [ms]");
-		}
+		for (int i=1; i<=25; ++i)
+			values.add(Math.random());
+		
+		Runnable task = () -> {
+			System.out.println("Thread "+Thread.currentThread().getId()+" starts");
+			List<Double>[] bestPartition = best(values);
+        	double sum0 = bestPartition[0].stream().mapToDouble(x->x).sum();
+        	double sum1 = bestPartition[1].stream().mapToDouble(x->x).sum();
+			System.out.println("Thread "+Thread.currentThread().getId()+" ends. Difference = "+Math.abs(sum1-sum0));
+		};
+		
+		Thread t = new Thread(task);
+		t.start();
+		Thread.sleep(1);
+		t.interrupt();
+		
+		t = new Thread(task);
+		t.start();
+		Thread.sleep(10);
+		t.interrupt();
+		
+		t = new Thread(task);
+		t.start();
+		Thread.sleep(100);
+		t.interrupt();
+		
+		t = new Thread(task);
+		t.start();
+		Thread.sleep(1000);
+		t.interrupt();
 	}
 
 	

@@ -1,14 +1,19 @@
 package lesson6;
 
-import java.time.*;
 import java.util.*;
+import java.util.concurrent.*;
 
 /**
  * An exact solution to the partition problem -- partition a set of numbers to two subsets with almost-equal sum.
  * 
+ * This version allows the process to be interrupted.
+ * This allows it to run as an "any-time algorithm".
+ * 
+ * Uses an executor service.
+ * 
  * @author erelsgl
  */
-public class Partition {
+public class PartitionWithInterruption1 {
 	
 	/**
 	 * Return a subset of "values" determined by the binary representation of "index".
@@ -52,7 +57,8 @@ public class Partition {
 		int bestIndex = 0;
 		double smallestDiff = Double.MAX_VALUE;
 		for (int index=0; index<numOfPartitions; ++index) {
-			Thread.yield();
+			if (Thread.interrupted()) 
+				break;
 			double sum1 = subsetSumByBinaryRepresentation(values, index);
 			double sum0 = subsetSumByBinaryRepresentation(values, ~index);
 			double diff = Math.abs(sum1-sum0);
@@ -71,19 +77,31 @@ public class Partition {
 	
 	
 	/**
-	 * This main program tests how much time it takes to partition arrays of increasing lengths.
+	 * This main program tests what happens when we interrupt the process after increasing amounts of time.
+	 * @throws InterruptedException 
+	 * @throws TimeoutException 
+	 * @throws ExecutionException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException, ExecutionException  {
 		List<Double> values = new ArrayList<>();
-		for (int i=1; i<=31; ++i) {
-			values.add(Math.random());  
-			Instant start = Instant.now();
-			Partition.best(values);
-			double durationInMillis = Duration.between(start, Instant.now()).toMillis(); 
-			System.out.println("Partitioning an array with "+i+" values takes "+durationInMillis+" [ms]");
+		for (int i=1; i<=25; ++i)
+			values.add(Math.random());
+		
+		Runnable task = () -> {
+			System.out.println("Thread "+Thread.currentThread().getId()+" starts");
+			List<Double>[] bestPartition = best(values);
+        	double sum0 = bestPartition[0].stream().mapToDouble(x->x).sum();
+        	double sum1 = bestPartition[1].stream().mapToDouble(x->x).sum();
+			System.out.println("Thread "+Thread.currentThread().getId()+" ends. Difference = "+Math.abs(sum1-sum0));
+		};
+		
+		ExecutorService executor = Executors.newCachedThreadPool();
+		Future<?> future = executor.submit(task);
+		try {
+			future.get(1, TimeUnit.MILLISECONDS);
+		} catch (TimeoutException e) {
+			System.out.println("Timeout");
 		}
 	}
-
-	
 
 }

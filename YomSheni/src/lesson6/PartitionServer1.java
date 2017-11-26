@@ -11,14 +11,14 @@ import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.DoubleStream;
-
 import com.sun.net.httpserver.HttpServer;
 
-import myMath.Polynom;
 
 /**
- * A web-server that reverses strings. Uses com.sun.net.httpserver package.
+ * A web-server that solves the Partition problem.
+ * 
+ * Version 1 - each task is in a thread of its own.
+ * 
  * @author erelsgl
  * @see https://stackoverflow.com/a/3732328/827927
  */

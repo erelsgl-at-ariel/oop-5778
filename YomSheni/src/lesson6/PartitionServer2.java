@@ -11,23 +11,23 @@ import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.DoubleStream;
 import java.util.concurrent.*;
 
 import com.sun.net.httpserver.HttpServer;
 
-import myMath.Polynom;
-
 /**
- * A web-server that reverses strings. Uses com.sun.net.httpserver package.
+ * A web-server that solves the Partition problem.
+ * 
+ * Version 2 - uses an executor and a thread pool.
+ * This is more efficient than using raw threads.
+ *
  * @author erelsgl
- * @see https://stackoverflow.com/a/3732328/827927
  */
 public class PartitionServer2 {
     public static void main(String[] args) throws Exception {
     	int port = 8003;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
-    	Executor executor = Executors.newCachedThreadPool();
+    	ExecutorService executor = Executors.newFixedThreadPool(4);
         
         server.createContext("/partition", request -> {
         	// The input is a list of values separated by commas, e.g, "1,2,3".
@@ -66,10 +66,6 @@ public class PartitionServer2 {
 	        		ex.printStackTrace();
 	        	}
         	};
-        	
-//        	Thread worker = new Thread(task); 
-//        	worker.start();
-//        	System.out.println("  Started thread "+worker.getId()+" to calculate output");
         	
         	executor.execute(task);
         });
