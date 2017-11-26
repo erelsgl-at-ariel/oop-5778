@@ -14,12 +14,12 @@ public class PartitionTime {
 
 	public static void main(String[] args) {
 		List<Double> values = new ArrayList<>();
-		for (int i=0; i<=31; ++i) {
+		for (int i=1; i<=31; ++i) {
+			values.add(Math.random());  
 			Instant start = Instant.now();
 			Partition.best(values);
 			double durationInMillis = Duration.between(start, Instant.now()).toMillis(); 
 			System.out.println("Partitioning an array with "+i+" values takes "+durationInMillis+" [ms]");
-			values.add(Math.random());  
 		}
 	}
 
