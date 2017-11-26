@@ -54,7 +54,7 @@ public class PolynomServer {
         		ex.printStackTrace();
 	        	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
 	        	request.getResponseHeaders().set("Content-Type", "text/plain");
-	            request.sendResponseHeaders(200, 0);
+	            request.sendResponseHeaders(500, 0);
 	            try (PrintStream os = new PrintStream(request.getResponseBody())) {
 	            	os.println("There was an exception: "+ ex);
 	            }

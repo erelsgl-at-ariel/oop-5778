@@ -1,10 +1,13 @@
 package lesson5;
 
+import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 
 /**
@@ -16,6 +19,15 @@ public class ReversingServer {
     public static void main(String[] args) throws Exception {
     	int port = 8001;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
+        
+//        HttpHandler handler = new HttpHandler() {
+//			public void handle(HttpExchange request) throws IOException {
+//				// TODO Auto-generated method stub
+//			}
+//        };
+//        server.createContext("/reverse", handler);
+        
+        
         server.createContext("/reverse", request -> {
         	String input = request.getRequestURI().getQuery();
         	System.out.println("The input is: "+input);
@@ -27,6 +39,9 @@ public class ReversingServer {
             request.sendResponseHeaders(200 /* OK */, 0);
             try (OutputStream os = request.getResponseBody()) {
             	os.write(output.getBytes());
+            } catch (Exception ex) {
+            	System.out.println("Error while sending response to client");
+            	ex.printStackTrace();
             }
         });
         
@@ -37,6 +52,8 @@ public class ReversingServer {
         	String output = null;
         	try {
         		output = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
+        	} catch (NoSuchFileException ex) {
+        		output = "Dear user, the file '"+fileName+"' does not exist. I am sorry.";
         	} catch (Exception ex) {
         		output = "Error: "+ex;
         	}
