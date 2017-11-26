@@ -1,12 +1,8 @@
 package lesson1;
 
+import org.junit.*;
 import static org.junit.Assert.*;
-
-import org.junit.Before;
-
 import static org.hamcrest.CoreMatchers.*;
-
-import org.junit.Test;
 
 public class TestMonomJunit {
 	

@@ -16,7 +16,7 @@ import com.sun.net.httpserver.HttpServer;
 import myMath.Polynom;
 
 /**
- * A web-server that reverses strings. Uses com.sun.net.httpserver package.
+ * A web-server that plots polynoms. Uses com.sun.net.httpserver package.
  * @author erelsgl
  * @see https://stackoverflow.com/a/3732328/827927
  */
@@ -65,7 +65,7 @@ public class PolynomServer {
         server.createContext("/file", request -> {
         	String fileName = request.getRequestURI().getPath().replaceAll("/file/", "");
         	System.out.println("Got new file-request: "+fileName);
-        	Path path = Paths.get("client", fileName);
+        	Path path = Paths.get("client", "lesson5", fileName);
         	String output = null;
         	if (Files.exists(path)) {
         		output = new String(Files.readAllBytes(path));
