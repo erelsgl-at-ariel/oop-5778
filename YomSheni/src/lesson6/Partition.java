@@ -50,6 +50,7 @@ public class Partition {
 		int bestIndex = 0;
 		double smallestDiff = Double.MAX_VALUE;
 		for (int index=0; index<numOfPartitions; ++index) {
+			Thread.yield();
 			double sum1 = subsetSumByBinaryRepresentation(values, index);
 			double sum0 = subsetSumByBinaryRepresentation(values, ~index);
 			double diff = Math.abs(sum1-sum0);

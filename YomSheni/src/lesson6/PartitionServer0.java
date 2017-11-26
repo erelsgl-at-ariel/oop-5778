@@ -22,7 +22,7 @@ import myMath.Polynom;
  * @author erelsgl
  * @see https://stackoverflow.com/a/3732328/827927
  */
-public class PartitionServer {
+public class PartitionServer0 {
     public static void main(String[] args) throws Exception {
     	int port = 8003;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
