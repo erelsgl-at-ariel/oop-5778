@@ -4,12 +4,16 @@ import java.util.*;
 import java.util.concurrent.*;
 
 /**
+ * WARNING: This class is buggy. It does not stop in time. 
+ * See PartitionWithInterruption0.java
+ * 
  * An exact solution to the partition problem -- partition a set of numbers to two subsets with almost-equal sum.
  * 
  * This version allows the process to be interrupted.
  * This allows it to run as an "any-time algorithm".
  * 
  * Uses an executor service.
+ * 
  * 
  * @author erelsgl
  */
