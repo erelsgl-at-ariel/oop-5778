@@ -57,6 +57,8 @@ public class PartitionWithInterruption0 {
 		int bestIndex = 0;
 		double smallestDiff = Double.MAX_VALUE;
 		for (int index=0; index<numOfPartitions; ++index) {
+			//TODO: improvement: int randomIndex = (int)Math.random()*numOfPartitions;  
+			Thread.yield();
 			if (Thread.interrupted()) 
 				break;
 			double sum1 = subsetSumByBinaryRepresentation(values, index);
@@ -83,7 +85,7 @@ public class PartitionWithInterruption0 {
 	public static void main(String[] args) throws InterruptedException {
 		List<Double> values = new ArrayList<>();
 		for (int i=1; i<=25; ++i)
-			values.add(Math.random());
+			values.add(Math.random()*1000);
 		
 		Runnable task = () -> {
 			System.out.println("Thread "+Thread.currentThread().getId()+" starts");
@@ -95,7 +97,7 @@ public class PartitionWithInterruption0 {
 		
 		Thread t = new Thread(task);
 		t.start();
-		Thread.sleep(1);
+		Thread.sleep(1); // the main program sleeps 1 millisecond
 		t.interrupt();
 		
 		t = new Thread(task);

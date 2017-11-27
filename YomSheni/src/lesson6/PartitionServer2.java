@@ -2,6 +2,7 @@ package lesson6;
 
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.lang.invoke.MethodHandles;
 import java.net.InetSocketAddress;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -27,7 +28,8 @@ public class PartitionServer2 {
     public static void main(String[] args) throws Exception {
     	int port = 8003;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
-    	ExecutorService executor = Executors.newFixedThreadPool(4);
+//    	ExecutorService executor = Executors.newFixedThreadPool(4);
+    	ExecutorService executor = Executors.newCachedThreadPool();
         
         server.createContext("/partition", request -> {
         	// The input is a list of values separated by commas, e.g, "1,2,3".
@@ -91,7 +93,7 @@ public class PartitionServer2 {
             	os.write(output.getBytes());
             }
         });
-        System.out.println("PartitionServer is up. "+
+        System.out.println(MethodHandles.lookup().lookupClass().getSimpleName()+" is up. "+
         		"Try http://127.0.0.1:"+port+"/partition?1,2,3 or http://127.0.0.1:"+port+"/file/partition.html");
         server.start();
     }

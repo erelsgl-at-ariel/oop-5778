@@ -31,13 +31,17 @@ public class PartitionTest {
 	@Test public void test12() {
 		List<Double> values = Arrays.asList(1.0, 2.0);
 		List<Double>[] output = Partition.best(values);
+//		double sum0 = // sum of output[0]
+//		double sum1 = // sum of output[1]
+//		double diff = Math.abs(sum0-sum1);
+//		assertThat(diff, is(1.0));
 		sortOutput(output);
 		assertThat(output[0], is(Arrays.asList(1.0)));
 		assertThat(output[1], is(Arrays.asList(2.0)));
 	}
 
 	@Test public void test1234() {
-		List<Double> values = Arrays.asList(1.0, 2.0, 3.0, 4.0);
+		List<Double> values = Arrays.asList(1.0, 4.0, 3.0, 2.0);
 		List<Double>[] output = Partition.best(values);
 		sortOutput(output);
 		assertThat(output[0], is(Arrays.asList(1.0, 4.0)));

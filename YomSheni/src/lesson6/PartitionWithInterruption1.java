@@ -1,5 +1,7 @@
 package lesson6;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -61,6 +63,7 @@ public class PartitionWithInterruption1 {
 		int bestIndex = 0;
 		double smallestDiff = Double.MAX_VALUE;
 		for (int index=0; index<numOfPartitions; ++index) {
+			Thread.yield();
 			if (Thread.interrupted()) 
 				break;
 			double sum1 = subsetSumByBinaryRepresentation(values, index);
@@ -99,12 +102,16 @@ public class PartitionWithInterruption1 {
 			System.out.println("Thread "+Thread.currentThread().getId()+" ends. Difference = "+Math.abs(sum1-sum0));
 		};
 		
+		
+		Instant start = Instant.now();
 		ExecutorService executor = Executors.newCachedThreadPool();
 		Future<?> future = executor.submit(task);
 		try {
-			future.get(1, TimeUnit.MILLISECONDS);
+			future.get(900, TimeUnit.MILLISECONDS);
 		} catch (TimeoutException e) {
-			System.out.println("Timeout");
+			future.cancel(true);
+			double durationInMillis = Duration.between(start, Instant.now()).toMillis();
+			System.out.println("Timeout after "+durationInMillis+" [ms]");
 		}
 	}
 

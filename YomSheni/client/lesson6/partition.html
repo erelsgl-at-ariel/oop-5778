@@ -13,14 +13,15 @@
 		<img src='https://openclipart.org/download/175849/ee03f54c.svg' style='float:right; width:100px'/>
 		<div>Enter the values of the jewels, separated by commas:</div> 
 		<textarea rows='10' cols='50' style='font-size:16px;font-weight:900'>1,2,3,4,5,6,7,8</textarea>
-		<button>Submit</button>
+		<button id='submit'>Submit</button>
+		<button id='clear'>Clear</button>
 	</form>
 	
 	<div id='output' style='border: dashed 1px green; margin: 10px; padding: 5px'>
 	</div>
 
 	<script>
-		$("button").click(function() {
+		$("button#submit").click(() => {
 			var input = $("textarea").val();
 			$("div#output").append("<div style='color:blue'>The input is: "+input+"</div>");
 			$.ajax(
@@ -34,6 +35,12 @@
 			);
 			return false
 		})
+		
+		$("button#clear").click(() => {
+			$("div#output").html("")
+			return false
+		})
+		
 	</script>
 
 </body>

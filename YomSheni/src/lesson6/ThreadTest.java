@@ -7,7 +7,11 @@ package lesson6;
 public class ThreadTest {
 
 	public static void main(String[] args) {
-		new Thread( ()-> {for (int i=0;i<1000;++i) System.out.print("1");} ).start();
+		Thread t1 = new Thread(
+				()-> {for (int i=0;i<1000;++i) System.out.print("1");}
+		);
+		t1.start();
+
 		new Thread( ()-> {for (int i=0;i<1000;++i) System.out.print("2");} ).start();
 		for (int i=0;i<1000;++i) System.out.print("3");
 	}

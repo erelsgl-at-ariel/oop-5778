@@ -2,6 +2,7 @@ package lesson6;
 
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.lang.invoke.MethodHandles;
 import java.net.InetSocketAddress;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -76,7 +77,7 @@ public class PartitionServer0 {
             	os.write(output.getBytes());
             }
         });
-        System.out.println("PartitionServer is up. "+
+        System.out.println(MethodHandles.lookup().lookupClass().getSimpleName()+" is up. "+
         		"Try http://127.0.0.1:"+port+"/partition?1,2,3 or http://127.0.0.1:"+port+"/file/partition.html");
         server.start();
     }
