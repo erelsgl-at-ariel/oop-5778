@@ -65,7 +65,7 @@ public class PolynomServer {
         server.createContext("/file", request -> {
         	String fileName = request.getRequestURI().getPath().replaceAll("/file/", "");
         	System.out.println("Got new file-request: "+fileName);
-        	Path path = Paths.get("client", fileName);
+        	Path path = Paths.get("client", "lesson5", fileName);
         	String output = null;
         	if (Files.exists(path)) {
         		output = new String(Files.readAllBytes(path));
