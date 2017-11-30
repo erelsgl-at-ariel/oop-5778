@@ -120,7 +120,9 @@ public class TestCollections {
 		List<String> c = new ArrayList<>();
 		Collections.addAll(c, "abc","de", "de");
 
-		c.sort( (x,y) -> x.length()-y.length() );
+		c.sort( 
+			(x,y) -> x.length()-y.length() 
+		);
 
 		System.out.println(c); // [de, de, abc]
 		

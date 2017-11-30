@@ -52,7 +52,6 @@ public class PartitionServer1 {
 	        		output = "Sorry, an error occured: "+ex;
 		        	System.out.println("    The output is: "+output);
 	        	}
-	        	System.out.println("  Thread "+Thread.currentThread().getId()+" is done");
 	        	
 	        	try {
 		        	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
@@ -65,6 +64,8 @@ public class PartitionServer1 {
 	        		System.out.println("Cannot send response to client");
 	        		ex.printStackTrace();
 	        	}
+
+	        	System.out.println("  Thread "+Thread.currentThread().getId()+" is done");
         	};
         	
         	Thread worker = new Thread(task);
