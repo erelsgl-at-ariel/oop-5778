@@ -1,4 +1,4 @@
-package lesson6;
+package lesson7;
 
 import java.time.Duration;
 import java.time.Instant;
