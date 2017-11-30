@@ -58,8 +58,18 @@ public class PartitionWithInterruption0 {
 		for (int index=0; index<numOfPartitions; ++index) {
 			//TODO: improvement: int randomIndex = (int)Math.random()*numOfPartitions;  
 			Thread.yield();
+			
+//			Option A: check if thread is interrupted
 			if (Thread.interrupted()) 
 				break;
+			
+//			Option B: sleep 0 ms and catch InterruptedException
+//			try {
+//				Thread.sleep(0\=============================================================-;
+//			} catch (InterruptedException e) {
+//				break;
+//			}
+			
 			double sum1 = subsetSumByBinaryRepresentation(values, index);
 			double sum0 = subsetSumByBinaryRepresentation(values, ~index);
 			double diff = Math.abs(sum1-sum0);

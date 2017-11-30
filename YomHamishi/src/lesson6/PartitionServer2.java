@@ -28,8 +28,8 @@ public class PartitionServer2 {
     public static void main(String[] args) throws Exception {
     	int port = 8003;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
-//    	ExecutorService executor = Executors.newFixedThreadPool(4);
-    	ExecutorService executor = Executors.newCachedThreadPool();
+    	ExecutorService executor = Executors.newFixedThreadPool(4);
+//    	ExecutorService executor = Executors.newCachedThreadPool();
         
         server.createContext("/partition", request -> {
         	// The input is a list of values separated by commas, e.g, "1,2,3".
