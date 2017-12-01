@@ -46,7 +46,6 @@ public class ParallelSumRaceCondition {
 			t2.join();
 			int sum = sums[0];
 			System.out.println("threads sum="+sum +"   "+Duration.between(startTime, Instant.now()).toMillis()+" [ms]");
-			// with SIZE=100_000_000, this takes ~5000 ms.
 		}
 		
 		{   /* VERSION 3 - RIGHT RESULTS but SLOW: */
@@ -75,7 +74,6 @@ public class ParallelSumRaceCondition {
 			t2.join();
 			int sum = sums[0];
 			System.out.println("threads sum="+sum +"   "+Duration.between(startTime, Instant.now()).toMillis()+" [ms]");
-			// with SIZE=100_000_000, this takes ~5000 ms.
 		}
 		
 	

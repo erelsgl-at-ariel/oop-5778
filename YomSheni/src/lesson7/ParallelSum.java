@@ -43,7 +43,6 @@ public class ParallelSum {
 			t2.join();
 			int sum = sums[0]+sums[1];
 			System.out.println("threads sum="+sum +"   "+Duration.between(startTime, Instant.now()).toMillis()+" [ms]");
-			// with SIZE=100_000_000, this takes ~5000 ms.
 		}
 		
 		{   /* VERSION 3 - STREAMS: */
@@ -54,7 +53,6 @@ public class ParallelSum {
 			.reduce((x,y)->x+y)
 			.getAsInt();
 			System.out.println("streams sum="+sum +"   "+Duration.between(startTime, Instant.now()).toMillis()+" [ms]");
-			// with SIZE=100_000_000, this takes ~2500 ms.
 		}
 		
 	}
