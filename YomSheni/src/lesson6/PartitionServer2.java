@@ -36,7 +36,7 @@ public class PartitionServer2 {
         	final String input = request.getRequestURI().getQuery();
         	System.out.println("The input is: "+input);
         	
-        	Runnable task = () -> {
+        	Runnable runnable = () -> {
 	        	String output = null;
 	        	try {
 	            	List<Double> values = 
@@ -69,7 +69,7 @@ public class PartitionServer2 {
 	        	}
         	};
         	
-        	executor.execute(task);
+        	executor.execute(runnable);
         });
         
         

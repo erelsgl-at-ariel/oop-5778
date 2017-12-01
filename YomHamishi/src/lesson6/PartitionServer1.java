@@ -33,7 +33,7 @@ public class PartitionServer1 {
         	final String input = request.getRequestURI().getQuery();
         	System.out.println("The input is: "+input);
         	
-        	Runnable task = () -> {
+        	Runnable runnable = () -> {
 	        	String output = null;
 	        	try {
 	            	List<Double> values = 
@@ -68,7 +68,7 @@ public class PartitionServer1 {
 	        	System.out.println("  Thread "+Thread.currentThread().getId()+" is done");
         	};
         	
-        	Thread worker = new Thread(task);
+        	Thread worker = new Thread(runnable);
         	worker.start();
         	System.out.println("  Thread "+worker.getId()+" starts working");
         });
