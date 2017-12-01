@@ -6,6 +6,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Demonstrates how race conditions can destroy a hashmap.
+ * 
+ * Based on code by Ivan: https://stackoverflow.com/a/47586668/827927
  *  
  * @author erelsgl
  */

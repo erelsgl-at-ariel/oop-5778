@@ -6,6 +6,8 @@ import java.util.stream.IntStream;
 /**
  * An implementation of the brute-force partition algorithm using parallel streams.
  * 
+ * Based on code by Misha: https://stackoverflow.com/a/47587739/827927
+ * 
  * @author erelsgl
  */
 public class PartitionStreams implements Partition {
@@ -33,10 +35,12 @@ public class PartitionStreams implements Partition {
 			// Loop over all partitions. Find the partition with the smallest difference.
 			int bestIndex = IntStream.range(0, numOfPartitions)
 			.parallel()
+			.reduce( (i,j) -> diff(values,i)<diff(values,j)? i: j )
 //			.mapToObj(i->i)
-			.boxed()
-			.min(compareByDiff)
-			.get();
+//			.boxed()  // 
+//			.min(compareByDiff)
+//			.get()
+			.getAsInt();
 		
 			// Create the result partition.
 			return new List[] {
