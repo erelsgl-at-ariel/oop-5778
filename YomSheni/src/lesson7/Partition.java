@@ -31,7 +31,7 @@ public interface Partition {
 	
 	
 	/**
-	 * Return a subset of "values" determined by the binary representation of "index".
+	 * Return the sum of the subset of "values" determined by the binary representation of "index".
 	 */
 	static double subsetSumByBinaryRepresentation(List<Double> values, int index) {
 		double result = 0;

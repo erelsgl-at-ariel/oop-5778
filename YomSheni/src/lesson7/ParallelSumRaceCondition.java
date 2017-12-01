@@ -7,11 +7,12 @@ import java.util.Arrays;
 /**
  * Calculating the sum of elements in an array using parallel computation.
  * 
- * BAD IMPLEMENTATION - race condition!
+ * BAD IMPLEMENTATION - uses a shared variable.
+ * Demonstrates race conditions and synchronization.
  * 
  * @author erelsgl
  */
-public class ParallelSumBad {
+public class ParallelSumRaceCondition {
 
 	static final int SIZE = 100_000_000; 
 	public static void main(String[] args) throws InterruptedException {

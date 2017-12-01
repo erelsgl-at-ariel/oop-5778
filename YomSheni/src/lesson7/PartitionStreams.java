@@ -33,7 +33,8 @@ public class PartitionStreams implements Partition {
 			// Loop over all partitions. Find the partition with the smallest difference.
 			int bestIndex = IntStream.range(0, numOfPartitions)
 			.parallel()
-			.mapToObj(i->i)
+//			.mapToObj(i->i)
+			.boxed()
 			.min(compareByDiff)
 			.get();
 		
