@@ -4,6 +4,11 @@ import java.time.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Demonstrates how race conditions can destroy a hashmap.
+ *  
+ * @author erelsgl
+ */
 public class HashMapRaceCondition {
 	static final int SIZE = 4_000_000; 
 	public static void main(String[] args) throws Exception {
