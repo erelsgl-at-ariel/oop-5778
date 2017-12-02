@@ -30,9 +30,8 @@ public class AuctionServer {
     	Map<Integer, Set<String>> bids;
     	//bids = new ConcurrentSkipListMap<>(
     	bids = new TreeMap<>(
-    		(x,y) -> y-x  
+    		(x,y) -> Integer.compare(y, x)  
     	);
-    	//Map<Integer, Set<String>> bids = new TreeMap<>();
         
         server.createContext("/bid", request -> {
         	// The input is a list of values separated by commas, e.g, "1,2,3".
@@ -46,7 +45,7 @@ public class AuctionServer {
 	        		int bid = Integer.valueOf(inputs[1]);
 	        		
 	        		synchronized(bids) {
-		        		bids.putIfAbsent(bid, new ConcurrentSkipListSet<>()); // ATOMIC
+		        		bids.putIfAbsent(bid, new LinkedHashSet<>());
 		        		bids.get(bid).add(name);
 		        		StringBuilder outputBuilder = new StringBuilder();
 		        		for (int b: bids.keySet())

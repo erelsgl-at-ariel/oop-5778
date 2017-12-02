@@ -30,7 +30,7 @@ public class ParallelSumRaceCondition {
 		
 		{   /* VERSION 2 - FAST but WRONG RESULTS: */
 			Instant startTime = Instant.now();
-			int[] sums = new int[2];
+			int[] sums = new int[1];
 			Thread t1 = new Thread(() -> {
 				for (int i=0; i<array.length/2; ++i)
 					sums[0] += Math.pow(array[i], 3);

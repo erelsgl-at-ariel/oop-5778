@@ -21,29 +21,37 @@ public class PartitionThreads implements Partition {
 			// Loop over all partitions. Find the partition with the smallest difference.
 			int numOfPartitions = 1 << values.size();
 			int[] bestIndexes = new int[2];
-			double[] smallestDiff = new double[] {Double.MAX_VALUE,Double.MAX_VALUE};
+			double[] smallestDiffs = new double[2];
 			Thread t1 = new Thread(() -> {
+				int bestIndex = 0;
+				double smallestDiff = Double.MAX_VALUE;
 				for (int index=0; index<numOfPartitions/2; ++index) {
 					double sum1 = Partition.subsetSumByBinaryRepresentation(values, index);
 					double sum0 = Partition.subsetSumByBinaryRepresentation(values, ~index);
 					double diff = Math.abs(sum1-sum0);
-					if (diff < smallestDiff[0]) {
-						bestIndexes[0] = index;
-						smallestDiff[0] = diff;
+					if (diff < smallestDiff) {
+						bestIndex = index;
+						smallestDiff = diff;
 					}
 				}
+				bestIndexes[0] = bestIndex;
+				smallestDiffs[0] = smallestDiff;
 			});
 			t1.start();
 			Thread t2 = new Thread(() -> {
+				int bestIndex = 0;
+				double smallestDiff = Double.MAX_VALUE;
 				for (int index=numOfPartitions/2; index<numOfPartitions; ++index) {
 					double sum1 = Partition.subsetSumByBinaryRepresentation(values, index);
 					double sum0 = Partition.subsetSumByBinaryRepresentation(values, ~index);
 					double diff = Math.abs(sum1-sum0);
-					if (diff < smallestDiff[1]) {
-						bestIndexes[1] = index;
-						smallestDiff[1] = diff;
+					if (diff < smallestDiff) {
+						bestIndex = index;
+						smallestDiff = diff;
 					}
 				}
+				bestIndexes[1] = bestIndex;
+				smallestDiffs[1] = smallestDiff;
 			});
 			t2.start();
 			try {
@@ -51,7 +59,7 @@ public class PartitionThreads implements Partition {
 				t2.join();
 			} catch (InterruptedException e) {	}
 			int bestIndex = (
-					smallestDiff[0] < smallestDiff[1]?
+					smallestDiffs[0] < smallestDiffs[1]?
 					bestIndexes[0]    : bestIndexes[1]
 					);
 			

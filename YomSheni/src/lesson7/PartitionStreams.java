@@ -36,10 +36,6 @@ public class PartitionStreams implements Partition {
 			int bestIndex = IntStream.range(0, numOfPartitions)
 			.parallel()
 			.reduce( (i,j) -> diff(values,i)<diff(values,j)? i: j )
-//			.mapToObj(i->i)
-//			.boxed()  // 
-//			.min(compareByDiff)
-//			.get()
 			.getAsInt();
 		
 			// Create the result partition.
