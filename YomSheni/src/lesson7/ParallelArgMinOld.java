@@ -1,5 +1,6 @@
 package lesson7;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.stream.IntStream;
 
@@ -9,7 +10,7 @@ import java.util.stream.IntStream;
  * 
  * @author erelsgl
  */
-public class ArgMinTest {
+public class ParallelArgMinOld {
 	static double f(int i) {
 		return Math.sin(i/100.0);
 	}
