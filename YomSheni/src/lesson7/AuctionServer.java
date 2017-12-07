@@ -3,6 +3,7 @@ package lesson7;
 import java.io.*;
 import java.lang.invoke.MethodHandles;
 import java.net.InetSocketAddress;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.time.*;
 import java.util.*;
@@ -61,8 +62,8 @@ public class AuctionServer {
 		        	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
 		        	request.getResponseHeaders().set("Content-Type", "text/plain");
 		            request.sendResponseHeaders(200, 0);
-		            try (PrintStream os = new PrintStream(request.getResponseBody())) {
-		            	os.println(output);
+		            try (OutputStream os = request.getResponseBody()) {
+		            	os.write(output.getBytes(StandardCharsets.UTF_8));
 		            }
 	        	} catch (Exception ex) {
 	        		System.out.println("Cannot send response to client");
@@ -82,7 +83,7 @@ public class AuctionServer {
         	Path path = Paths.get("client", "lesson7", fileName);
         	String output = null;
         	if (Files.exists(path)) {
-        		output = new String(Files.readAllBytes(path));
+        		output = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
         	} else {
         		output = "File "+path+" not found!";
         	}
@@ -91,7 +92,7 @@ public class AuctionServer {
         	request.getResponseHeaders().set("Content-Type", "text/html");
             request.sendResponseHeaders(200, 0);
             try (OutputStream os = request.getResponseBody()) {
-            	os.write(output.getBytes());
+            	os.write(output.getBytes(StandardCharsets.UTF_8));
             }
         });
         System.out.println(MethodHandles.lookup().lookupClass().getSimpleName()+" is up. "+
