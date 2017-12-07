@@ -18,7 +18,7 @@ public class WifiDatabase {
 		samples.sort(
 			Comparator.comparing(sample -> -sample.getY())
 		);
-		return samples.subList(0, 3);
+		return samples.subList(0, n);
 	}
 	
 	/**
@@ -28,8 +28,9 @@ public class WifiDatabase {
 	public List<WifiSample> kRowsWithHighestY(int k) {
 		return samples
 			.stream()
+			.parallel()
 			.sorted(Comparator.comparing(sample -> -sample.getY()))
-			.limit(3)
+			.limit(k)
 			.collect(Collectors.toList());
 	}
 
