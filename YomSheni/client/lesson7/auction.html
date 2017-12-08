@@ -26,22 +26,30 @@
 	</div>
 
 	<script>
-		$("button#submit").click(() => {
-			var name  = $("input#name").val();
-			var bid   = $("input#bid").val();
+		function submitBid(name, bid) {
 			$.ajax(
 				{
 					"url": encodeURI("/bid?" + name+","+bid)
 				}
-			).then(
-				function(output) {
-					$("div#output").html(output)
-					$("div#output div").first().attr("style", "background:yellow; font-weight:900")
-				}
-			);
+			).then(  output => {
+				$("div#output").html(output)
+				$("div#output div").first().attr("style", "background:yellow; font-weight:900")
+			});
+		}
+		
+		var inputName = 0, inputBid = 0
+		$("button#submit").click(() => {
+			inputName  = $("input#name").val();
+			inputBid   = $("input#bid").val();
+			submitBid(inputName,inputBid)
 			return false
 		})
 		
+		// Repeat the most recent submission every 5 seconds, to refresh the display:
+		setInterval ( () => {
+			if (inputName && inputBid)
+				submitBid(inputName,inputBid)
+		}, 5000);
 	</script>
 
 </body>
