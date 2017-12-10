@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_NDLe0N0KEee2NZwEhSwiPw" name="PapyrusTutorial">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_NDLe0N0KEee2NZwEhSwiPw" name="FoodOrderSystem" visibility="public">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_mmcB8N2fEeex9-XHLsFDzw">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </packageImport>
   <packagedElement xmi:type="uml:Actor" xmi:id="_eDEHYN0KEee2NZwEhSwiPw" name="Customer"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_gltqUN0KEee2NZwEhSwiPw" name="System">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_k9_5MN0KEee2NZwEhSwiPw" name="LoginAccount"/>
@@ -62,9 +65,116 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_l8V9gd0aEee2NZwEhSwiPw" name="view statistics" type="_kXZY8N0aEee2NZwEhSwiPw" association="_l8VWcN0aEee2NZwEhSwiPw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_l8V9gt0aEee2NZwEhSwiPw" name="manager" type="_fysesN0aEee2NZwEhSwiPw" association="_l8VWcN0aEee2NZwEhSwiPw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_EZQRoN14Eee8lNVbqQ8ZUg" name="Activity1" node="_GWVpYN14Eee8lNVbqQ8ZUg">
-    <ownedBehavior xmi:type="uml:Activity" xmi:id="_IpJZgN14Eee8lNVbqQ8ZUg" name="Activity1"/>
-    <node xmi:type="uml:InitialNode" xmi:id="_GWVpYN14Eee8lNVbqQ8ZUg" name="InitialNode1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_EZQRoN14Eee8lNVbqQ8ZUg" name="Order Meal" node="_GWVpYN14Eee8lNVbqQ8ZUg _bzs8UN2YEeex9-XHLsFDzw _KWGnkN2ZEeex9-XHLsFDzw _LLhzsN2ZEeex9-XHLsFDzw _9WogcN2YEeex9-XHLsFDzw _fgQRIN2ZEeex9-XHLsFDzw _vnDgIN2aEeex9-XHLsFDzw _1DBZkN2aEeex9-XHLsFDzw _oJRqgN2bEeex9-XHLsFDzw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SkWbYN2ZEeex9-XHLsFDzw" target="_KWGnkN2ZEeex9-XHLsFDzw" source="_9WogcN2YEeex9-XHLsFDzw">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_XmgJ0N2dEeex9-XHLsFDzw">
+        <body>If chose set meal...</body>
+      </ownedComment>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_T1_pcN2ZEeex9-XHLsFDzw" target="_LLhzsN2ZEeex9-XHLsFDzw" source="_9WogcN2YEeex9-XHLsFDzw">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_YiClAN2dEeex9-XHLsFDzw">
+        <body>If chose alacarte meal...</body>
+      </ownedComment>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_iOYrUN2ZEeex9-XHLsFDzw" target="_fgQRIN2ZEeex9-XHLsFDzw" source="_GWVpYN14Eee8lNVbqQ8ZUg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_jETmsN2ZEeex9-XHLsFDzw" target="_9WogcN2YEeex9-XHLsFDzw" source="_fgQRIN2ZEeex9-XHLsFDzw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yucH0N2aEeex9-XHLsFDzw" target="_vnDgIN2aEeex9-XHLsFDzw" source="_LLhzsN2ZEeex9-XHLsFDzw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_0CrW4N2aEeex9-XHLsFDzw" target="_vnDgIN2aEeex9-XHLsFDzw" source="_KWGnkN2ZEeex9-XHLsFDzw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6RzLkN2aEeex9-XHLsFDzw" target="_1DBZkN2aEeex9-XHLsFDzw" source="_vnDgIN2aEeex9-XHLsFDzw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qT5vAN2bEeex9-XHLsFDzw" target="_oJRqgN2bEeex9-XHLsFDzw" source="_1DBZkN2aEeex9-XHLsFDzw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_GWVpYN14Eee8lNVbqQ8ZUg" name="Start" outgoing="_iOYrUN2ZEeex9-XHLsFDzw"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_bzs8UN2YEeex9-XHLsFDzw" name="CallBehaviorAction1"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_9WogcN2YEeex9-XHLsFDzw" name="Choose meal type" incoming="_jETmsN2ZEeex9-XHLsFDzw" outgoing="_SkWbYN2ZEeex9-XHLsFDzw _T1_pcN2ZEeex9-XHLsFDzw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_KWGnkN2ZEeex9-XHLsFDzw" name="Set meal" incoming="_SkWbYN2ZEeex9-XHLsFDzw" outgoing="_0CrW4N2aEeex9-XHLsFDzw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_LLhzsN2ZEeex9-XHLsFDzw" name="Alacarte meal" incoming="_T1_pcN2ZEeex9-XHLsFDzw" outgoing="_yucH0N2aEeex9-XHLsFDzw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_fgQRIN2ZEeex9-XHLsFDzw" name="System asks user to choose meal type" incoming="_iOYrUN2ZEeex9-XHLsFDzw" outgoing="_jETmsN2ZEeex9-XHLsFDzw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_vnDgIN2aEeex9-XHLsFDzw" name=" " incoming="_yucH0N2aEeex9-XHLsFDzw _0CrW4N2aEeex9-XHLsFDzw" outgoing="_6RzLkN2aEeex9-XHLsFDzw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_1DBZkN2aEeex9-XHLsFDzw" name="Customer chooses meal and quantity" incoming="_6RzLkN2aEeex9-XHLsFDzw" outgoing="_qT5vAN2bEeex9-XHLsFDzw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_oJRqgN2bEeex9-XHLsFDzw" name=" " incoming="_qT5vAN2bEeex9-XHLsFDzw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_WP2z4N2FEee8lNVbqQ8ZUg" name="Component1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_3RBYoN2OEeex9-XHLsFDzw" name="Interaction1">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="__GSEsN2OEeex9-XHLsFDzw" name="Lifeline1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_7QQ1YN2OEeex9-XHLsFDzw" name="Interaction2"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1VWnEN2XEeex9-XHLsFDzw" name="Manager"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_7QHVUN2XEeex9-XHLsFDzw" name="Customer"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8CJPMN2XEeex9-XHLsFDzw" name="Account">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="__49IsN2XEeex9-XHLsFDzw" client="_8CJPMN2XEeex9-XHLsFDzw" supplier="_7QHVUN2XEeex9-XHLsFDzw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_YBD3gN2gEeex9-XHLsFDzw" name="data">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bgz74N2gEeex9-XHLsFDzw" name="Person" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hS8SkN2gEeex9-XHLsFDzw" name="name" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_03P_sN2gEeex9-XHLsFDzw" name="height" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DFIasN2hEeex9-XHLsFDzw" name="hobbies" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LZk9IN2hEeex9-XHLsFDzw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LZ5tQN2hEeex9-XHLsFDzw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_k5yoAN2hEeex9-XHLsFDzw" name="viewInfo" concurrency="guarded" isQuery="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_rluUgN2hEeex9-XHLsFDzw" name="viewerInfo" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_vSI74N2hEeex9-XHLsFDzw" name="info" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_t9CCwN2kEeex9-XHLsFDzw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_4KAiMN2mEeerUPhwbRWclA" name="Enumeration1"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_adtCoN2sEeeqFdIRZDBjmw" name="Order Meal Use Case">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_cVfqsN2sEeeqFdIRZDBjmw" name="Customer" coveredBy="_w7gFYN2sEeeqFdIRZDBjmw _z_DV8N2sEeeqFdIRZDBjmw _87jW4N2sEeeqFdIRZDBjmw _w8aEUN2sEeeqFdIRZDBjmw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_p2XOsN2sEeeqFdIRZDBjmw" name=":System" coveredBy="_w7feUN2sEeeqFdIRZDBjmw _z_D9AN2sEeeqFdIRZDBjmw _87iv0N2sEeeqFdIRZDBjmw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_w7gFYN2sEeeqFdIRZDBjmw" name="Message1ReceiveEvent" covered="_cVfqsN2sEeeqFdIRZDBjmw" message="_w7O_oN2sEeeqFdIRZDBjmw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_w7feUN2sEeeqFdIRZDBjmw" name="Message1SendEvent" covered="_p2XOsN2sEeeqFdIRZDBjmw" message="_w7O_oN2sEeeqFdIRZDBjmw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_z_D9AN2sEeeqFdIRZDBjmw" name="Message1ReceiveEvent" covered="_p2XOsN2sEeeqFdIRZDBjmw" message="_z-8oQN2sEeeqFdIRZDBjmw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_z_DV8N2sEeeqFdIRZDBjmw" name="Message1SendEvent" covered="_cVfqsN2sEeeqFdIRZDBjmw" message="_z-8oQN2sEeeqFdIRZDBjmw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_87iv0N2sEeeqFdIRZDBjmw" name="Message1SendEvent" covered="_p2XOsN2sEeeqFdIRZDBjmw" message="_87iIwN2sEeeqFdIRZDBjmw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_87jW4N2sEeeqFdIRZDBjmw" name="Message1ReceiveEvent" covered="_cVfqsN2sEeeqFdIRZDBjmw" message="_87iIwN2sEeeqFdIRZDBjmw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_w8aEUN2sEeeqFdIRZDBjmw" name="BehaviorExecutionSpecification1" covered="_cVfqsN2sEeeqFdIRZDBjmw" finish="_z_DV8N2sEeeqFdIRZDBjmw" start="_w7gFYN2sEeeqFdIRZDBjmw"/>
+    <message xmi:type="uml:Message" xmi:id="_w7O_oN2sEeeqFdIRZDBjmw" name="showMeals()" receiveEvent="_w7gFYN2sEeeqFdIRZDBjmw" sendEvent="_w7feUN2sEeeqFdIRZDBjmw"/>
+    <message xmi:type="uml:Message" xmi:id="_z-8oQN2sEeeqFdIRZDBjmw" name="chosenMeal = chooseMeal()" messageSort="reply" receiveEvent="_z_D9AN2sEeeqFdIRZDBjmw" sendEvent="_z_DV8N2sEeeqFdIRZDBjmw"/>
+    <message xmi:type="uml:Message" xmi:id="_87iIwN2sEeeqFdIRZDBjmw" name="showDetails(chosenMeal)" messageSort="reply" receiveEvent="_87jW4N2sEeeqFdIRZDBjmw" sendEvent="_87iv0N2sEeeqFdIRZDBjmw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_9odMQN3EEeeqFdIRZDBjmw" name="Interaction3">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_A_A4YN3FEeeqFdIRZDBjmw" name="Customer" coveredBy="_Q5LPAN3FEeeqFdIRZDBjmw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Cyr1cN3FEeeqFdIRZDBjmw" name="System" coveredBy="_Q5MdIN3FEeeqFdIRZDBjmw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Q5LPAN3FEeeqFdIRZDBjmw" name="Message1SendEvent" covered="_A_A4YN3FEeeqFdIRZDBjmw" message="_Q5IywN3FEeeqFdIRZDBjmw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Q5MdIN3FEeeqFdIRZDBjmw" name="Message1ReceiveEvent" covered="_Cyr1cN3FEeeqFdIRZDBjmw" message="_Q5IywN3FEeeqFdIRZDBjmw"/>
+    <message xmi:type="uml:Message" xmi:id="_Q5IywN3FEeeqFdIRZDBjmw" name="Message1" messageSort="asynchCall" receiveEvent="_Q5MdIN3FEeeqFdIRZDBjmw" sendEvent="_Q5LPAN3FEeeqFdIRZDBjmw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3dOioN3QEee2tczxSqD9Wg" name="Account"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5zZIwN3QEee2tczxSqD9Wg" name="Meal">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sOjOQN3REee2tczxSqD9Wg" name="mealIngredients" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xj8loN3REee2tczxSqD9Wg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xkGWoN3REee2tczxSqD9Wg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0t6AMN3REee2tczxSqD9Wg" name="mealPrice" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_74hCMN3QEee2tczxSqD9Wg" name="Payment">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JiDaAN3REee2tczxSqD9Wg" name="amount" visibility="private" isUnique="false" aggregation="shared">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FekZoN3VEeeNWexZ0e-2QQ" name="checkValidity"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Wr1TsN3REee2tczxSqD9Wg" name="CreditCardPayment">
+    <generalization xmi:type="uml:Generalization" xmi:id="_bRoaIN3REee2tczxSqD9Wg" general="_74hCMN3QEee2tczxSqD9Wg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Xug4sN3REee2tczxSqD9Wg" name="PaypalPayment">
+    <generalization xmi:type="uml:Generalization" xmi:id="_aqBnkN3REee2tczxSqD9Wg" general="_74hCMN3QEee2tczxSqD9Wg"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LDZQ8N3REee2tczxSqD9Wg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LDbGIN3REee2tczxSqD9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Model>
