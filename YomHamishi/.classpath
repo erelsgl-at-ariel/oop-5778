@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="lesson3/MonomTest.java|lesson3/MonomTest5.java|lesson3/Collection.java|lesson3/List.java|lesson2/" kind="src" path="src"/>
+	<classpathentry excluding="lesson3/MonomTest.java|lesson3/MonomTest5.java|lesson3/Collection.java|lesson3/List.java" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="commons-csv-1.5.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/YomSheni"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-9"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
