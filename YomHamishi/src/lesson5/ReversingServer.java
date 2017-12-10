@@ -66,9 +66,16 @@ public class ReversingServer {
         	} catch (Exception ex) {
         		output = "Error: "+ex;
         	}
+
+        	String contentType = (
+        		fileName.endsWith(".html")? "text/html":
+           		fileName.endsWith(".js")? "text/javascript":
+               	fileName.endsWith(".css")? "text/css":
+               	"text/plain"
+        		);
         	
         	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
-        	request.getResponseHeaders().set("Content-Type", "text/html");
+        	request.getResponseHeaders().set("Content-Type", contentType);
             request.sendResponseHeaders(200, 0);
             try (OutputStream os = request.getResponseBody()) {
             	os.write(output.getBytes());
