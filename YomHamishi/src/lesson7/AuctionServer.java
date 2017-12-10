@@ -63,17 +63,21 @@ public class AuctionServer {
         
         server.createContext("/file", request -> {
         	String output = null;
-        	
-        	// Read the input and create the output:
-        	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
-        	request.getResponseHeaders().set("Content-Type", "text/html");
-            request.sendResponseHeaders(200, 0);
-        	
+
         	try {
             	String fileName = request.getRequestURI().getPath().replaceAll("/file/", "");
             	System.out.println("Got new file-request: "+fileName);
             	Path path = Paths.get("client", "lesson7", fileName);
             	if (Files.exists(path)) {
+                	String contentType = (
+                    		fileName.endsWith(".html")? "text/html":
+                       		fileName.endsWith(".js")? "text/javascript":
+                           	fileName.endsWith(".css")? "text/css":
+                           	"text/plain"
+                    		);
+                	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+                	request.getResponseHeaders().set("Content-Type", contentType);
+                    request.sendResponseHeaders(200, 0);
 		            try (OutputStream os = request.getResponseBody()) {
 		            	os.write(Files.readAllBytes(path));
 		            }
@@ -83,9 +87,11 @@ public class AuctionServer {
             	}
         	} catch (Throwable ex) {
         		output = "Sorry, an error occured: "+ex;
-	        	System.out.println(output);
         	}
-        	
+        	System.out.println(output);
+        	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+        	request.getResponseHeaders().set("Content-Type", "text/plain");
+            request.sendResponseHeaders(200, 0);
             try (OutputStream os = request.getResponseBody()) {
             	os.write(output.getBytes(StandardCharsets.UTF_8));
         	} catch (Exception ex) {
