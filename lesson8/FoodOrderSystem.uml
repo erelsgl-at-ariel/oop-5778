@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_NDLe0N0KEee2NZwEhSwiPw" name="PapyrusTutorial">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_eDEHYN0KEee2NZwEhSwiPw" name="Customer"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_gltqUN0KEee2NZwEhSwiPw" name="System">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_k9_5MN0KEee2NZwEhSwiPw" name="LoginAccount"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sqENAN0KEee2NZwEhSwiPw" name="MakePayment"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uSBCQN0KEee2NZwEhSwiPw" name="MakeCreditPayment">
+      <generalization xmi:type="uml:Generalization" xmi:id="_LcFv0d0LEee2NZwEhSwiPw" general="_sqENAN0KEee2NZwEhSwiPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_vUFjQN0KEee2NZwEhSwiPw" name="MakePaypalPayment">
+      <generalization xmi:type="uml:Generalization" xmi:id="_NOBAYN0LEee2NZwEhSwiPw" general="_sqENAN0KEee2NZwEhSwiPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kXZY8N0aEee2NZwEhSwiPw" name="View statistics">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_vR0KkN2HEeex9-XHLsFDzw">
+        <body>1. Manager selects meal type.
+2. System shows how many meals of that type were ordered today.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_oMxIAN0aEee2NZwEhSwiPw" client="_kXZY8N0aEee2NZwEhSwiPw" supplier="_k9_5MN0KEee2NZwEhSwiPw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zaBWEN2HEeex9-XHLsFDzw" name="OrderMeal">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_5_o_MN2HEeex9-XHLsFDzw">
+        <body>1. The system displays the meals to the customer.
+2. The customer selects a meal.
+3. The system displays the meal details and price.
+4. The customer approves.
+5. The meal is added to the cart.
+6. The customer may repeat steps 2-5 to order more meals.
+7. Finally the customer asks to complete the order.
+8. The system shows the final cart and price and proceeds to payment.
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_7ToWoN2HEeex9-XHLsFDzw" client="_zaBWEN2HEeex9-XHLsFDzw" supplier="_k9_5MN0KEee2NZwEhSwiPw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_8Q2M0N2HEeex9-XHLsFDzw" client="_zaBWEN2HEeex9-XHLsFDzw" supplier="_sqENAN0KEee2NZwEhSwiPw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zyOigN0KEee2NZwEhSwiPw" memberEnd="_zyfoQN0KEee2NZwEhSwiPw _zyhdcN0KEee2NZwEhSwiPw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zyUpIN0KEee2NZwEhSwiPw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zyVQMN0KEee2NZwEhSwiPw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zyfoQN0KEee2NZwEhSwiPw" name="loginaccount" type="_k9_5MN0KEee2NZwEhSwiPw" association="_zyOigN0KEee2NZwEhSwiPw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zyhdcN0KEee2NZwEhSwiPw" name="customer" type="_eDEHYN0KEee2NZwEhSwiPw" association="_zyOigN0KEee2NZwEhSwiPw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6UPeAN0KEee2NZwEhSwiPw" memberEnd="_6URTMN0KEee2NZwEhSwiPw _6UR6QN0KEee2NZwEhSwiPw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6UQsIN0KEee2NZwEhSwiPw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6UQsId0KEee2NZwEhSwiPw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6URTMN0KEee2NZwEhSwiPw" name="makepayment" type="_sqENAN0KEee2NZwEhSwiPw" association="_6UPeAN0KEee2NZwEhSwiPw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6UR6QN0KEee2NZwEhSwiPw" name="customer" type="_eDEHYN0KEee2NZwEhSwiPw" association="_6UPeAN0KEee2NZwEhSwiPw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_fysesN0aEee2NZwEhSwiPw" name="Manager"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hozrwN0aEee2NZwEhSwiPw" memberEnd="_ho1g8N0aEee2NZwEhSwiPw _ho2vEN0aEee2NZwEhSwiPw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ho054N0aEee2NZwEhSwiPw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ho054d0aEee2NZwEhSwiPw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ho1g8N0aEee2NZwEhSwiPw" name="loginaccount" type="_k9_5MN0KEee2NZwEhSwiPw" association="_hozrwN0aEee2NZwEhSwiPw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ho2vEN0aEee2NZwEhSwiPw" name="manager" type="_fysesN0aEee2NZwEhSwiPw" association="_hozrwN0aEee2NZwEhSwiPw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_l8VWcN0aEee2NZwEhSwiPw" memberEnd="_l8V9gd0aEee2NZwEhSwiPw _l8V9gt0aEee2NZwEhSwiPw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l8VWcd0aEee2NZwEhSwiPw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l8V9gN0aEee2NZwEhSwiPw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_l8V9gd0aEee2NZwEhSwiPw" name="view statistics" type="_kXZY8N0aEee2NZwEhSwiPw" association="_l8VWcN0aEee2NZwEhSwiPw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_l8V9gt0aEee2NZwEhSwiPw" name="manager" type="_fysesN0aEee2NZwEhSwiPw" association="_l8VWcN0aEee2NZwEhSwiPw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_EZQRoN14Eee8lNVbqQ8ZUg" name="Activity1" node="_GWVpYN14Eee8lNVbqQ8ZUg">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_IpJZgN14Eee8lNVbqQ8ZUg" name="Activity1"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_GWVpYN14Eee8lNVbqQ8ZUg" name="InitialNode1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_WP2z4N2FEee8lNVbqQ8ZUg" name="Component1"/>
+</uml:Model>
