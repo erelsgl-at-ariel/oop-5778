@@ -74,8 +74,9 @@ public class ReversingServer {
             	os.write(output.getBytes());
             }
         });
+        String url = "http://127.0.0.1:"+port;
         System.out.println("ReversingServer is up. "+
-        		"To reverse the string abc, go to http://127.0.0.1:"+port+"/reverse?abc");
+        		"Try "+url+"/reverse?abc   or   "+url+"/file/reverse3.html   or   "+url+"/file/reverse4post.html");
         server.start();
     }
 }
