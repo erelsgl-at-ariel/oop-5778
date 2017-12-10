@@ -1,13 +1,10 @@
 package lesson5;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.InetSocketAddress;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 
-import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 
 /**
@@ -29,9 +26,21 @@ public class ReversingServer {
         
         
         server.createContext("/reverse", request -> {
-        	String input = request.getRequestURI().getQuery();
-        	System.out.println("The input is: "+input);
-        	String output = new StringBuilder(input).reverse().toString(); 
+        	String output = null;
+        	try {
+	        	String input = request.getRequestURI().getQuery();
+	        	if (input != null) { 
+		        	System.out.println("GET input: "+input);
+	        	} else {
+	                 InputStreamReader isr = new InputStreamReader(request.getRequestBody(), "utf-8");
+	                 BufferedReader br = new BufferedReader(isr);
+	                 input = br.readLine();	        		
+	                 System.out.println("POST input: "+input);
+	        	}
+	        	output = new StringBuilder(input).reverse().toString();
+        	} catch (Throwable ex) {
+        		output = "Sorry, there was an error: "+ex;
+        	}
         	System.out.println("   The output is: "+output);
         	
         	request.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
