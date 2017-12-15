@@ -171,6 +171,89 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_Xug4sN3REee2tczxSqD9Wg" name="PaypalPayment">
     <generalization xmi:type="uml:Generalization" xmi:id="_aqBnkN3REee2tczxSqD9Wg" general="_74hCMN3QEee2tczxSqD9Wg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_cdUvkOCiEeeRfYUVHMYlnQ" name="System">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hDC9gOCiEeeRfYUVHMYlnQ" name="Order Meal">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_TU9AYOCjEeeRfYUVHMYlnQ">
+        <body>1. User asks to show available meals.
+2. System shows meals to user.
+3. User chooses a meal.
+4. System shows meal details and price.
+5. User approves.
+6. User may repeat steps 3-5.
+7. User views shopping cart.
+8. System takes user to payment screen.
+</body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_oBhLgOCiEeeRfYUVHMYlnQ" addition="_mNQYkOCiEeeRfYUVHMYlnQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mNQYkOCiEeeRfYUVHMYlnQ" name="Payment"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qJLbkOCiEeeRfYUVHMYlnQ" name="Login"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_urYbcOCiEeeRfYUVHMYlnQ" client="_hDC9gOCiEeeRfYUVHMYlnQ" supplier="_qJLbkOCiEeeRfYUVHMYlnQ"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2W7K0OCiEeeRfYUVHMYlnQ" name="Read Meals"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_aEASUOCjEeeRfYUVHMYlnQ" name="Credit payment">
+      <generalization xmi:type="uml:Generalization" xmi:id="_fcjrYOCjEeeRfYUVHMYlnQ" general="_mNQYkOCiEeeRfYUVHMYlnQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_bEHEcOCjEeeRfYUVHMYlnQ" name="Paypal payment">
+      <generalization xmi:type="uml:Generalization" xmi:id="_e0x5sOCjEeeRfYUVHMYlnQ" general="_mNQYkOCiEeeRfYUVHMYlnQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_h-WIIOCiEeeRfYUVHMYlnQ" name="Web user"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kwgtwOCiEeeRfYUVHMYlnQ" memberEnd="_kwlmQOCiEeeRfYUVHMYlnQ _kwmNUOCiEeeRfYUVHMYlnQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kwkYIOCiEeeRfYUVHMYlnQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kwkYIeCiEeeRfYUVHMYlnQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kwlmQOCiEeeRfYUVHMYlnQ" name="order meal" type="_hDC9gOCiEeeRfYUVHMYlnQ" association="_kwgtwOCiEeeRfYUVHMYlnQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kwmNUOCiEeeRfYUVHMYlnQ" name="web user" type="_h-WIIOCiEeeRfYUVHMYlnQ" association="_kwgtwOCiEeeRfYUVHMYlnQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_srFXoOCiEeeRfYUVHMYlnQ" memberEnd="_srF-suCiEeeRfYUVHMYlnQ _srF-s-CiEeeRfYUVHMYlnQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_srF-sOCiEeeRfYUVHMYlnQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_srF-seCiEeeRfYUVHMYlnQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_srF-suCiEeeRfYUVHMYlnQ" name="login" type="_qJLbkOCiEeeRfYUVHMYlnQ" association="_srFXoOCiEeeRfYUVHMYlnQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_srF-s-CiEeeRfYUVHMYlnQ" name="web user" type="_h-WIIOCiEeeRfYUVHMYlnQ" association="_srFXoOCiEeeRfYUVHMYlnQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_zDOlcOCiEeeRfYUVHMYlnQ" name="Chef"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3o7lQOCiEeeRfYUVHMYlnQ" memberEnd="_3o8zYeCiEeeRfYUVHMYlnQ _3o8zYuCiEeeRfYUVHMYlnQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3o8MUOCiEeeRfYUVHMYlnQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3o8zYOCiEeeRfYUVHMYlnQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3o8zYeCiEeeRfYUVHMYlnQ" name="read meals" type="_2W7K0OCiEeeRfYUVHMYlnQ" association="_3o7lQOCiEeeRfYUVHMYlnQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3o8zYuCiEeeRfYUVHMYlnQ" name="chef" type="_zDOlcOCiEeeRfYUVHMYlnQ" association="_3o7lQOCiEeeRfYUVHMYlnQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_591AEOCiEeeRfYUVHMYlnQ" memberEnd="_591nIuCiEeeRfYUVHMYlnQ _591nI-CiEeeRfYUVHMYlnQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_591nIOCiEeeRfYUVHMYlnQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_591nIeCiEeeRfYUVHMYlnQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_591nIuCiEeeRfYUVHMYlnQ" name="login" type="_qJLbkOCiEeeRfYUVHMYlnQ" association="_591AEOCiEeeRfYUVHMYlnQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_591nI-CiEeeRfYUVHMYlnQ" name="chef" type="_zDOlcOCiEeeRfYUVHMYlnQ" association="_591AEOCiEeeRfYUVHMYlnQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0jXycOC2EeeRfYUVHMYlnQ" name="Meal">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__9-0kOC2EeeRfYUVHMYlnQ" name="mealdescription" type="_2Aq24OC2EeeRfYUVHMYlnQ" association="__99mcOC2EeeRfYUVHMYlnQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__9-0keC2EeeRfYUVHMYlnQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__9-0kuC2EeeRfYUVHMYlnQ" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2Aq24OC2EeeRfYUVHMYlnQ" name="MealDescription">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4gH74OC2EeeRfYUVHMYlnQ" name="text"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5roswOC2EeeRfYUVHMYlnQ" name="price"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__99mcOC2EeeRfYUVHMYlnQ" memberEnd="__9-0kOC2EeeRfYUVHMYlnQ __9-0k-C2EeeRfYUVHMYlnQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__9-NgOC2EeeRfYUVHMYlnQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__9-NgeC2EeeRfYUVHMYlnQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__9-0k-C2EeeRfYUVHMYlnQ" name="meal" type="_0jXycOC2EeeRfYUVHMYlnQ" association="__99mcOC2EeeRfYUVHMYlnQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_H3OBsOC3EeeRfYUVHMYlnQ" name="Payment">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_S3LvMOC3EeeRfYUVHMYlnQ" name="amount"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_I4R2EOC3EeeRfYUVHMYlnQ" name="CreditPayment">
+    <generalization xmi:type="uml:Generalization" xmi:id="_NGx20OC3EeeRfYUVHMYlnQ" general="_H3OBsOC3EeeRfYUVHMYlnQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_T3bEMOC3EeeRfYUVHMYlnQ" name="credittype"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KCQV4OC3EeeRfYUVHMYlnQ" name="PaypalPayment">
+    <generalization xmi:type="uml:Generalization" xmi:id="_OXdbkOC3EeeRfYUVHMYlnQ" general="_H3OBsOC3EeeRfYUVHMYlnQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VI0aoOC3EeeRfYUVHMYlnQ" name="paypalUsername"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LDZQ8N3REee2tczxSqD9Wg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LDbGIN3REee2tczxSqD9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
