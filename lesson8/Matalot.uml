@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_mlRtoN5KEeeNWexZ0e-2QQ" name="Matalot">
+  <packagedElement xmi:type="uml:Package" xmi:id="_zWYooN5KEeeNWexZ0e-2QQ" name="System">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0JaoEN5KEeeNWexZ0e-2QQ" name="Collect data">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_c7O0wN5LEeeNWexZ0e-2QQ">
+        <body>1. Read folder.
+2. Read every file in the folder.
+3. If the file is incorrect - report error.
+4. Add the file to the database.
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0-TosN5KEeeNWexZ0e-2QQ" name="Analyze data"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2xMioN5KEeeNWexZ0e-2QQ" name="Display data"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JXfIUN5LEeeNWexZ0e-2QQ" name="Collect data gmon">
+      <generalization xmi:type="uml:Generalization" xmi:id="_MwWhkN5LEeeNWexZ0e-2QQ" general="_0JaoEN5KEeeNWexZ0e-2QQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_K25FkN5LEeeNWexZ0e-2QQ" name="Collect data wigle">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Nb4x4N5LEeeNWexZ0e-2QQ" general="_0JaoEN5KEeeNWexZ0e-2QQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gSfrgN5LEeeNWexZ0e-2QQ" name="Filter">
+      <generalization xmi:type="uml:Generalization" xmi:id="_mWvs8N5LEeeNWexZ0e-2QQ" general="_0-TosN5KEeeNWexZ0e-2QQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_h70ZwN5LEeeNWexZ0e-2QQ" name="Get mac location">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ziBbcN5LEeeNWexZ0e-2QQ">
+        <body>1. User enters mac address.
+2. System finds all samples for this mac address.
+3. System calculates weighted average of the locations of samples.</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_ly4K4N5LEeeNWexZ0e-2QQ" general="_0-TosN5KEeeNWexZ0e-2QQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OV8L4OCnEeeRfYUVHMYlnQ" name="Graphical display">
+      <generalization xmi:type="uml:Generalization" xmi:id="_SckDAOCnEeeRfYUVHMYlnQ" general="_2xMioN5KEeeNWexZ0e-2QQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QYAxUOCnEeeRfYUVHMYlnQ" name="Write to CSV file">
+      <generalization xmi:type="uml:Generalization" xmi:id="_S9gM4OCnEeeRfYUVHMYlnQ" general="_2xMioN5KEeeNWexZ0e-2QQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_33zlYN5KEeeNWexZ0e-2QQ" name="User"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5rrWwN5KEeeNWexZ0e-2QQ" memberEnd="_5rr90N5KEeeNWexZ0e-2QQ _5rr90d5KEeeNWexZ0e-2QQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5rrWwd5KEeeNWexZ0e-2QQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5rrWwt5KEeeNWexZ0e-2QQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5rr90N5KEeeNWexZ0e-2QQ" name="collect data" type="_0JaoEN5KEeeNWexZ0e-2QQ" association="_5rrWwN5KEeeNWexZ0e-2QQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5rr90d5KEeeNWexZ0e-2QQ" name="programmer" type="_33zlYN5KEeeNWexZ0e-2QQ" association="_5rrWwN5KEeeNWexZ0e-2QQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7RWUEN5KEeeNWexZ0e-2QQ" memberEnd="_7RYwUd5KEeeNWexZ0e-2QQ _7RZXYN5KEeeNWexZ0e-2QQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7RYJQN5KEeeNWexZ0e-2QQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7RYwUN5KEeeNWexZ0e-2QQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7RYwUd5KEeeNWexZ0e-2QQ" name="display data" type="_2xMioN5KEeeNWexZ0e-2QQ" association="_7RWUEN5KEeeNWexZ0e-2QQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7RZXYN5KEeeNWexZ0e-2QQ" name="programmer" type="_33zlYN5KEeeNWexZ0e-2QQ" association="_7RWUEN5KEeeNWexZ0e-2QQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_C_4GAN5LEeeNWexZ0e-2QQ" memberEnd="_C_57MN5LEeeNWexZ0e-2QQ _C_57Md5LEeeNWexZ0e-2QQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C_5UIN5LEeeNWexZ0e-2QQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C_5UId5LEeeNWexZ0e-2QQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C_57MN5LEeeNWexZ0e-2QQ" name="analyze data" type="_0-TosN5KEeeNWexZ0e-2QQ" association="_C_4GAN5LEeeNWexZ0e-2QQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C_57Md5LEeeNWexZ0e-2QQ" type="_7RWUEN5KEeeNWexZ0e-2QQ" association="_C_4GAN5LEeeNWexZ0e-2QQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9PesUN5YEeeIfrAPglsteQ" name="GeographicLocation">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_APgHwN5ZEeeIfrAPglsteQ" name="lat"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_B9TtYN5ZEeeIfrAPglsteQ" name="lon"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CuRQQN5ZEeeIfrAPglsteQ" name="alt"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_N6c00N5ZEeeIfrAPglsteQ" name="WifiNetwork">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QYXowN5ZEeeIfrAPglsteQ" name="name"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Rmr2AN5ZEeeIfrAPglsteQ" name="mac"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_STRPMN5ZEeeIfrAPglsteQ" name="frequency"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TS78cN5ZEeeIfrAPglsteQ" name="signal"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_i58tkN5ZEeeIfrAPglsteQ" name="Database">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sit-od5ZEeeIfrAPglsteQ" name="line" type="_qUDHoN5ZEeeIfrAPglsteQ" association="_sitXkN5ZEeeIfrAPglsteQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sit-ot5ZEeeIfrAPglsteQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sit-o95ZEeeIfrAPglsteQ" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FpeAoN5aEeeIfrAPglsteQ" name="calculateMacLocation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Hoi8cN5aEeeIfrAPglsteQ" name="calculateUserLocation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qUDHoN5ZEeeIfrAPglsteQ" name="Line">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zjbBQN5ZEeeIfrAPglsteQ" name="geographiclocation" type="_9PesUN5YEeeIfrAPglsteQ" association="_zjZMEN5ZEeeIfrAPglsteQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zjboUN5ZEeeIfrAPglsteQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zjboUd5ZEeeIfrAPglsteQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3WoNIN5ZEeeIfrAPglsteQ" name="wifinetwork" type="_N6c00N5ZEeeIfrAPglsteQ" association="_3Wm_AN5ZEeeIfrAPglsteQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Wo0MN5ZEeeIfrAPglsteQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3Wr3gN5ZEeeIfrAPglsteQ" value="10"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-olX0N5ZEeeIfrAPglsteQ" name="time"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AJX1IN5aEeeIfrAPglsteQ" name="id"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sitXkN5ZEeeIfrAPglsteQ" memberEnd="_sit-od5ZEeeIfrAPglsteQ _siulsN5ZEeeIfrAPglsteQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sitXkd5ZEeeIfrAPglsteQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sit-oN5ZEeeIfrAPglsteQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_siulsN5ZEeeIfrAPglsteQ" name="database" type="_i58tkN5ZEeeIfrAPglsteQ" association="_sitXkN5ZEeeIfrAPglsteQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zjZMEN5ZEeeIfrAPglsteQ" memberEnd="_zjbBQN5ZEeeIfrAPglsteQ _zjcPYN5ZEeeIfrAPglsteQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zjaaMN5ZEeeIfrAPglsteQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zjaaMd5ZEeeIfrAPglsteQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zjcPYN5ZEeeIfrAPglsteQ" name="line" type="_qUDHoN5ZEeeIfrAPglsteQ" association="_zjZMEN5ZEeeIfrAPglsteQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3Wm_AN5ZEeeIfrAPglsteQ" visibility="private" memberEnd="_3WoNIN5ZEeeIfrAPglsteQ _3Wu60N5ZEeeIfrAPglsteQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3WnmEN5ZEeeIfrAPglsteQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3WnmEd5ZEeeIfrAPglsteQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3Wu60N5ZEeeIfrAPglsteQ" name="line" type="_qUDHoN5ZEeeIfrAPglsteQ" association="_3Wm_AN5ZEeeIfrAPglsteQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_ZBa3UN5bEeeIfrAPglsteQ" name="Interaction1">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_aJyNkN5bEeeIfrAPglsteQ" name="Cashier" coveredBy="_doXNQN5bEeeIfrAPglsteQ _fgIAIN5bEeeIfrAPglsteQ _fg_i0N5bEeeIfrAPglsteQ _fg-UsN5bEeeIfrAPglsteQ"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_bjYdwN5bEeeIfrAPglsteQ" name="System" coveredBy="_doX0UN5bEeeIfrAPglsteQ _fgHZEN5bEeeIfrAPglsteQ _dpBUkN5bEeeIfrAPglsteQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_doXNQN5bEeeIfrAPglsteQ" name="Message1SendEvent" covered="_aJyNkN5bEeeIfrAPglsteQ" message="_doQfkN5bEeeIfrAPglsteQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_doX0UN5bEeeIfrAPglsteQ" name="Message1ReceiveEvent" covered="_bjYdwN5bEeeIfrAPglsteQ" message="_doQfkN5bEeeIfrAPglsteQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fgHZEN5bEeeIfrAPglsteQ" name="Message1SendEvent" covered="_bjYdwN5bEeeIfrAPglsteQ" message="_fgGK8N5bEeeIfrAPglsteQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fgIAIN5bEeeIfrAPglsteQ" name="Message1ReceiveEvent" covered="_aJyNkN5bEeeIfrAPglsteQ" message="_fgGK8N5bEeeIfrAPglsteQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_fg_i0N5bEeeIfrAPglsteQ" name="BehaviorExecutionSpecification2Finish" covered="_aJyNkN5bEeeIfrAPglsteQ" execution="_fg-UsN5bEeeIfrAPglsteQ"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_dpBUkN5bEeeIfrAPglsteQ" name="BehaviorExecutionSpecification1" covered="_bjYdwN5bEeeIfrAPglsteQ" finish="_fgHZEN5bEeeIfrAPglsteQ" start="_doX0UN5bEeeIfrAPglsteQ"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_fg-UsN5bEeeIfrAPglsteQ" name="BehaviorExecutionSpecification2" covered="_aJyNkN5bEeeIfrAPglsteQ" finish="_fg_i0N5bEeeIfrAPglsteQ" start="_fgIAIN5bEeeIfrAPglsteQ"/>
+    <message xmi:type="uml:Message" xmi:id="_doQfkN5bEeeIfrAPglsteQ" name="addIetm(code,quantity)" receiveEvent="_doX0UN5bEeeIfrAPglsteQ" sendEvent="_doXNQN5bEeeIfrAPglsteQ"/>
+    <message xmi:type="uml:Message" xmi:id="_fgGK8N5bEeeIfrAPglsteQ" name="description, price" receiveEvent="_fgIAIN5bEeeIfrAPglsteQ" sendEvent="_fgHZEN5bEeeIfrAPglsteQ"/>
+  </packagedElement>
+</uml:Model>
