@@ -2,7 +2,10 @@ package lesson7;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -79,6 +82,17 @@ public class ParallelSum {
 			.reduce((x,y)->x+y)
 			.getAsDouble();
 			System.out.println("streams sum="+sum +"   "+Duration.between(startTime, Instant.now()).toMillis()+" [ms]");
+
+			List<Double> arrayList = new ArrayList<>();
+			Collections.addAll(arrayList, 1.,2.,3.,4.);
+
+			arrayList.stream()
+			.parallel()
+			.map(x -> Math.pow(x, 3))
+			.forEach(x -> {System.out.println(x);});
+			
+			System.out.println("streams sum="+sum +"   "+Duration.between(startTime, Instant.now()).toMillis()+" [ms]");
+			
 		}
 		
 	}
