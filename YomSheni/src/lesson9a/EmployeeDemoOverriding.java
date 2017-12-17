@@ -1,4 +1,4 @@
-package lesson9;
+package lesson9a;
 
 import java.util.*;
 
@@ -11,17 +11,17 @@ public class EmployeeDemoOverriding {
 		List<Employee> employees = new ArrayList<>();
 		
 		Employee e1 = new Employee("A", 100);
-		System.out.println(e1.description());
+		System.out.println("A earns "+e1.getSalary());
 		employees.add(e1);
 		
 		Programmer e2 = new Programmer("B", 100);
 		e2.delLines(10);
-		System.out.println(e2.description());
+		System.out.println("B earns "+e2.getSalary());
 		employees.add(e2);
 		
 		Manager e3 = new Manager("C", 100);
 		e3.setBonus(5);
-		System.out.println(e3.description());
+		System.out.println("C earns "+e3.getSalary());
 		employees.add(e3);
 		
 		double totalSalary = 

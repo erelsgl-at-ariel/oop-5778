@@ -1,4 +1,4 @@
-package lesson9;
+package lesson9a;
 
 /**
  * A programmer is an employee that gets a reduction for writing too many lines.
@@ -22,7 +22,17 @@ public class Programmer extends Employee {
     }
 
     @Override
+	public String toString() {
+		return "Programmer [linesWritten=" + linesWritten + ", salary=" + salary + ", joinDate=" + joinDate + "]";
+	}
+
+	@Override
     public double getSalary() { 
         return super.getSalary() - this.linesWritten/10;
+    }
+    
+    
+    @Override public Manager getSupervisor() {
+    	return null;   // NOT IMPLEMENTED YET  
     }
 }
