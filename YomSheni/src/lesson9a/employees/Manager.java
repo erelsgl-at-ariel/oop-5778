@@ -8,7 +8,15 @@ package lesson9a.employees;
 public class Manager extends Employee {
     double bonus;
     
-    // public Manager() {} compilation error
+//    // This happens behind the scenes
+//    public Manager() {
+//    	super();
+//    }
+    
+//    public Manager(String name) {
+//        super(name);
+//        bonus = 0;
+//    }
     
     public Manager(String name, double salary) {
         super(name, salary);

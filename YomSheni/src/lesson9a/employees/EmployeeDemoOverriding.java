@@ -16,13 +16,16 @@ public class EmployeeDemoOverriding {
 		
 		Programmer e2 = new Programmer("B", 100);
 		e2.delLines(10);
-		System.out.println("B earns "+e2.getSalary());
+		Employee e2x = e2;
+		//e2x.delLines(10); // compiler error
+		System.out.println("B earns "+e2x.getSalary());
 		employees.add(e2);
-		
+				
 		Manager e3 = new Manager("C", 100);
 		e3.setBonus(5);
 		System.out.println("C earns "+e3.getSalary());
 		employees.add(e3);
+
 		
 		double totalSalary = 
 			employees
@@ -30,14 +33,6 @@ public class EmployeeDemoOverriding {
 			.mapToDouble(e -> e.getSalary())
 			.reduce( (x,y) -> x+y )
 			.getAsDouble();
-		System.out.println("total salaray = "+totalSalary);
-		
-//		Employee e4 = e3;
-//		System.out.println(e4.description());
-//		
-//		e4.raiseSalary(5);
-//		System.out.println(e4.description());
-		//e4.setBonus(10); // Compilation error
-		
+		System.out.println("total salary = "+totalSalary);
 	}
 }
