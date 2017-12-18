@@ -1,6 +1,6 @@
 package lesson9a.logging;
 
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * @author erelsgl
@@ -12,5 +12,11 @@ public class ArrayListWithLogging<T> extends ArrayList<T> {
     public void add(int index, T element) {
         super.add(index, element);
         System.out.printf("Adding %s at %d\n", element, index);
+    }
+	
+	@Override
+    public boolean add(T element) {
+        System.out.printf("Adding %s\n", element);
+        return super.add(element);
     }
 }

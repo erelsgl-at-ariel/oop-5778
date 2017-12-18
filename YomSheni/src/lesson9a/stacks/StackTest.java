@@ -21,7 +21,8 @@ public class StackTest {
 		stack1.push(111);
 		stack1.push(222);
 		stack1.push(333);
-		//stack1.add(1, 444);  // compilation error
+//		stack1.add(1, 444);  // compilation error
+//		stack1.list.add(1, 444);  // compilation error
 		//System.out.println(stack1.pop());
 		System.out.println(stack1.pop());
 		System.out.println(stack1.pop());

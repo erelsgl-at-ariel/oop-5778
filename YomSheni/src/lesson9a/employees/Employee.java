@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * 
  * @author erelsgl
  */
-public class Employee  {
+public class Employee extends Object {
     String name = "";
     double salary = 0;
     LocalDate joinDate = null;
@@ -45,7 +45,7 @@ public class Employee  {
     }
     
     @Override public String toString() {
-		return "Employee [name=" + name + ", salary=" + salary + "]";
+		return "Employee [name=" + name + ", salary=" + getSalary() + "]";
 	}
     
     /* The code below generates a compiler error! */  
@@ -66,26 +66,31 @@ public class Employee  {
     	return null;   // NOT IMPLEMENTED YET  
     }
 
-//	@Override
-//	public int hashCode() {
-//		final int prime = 31;
-//		int result = 1;
-//		result = prime * result + ((joinDate == null) ? 0 : joinDate.hashCode());
-//		result = prime * result + ((name == null) ? 0 : name.hashCode());
-//		long temp;
-//		temp = Double.doubleToLongBits(salary);
-//		result = prime * result + (int) (temp ^ (temp >>> 32));
-//		return result;
-//	}
+	@Override
+	public int hashCode() {
+//		return 0; // possible but inefficient.
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((joinDate == null) ? 0 : joinDate.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		long temp;
+		temp = Double.doubleToLongBits(salary);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
 
+    
+    
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) return true;
+		//return false;
+		
 		if (obj == null) return false;
 		if (getClass() != obj.getClass()) return false;
 		
 		Employee other = (Employee) obj;
-		
+
 		if (joinDate == null) {
 			if (other.joinDate != null)
 				return false;

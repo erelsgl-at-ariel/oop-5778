@@ -1,6 +1,7 @@
 package lesson9a.logging;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Based on code by Cay S. Horstmann.
@@ -17,8 +18,8 @@ public class ArrayListWithLoggingDemo {
     	}
     	{
 	        @SuppressWarnings("serial")
-			ArrayList<String> names = new ArrayList<String>() {
-	            public void add(int index, String element) {
+			List<String> names = new ArrayList<String>() {
+	            @Override public void add(int index, String element) {
 	                super.add(index, element);
 	                System.out.printf("Adding %s at %d\n", element, index);
 	            }

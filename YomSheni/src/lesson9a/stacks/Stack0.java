@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /**
  * A WRONG way to define a stack.
- * It is wrong to use inheritance here, 
- * since a stack is NOT an arraylist.
+ * It is wrong to use INHERITANCE here, 
+ * since a stack is NOT an ArrayList.
  * For a better way, see Stack1.
  *
  * @author erelsgl
@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class Stack0<T> extends ArrayList<T> {
 	public void push (T item) {
-		add(item);
+		super.add(item);
 	}
 	
 	public T pop() {

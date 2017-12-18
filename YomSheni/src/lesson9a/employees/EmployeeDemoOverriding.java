@@ -20,7 +20,7 @@ public class EmployeeDemoOverriding {
 		//e2x.delLines(10); // compiler error
 		System.out.println("B earns "+e2x.getSalary());
 		employees.add(e2);
-				
+		
 		Manager e3 = new Manager("C", 100);
 		e3.setBonus(5);
 		System.out.println("C earns "+e3.getSalary());
@@ -34,5 +34,15 @@ public class EmployeeDemoOverriding {
 			.reduce( (x,y) -> x+y )
 			.getAsDouble();
 		System.out.println("total salary = "+totalSalary);
+		
+//		Employee e5 = new Manager("abc",500);
+//		Manager m5 = (Manager)e5;
+//		//e5.setBonus(5);
+//		m5.setBonus(5);
+//		Programmer p5 = (Programmer)e5;
+//		//e5.addLines(10);
+//		p5.addLines(10);
+		
+		
 	}
 }

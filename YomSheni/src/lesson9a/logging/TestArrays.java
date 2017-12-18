@@ -1,4 +1,4 @@
-package lesson9a.employees;
+package lesson9a.logging;
 
 import java.util.*;
 

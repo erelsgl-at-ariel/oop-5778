@@ -43,9 +43,13 @@ public class EmployeeDemoOverloading {
 		e3.setBonus(5);
 		System.out.println("C earns "+getSalary(e3));
 		employees.add(e3);
+		
+		Manager e3sup = e3.getSupervisor();
 
 		Employee e4 = e3;
 		System.out.println("C earns "+getSalary(e4));
+
+		Employee e4sup = e4.getSupervisor();
 		
 		double totalSalary = 
 			employees

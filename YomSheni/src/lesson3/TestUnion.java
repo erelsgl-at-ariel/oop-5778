@@ -13,10 +13,10 @@ public class TestUnion {
 	}
 
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
-		Set<Integer> a = new TreeSet<Integer>();
-		Collections.addAll(a, 10,20,30,40);
-		Set<Integer> b = new TreeSet<Integer>();
-		Collections.addAll(b, 30,40,50,60);
+		Set<Integer> a = new LinkedHashSet<Integer>();
+		Collections.addAll(a, 10,30,20,40);
+		Set<Integer> b = new LinkedHashSet<Integer>();
+		Collections.addAll(b, 30,50,40,60);
 		System.out.println(union(a,b));
 	}
 }

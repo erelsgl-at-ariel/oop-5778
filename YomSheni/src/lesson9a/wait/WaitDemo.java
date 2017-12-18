@@ -27,5 +27,6 @@ public class WaitDemo {
 			queue.notifyAll();
 		}
 		
+		Object o;
 	}
 }
