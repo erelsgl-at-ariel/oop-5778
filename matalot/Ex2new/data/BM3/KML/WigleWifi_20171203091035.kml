@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><Style id="red"><IconStyle><Icon><href>http://maps.google.com/mapfiles/ms/icons/red-dot.png</href></Icon></IconStyle></Style><Style id="yellow"><IconStyle><Icon><href>http://maps.google.com/mapfiles/ms/icons/yellow-dot.png</href></Icon></IconStyle></Style><Style id="green"><IconStyle><Icon><href>http://maps.google.com/mapfiles/ms/icons/green-dot.png</href></Icon></IconStyle></Style><Folder><name>Wifi Networks</name>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:28:f8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:e8:f8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284787000</b><br/>Date: <b>2017-12-03 09:06:27</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21027619,32.1038636</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:3d:68</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284666000</b><br/>Date: <b>2017-12-03 09:04:26</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20995369,32.10261559</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:ed:48</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>ec:8c:a2:08:79:ac</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:ec:38</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284638000</b><br/>Date: <b>2017-12-03 09:03:58</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969313,32.10292495</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel Lishka]]></name>
+<description><![CDATA[BSSID: <b>0a:27:22:f3:bb:2b</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2c:5b:d8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284781000</b><br/>Date: <b>2017-12-03 09:06:21</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21021258,32.10383605</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:1e:68</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284115000</b><br/>Date: <b>2017-12-03 08:55:15</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20978446,32.10305306</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:2c:38</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284660000</b><br/>Date: <b>2017-12-03 09:04:20</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20988707,32.10266129</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:92:af:77</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5200</b><br/>Timestamp: <b>1512284503000</b><br/>Date: <b>2017-12-03 09:01:43</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20960852,32.10300972</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:96:f1:57</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5260</b><br/>Timestamp: <b>1512284433000</b><br/>Date: <b>2017-12-03 09:00:33</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.2096224,32.10301046</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Bezeq]]></name>
+<description><![CDATA[BSSID: <b>84:c9:b2:b7:c8:2d</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284953000</b><br/>Date: <b>2017-12-03 09:09:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.2100555,32.10229579</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[yosh]]></name>
+<description><![CDATA[BSSID: <b>00:11:6b:11:7e:0c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284151000</b><br/>Date: <b>2017-12-03 08:55:51</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21150642,32.10434812</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:1d:78</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284791000</b><br/>Date: <b>2017-12-03 09:06:31</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21022668,32.10384447</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[outsense]]></name>
+<description><![CDATA[BSSID: <b>c2:6c:ac:a0:7b:4d</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>ec:8c:a2:26:b0:e8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:f1:58</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284630000</b><br/>Date: <b>2017-12-03 09:03:50</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20964577,32.10300864</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>8c:0c:90:2e:16:88</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284589000</b><br/>Date: <b>2017-12-03 09:03:09</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.2098035,32.10339504</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:06:b8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284795000</b><br/>Date: <b>2017-12-03 09:06:35</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21016707,32.10381301</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[AndroidAP]]></name>
+<description><![CDATA[BSSID: <b>c0:bd:d1:d5:8c:55</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:12:af:78</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284894000</b><br/>Date: <b>2017-12-03 09:08:14</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20970331,32.10294016</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:30:3c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5220</b><br/>Timestamp: <b>1512284633000</b><br/>Date: <b>2017-12-03 09:03:53</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20965373,32.10298958</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:62:48</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:3d:6c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5220</b><br/>Timestamp: <b>1512284672000</b><br/>Date: <b>2017-12-03 09:04:32</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.209928,32.102646</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[restore]]></name>
+<description><![CDATA[BSSID: <b>b2:6c:ac:a0:18:29</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>34:8f:27:20:89:b8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:2f:68</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284091000</b><br/>Date: <b>2017-12-03 08:54:51</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20998301,32.10212708</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:33:c8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:28:e8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>ec:8c:a2:26:d3:68</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:13:08</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:3a:38</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284115000</b><br/>Date: <b>2017-12-03 08:55:15</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20978446,32.10305306</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-13-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>a0:8c:fd:0a:24:56</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284745000</b><br/>Date: <b>2017-12-03 09:05:45</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.2098239,32.10346602</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2b:07:b8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284795000</b><br/>Date: <b>2017-12-03 09:06:35</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21016707,32.10381301</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[giftwizard]]></name>
+<description><![CDATA[BSSID: <b>a2:6c:ac:a0:3d:eb</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2422</b><br/>Timestamp: <b>1512284308000</b><br/>Date: <b>2017-12-03 08:58:28</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.21000144,32.1026481</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:04:7c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5320</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-F4-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>a0:8c:fd:0a:d5:f5</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512283575000</b><br/>Date: <b>2017-12-03 08:46:15</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20934828,32.10207016</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:12:90:bc</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5200</b><br/>Timestamp: <b>1512284848000</b><br/>Date: <b>2017-12-03 09:07:28</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20977545,32.10327032</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2c:5c:18</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284795000</b><br/>Date: <b>2017-12-03 09:06:35</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21016707,32.10381301</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[IT-MNG]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:ed:b8</b><br/>Capabilities: <b>[WPA2-PSK-CCMP+TKIP][ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284739000</b><br/>Date: <b>2017-12-03 09:05:39</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20978577,32.10339224</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Guest]]></name>
+<description><![CDATA[BSSID: <b>90:6c:ac:9f:fb:1f</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:05:38</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284308000</b><br/>Date: <b>2017-12-03 08:58:28</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21000144,32.1026481</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>00:02:6f:8e:64:67</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284473000</b><br/>Date: <b>2017-12-03 09:01:13</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.2096084,32.10300921</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:e5:a8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284833000</b><br/>Date: <b>2017-12-03 09:07:13</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20978696,32.1034255</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2b:02:78</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284795000</b><br/>Date: <b>2017-12-03 09:06:35</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21016707,32.10381301</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[EVE]]></name>
+<description><![CDATA[BSSID: <b>90:6c:ac:a0:7b:4d</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:ee:98</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284666000</b><br/>Date: <b>2017-12-03 09:04:26</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20995369,32.10261559</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:11:a8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284115000</b><br/>Date: <b>2017-12-03 08:55:15</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20978446,32.10305306</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:2b:e8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[yosh]]></name>
+<description><![CDATA[BSSID: <b>00:11:6b:11:02:b7</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284088000</b><br/>Date: <b>2017-12-03 08:54:48</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.2098381,32.10199722</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>34:8f:27:20:8c:18</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284308000</b><br/>Date: <b>2017-12-03 08:58:28</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21000144,32.1026481</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:f1:5c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5260</b><br/>Timestamp: <b>1512284739000</b><br/>Date: <b>2017-12-03 09:05:39</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20978577,32.10339224</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2c:5b:dc</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284795000</b><br/>Date: <b>2017-12-03 09:06:35</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21016707,32.10381301</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Guest]]></name>
+<description><![CDATA[BSSID: <b>90:6c:ac:a0:60:4d</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>ec:8c:a2:08:79:a8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:1b:8c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5300</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-8A-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>3c:52:82:ef:a4:8b</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284757000</b><br/>Date: <b>2017-12-03 09:05:57</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20993338,32.10360427</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:05:78</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:2b:d8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-5C-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>fc:3f:db:9c:36:3d</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512283578000</b><br/>Date: <b>2017-12-03 08:46:18</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20955856,32.10199513</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:ed:3c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5220</b><br/>Timestamp: <b>1512284638000</b><br/>Date: <b>2017-12-03 09:03:58</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969313,32.10292495</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[incentive2]]></name>
+<description><![CDATA[BSSID: <b>a2:6c:ac:a0:60:4d</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:f4:78</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[TP-LINK_ADD150]]></name>
+<description><![CDATA[BSSID: <b>74:ea:3a:ad:d1:50</b><br/>Capabilities: <b>[WPS][ESS]</b><br/>Frequency: <b>2427</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:f1:98</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[IT-MNG]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:ed:bc</b><br/>Capabilities: <b>[WPA2-PSK-CCMP+TKIP][ESS]</b><br/>Frequency: <b>5240</b><br/>Timestamp: <b>1512284833000</b><br/>Date: <b>2017-12-03 09:07:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20978696,32.1034255</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Wirless-Afikim]]></name>
+<description><![CDATA[BSSID: <b>00:1a:dd:e3:4b:64</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2447</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[magneto]]></name>
+<description><![CDATA[BSSID: <b>b2:6c:ac:a0:7b:4d</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:fd:48</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284721000</b><br/>Date: <b>2017-12-03 09:05:21</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.2097271,32.10316878</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:94:30:37</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5220</b><br/>Timestamp: <b>1512284638000</b><br/>Date: <b>2017-12-03 09:03:58</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20969313,32.10292495</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:3d:58</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:36:f8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512283632000</b><br/>Date: <b>2017-12-03 08:47:12</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21127266,32.10417317</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-64-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>30:e1:71:0d:e0:65</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512283530000</b><br/>Date: <b>2017-12-03 08:45:30</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20906784,32.10411028</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:94:2c:37</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5260</b><br/>Timestamp: <b>1512284978000</b><br/>Date: <b>2017-12-03 09:09:38</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20986429,32.10273382</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[AUC_4_2_24]]></name>
+<description><![CDATA[BSSID: <b>d8:5d:4c:9e:69:22</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284589000</b><br/>Date: <b>2017-12-03 09:03:09</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.2098035,32.10339504</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-B1-HP DeskJet 3830 series]]></name>
+<description><![CDATA[BSSID: <b>70:5a:0f:57:04:17</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][WPS][ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284025000</b><br/>Date: <b>2017-12-03 08:53:45</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20990936,32.10466627</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:ed:78</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>8c:0c:90:2d:75:e8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284308000</b><br/>Date: <b>2017-12-03 08:58:28</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21000144,32.1026481</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:2b:88</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284633000</b><br/>Date: <b>2017-12-03 09:03:53</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20965373,32.10298958</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:42:68</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:ec:3c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284644000</b><br/>Date: <b>2017-12-03 09:04:04</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20973329,32.10285414</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:12:af:7c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5200</b><br/>Timestamp: <b>1512284473000</b><br/>Date: <b>2017-12-03 09:01:13</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.2096084,32.10300921</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:96:ed:37</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5220</b><br/>Timestamp: <b>1512284539000</b><br/>Date: <b>2017-12-03 09:02:19</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20962475,32.10302095</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:fd:4c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284595000</b><br/>Date: <b>2017-12-03 09:03:15</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20977885,32.10336815</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:1c:b8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284978000</b><br/>Date: <b>2017-12-03 09:09:38</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20986429,32.10273382</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[HelpDesk]]></name>
+<description><![CDATA[BSSID: <b>f8:d1:11:77:77:c6</b><br/>Capabilities: <b>[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]</b><br/>Frequency: <b>2427</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[sinusafe]]></name>
+<description><![CDATA[BSSID: <b>b2:6c:ac:a0:3d:eb</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2422</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[KCG-ADSL]]></name>
+<description><![CDATA[BSSID: <b>00:1d:aa:81:d8:3c</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][WPS][ESS]</b><br/>Frequency: <b>2422</b><br/>Timestamp: <b>1512284902000</b><br/>Date: <b>2017-12-03 09:08:22</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20975138,32.1028277</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2c:5c:1c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284795000</b><br/>Date: <b>2017-12-03 09:06:35</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21016707,32.10381301</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:95:ec:37</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284638000</b><br/>Date: <b>2017-12-03 09:03:58</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20969313,32.10292495</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:ed:38</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284791000</b><br/>Date: <b>2017-12-03 09:06:31</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21022668,32.10384447</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>ec:8c:a2:88:78:c7</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5240</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:44:8c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>ec:8c:a2:08:78:cc</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5240</b><br/>Timestamp: <b>1512284308000</b><br/>Date: <b>2017-12-03 08:58:28</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21000144,32.1026481</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:ed:48</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284751000</b><br/>Date: <b>2017-12-03 09:05:51</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20987906,32.10353221</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:12:90:b8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[OOP_course]]></name>
+<description><![CDATA[BSSID: <b>e4:95:6e:40:87:1a</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284473000</b><br/>Date: <b>2017-12-03 09:01:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.2096084,32.10300921</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>8c:0c:90:2e:e8:18</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512283905000</b><br/>Date: <b>2017-12-03 08:51:45</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21102378,32.10415616</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:96:04:77</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5320</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:30:38</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284644000</b><br/>Date: <b>2017-12-03 09:04:04</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20973329,32.10285414</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>00:1a:dd:e3:4b:65</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2447</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:ee:9c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284925000</b><br/>Date: <b>2017-12-03 09:08:45</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20997646,32.10254921</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[HP-Print-30-Officejet 7610]]></name>
+<description><![CDATA[BSSID: <b>d0:bf:9c:db:31:30</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:ab:bd:87</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5220</b><br/>Timestamp: <b>1512284781000</b><br/>Date: <b>2017-12-03 09:06:21</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.21021258,32.10383605</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:2b:c8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[ShapeDo]]></name>
+<description><![CDATA[BSSID: <b>f8:e9:03:12:ef:3b</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[lab_6.1.3]]></name>
+<description><![CDATA[BSSID: <b>c4:12:f5:f6:a0:18</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2422</b><br/>Timestamp: <b>1512284937000</b><br/>Date: <b>2017-12-03 09:08:57</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.21004364,32.10239413</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>ec:8c:a2:08:94:18</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[HelpDesk]]></name>
+<description><![CDATA[BSSID: <b>60:e3:27:7b:e0:98</b><br/>Capabilities: <b>[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]</b><br/>Frequency: <b>2427</b><br/>Timestamp: <b>1512284791000</b><br/>Date: <b>2017-12-03 09:06:31</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.21022668,32.10384447</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[ShapeDo-5GHz]]></name>
+<description><![CDATA[BSSID: <b>f8:e9:03:12:ef:3c</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5320</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Onicom]]></name>
+<description><![CDATA[BSSID: <b>c0:4a:00:71:ee:ee</b><br/>Capabilities: <b>[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]</b><br/>Frequency: <b>2452</b><br/>Timestamp: <b>1512284589000</b><br/>Date: <b>2017-12-03 09:03:09</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.2098035,32.10339504</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:04:78</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-3B-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>3c:52:82:ef:c4:3c</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284638000</b><br/>Date: <b>2017-12-03 09:03:58</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20969313,32.10292495</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:1b:88</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>ec:8c:a2:08:79:88</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512283501000</b><br/>Date: <b>2017-12-03 08:45:01</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21060161,32.10496562</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[2.4V1]]></name>
+<description><![CDATA[BSSID: <b>40:a5:ef:7a:17:f2</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][WPS][ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284115000</b><br/>Date: <b>2017-12-03 08:55:15</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20978446,32.10305306</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:95:fd:47</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284595000</b><br/>Date: <b>2017-12-03 09:03:15</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20977885,32.10336815</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2b:24:98</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512283902000</b><br/>Date: <b>2017-12-03 08:51:42</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21083187,32.1041076</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[artsim]]></name>
+<description><![CDATA[BSSID: <b>a2:6c:ac:a0:18:29</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Guest]]></name>
+<description><![CDATA[BSSID: <b>90:6c:ac:a0:3d:eb</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2422</b><br/>Timestamp: <b>1512284308000</b><br/>Date: <b>2017-12-03 08:58:28</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.21000144,32.1026481</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:12:7c:c8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284308000</b><br/>Date: <b>2017-12-03 08:58:28</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21000144,32.1026481</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:1d:7c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5220</b><br/>Timestamp: <b>1512284803000</b><br/>Date: <b>2017-12-03 09:06:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21006524,32.10373405</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:ed:38</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284901000</b><br/>Date: <b>2017-12-03 09:08:21</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20974618,32.10283849</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-51-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>3c:52:82:ef:d4:52</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284811000</b><br/>Date: <b>2017-12-03 09:06:51</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20995718,32.103659</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:95:44:87</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:41:78</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2412</b><br/>Timestamp: <b>1512284787000</b><br/>Date: <b>2017-12-03 09:06:27</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21027619,32.1038636</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:06:bc</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5240</b><br/>Timestamp: <b>1512284781000</b><br/>Date: <b>2017-12-03 09:06:21</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21021258,32.10383605</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:44:58</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:14:2c:3c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5260</b><br/>Timestamp: <b>1512284978000</b><br/>Date: <b>2017-12-03 09:09:38</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20986429,32.10273382</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2b:bd:8c</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5220</b><br/>Timestamp: <b>1512284781000</b><br/>Date: <b>2017-12-03 09:06:21</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21021258,32.10383605</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:16:d2:88</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-47-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>30:e1:71:0f:a2:49</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][WPS][ESS][P2P]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512283593000</b><br/>Date: <b>2017-12-03 08:46:33</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.2098807,32.10263944</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2b:bd:88</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284791000</b><br/>Date: <b>2017-12-03 09:06:31</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21022668,32.10384447</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Guest]]></name>
+<description><![CDATA[BSSID: <b>a2:6c:ac:a0:7b:4d</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2462</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:15:44:88</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284263000</b><br/>Date: <b>2017-12-03 08:57:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20898419,32.10400645</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Guest]]></name>
+<description><![CDATA[BSSID: <b>90:6c:ac:a0:18:29</b><br/>Capabilities: <b>[WPA2-PSK-CCMP-preauth][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284293000</b><br/>Date: <b>2017-12-03 08:58:13</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20936037,32.10207407</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>24:79:2a:2b:07:bc</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>5180</b><br/>Timestamp: <b>1512284791000</b><br/>Date: <b>2017-12-03 09:06:31</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.21022668,32.10384447</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[]]></name>
+<description><![CDATA[BSSID: <b>1c:b9:c4:96:06:b7</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>5240</b><br/>Timestamp: <b>1512284795000</b><br/>Date: <b>2017-12-03 09:06:35</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.21016707,32.10381301</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-61-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>30:e1:71:0d:e0:63</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284727000</b><br/>Date: <b>2017-12-03 09:05:27</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20974432,32.10324284</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Ariel_University]]></name>
+<description><![CDATA[BSSID: <b>ec:8c:a2:08:78:c8</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512284323000</b><br/>Date: <b>2017-12-03 08:58:43</b>]]></description><styleUrl>#green</styleUrl>
+<Point>
+<coordinates>35.20969029,32.10312585</coordinates></Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[DIRECT-55-HP DeskJet 3630 series]]></name>
+<description><![CDATA[BSSID: <b>3c:52:82:ef:d4:56</b><br/>Capabilities: <b>[WPA2-PSK-CCMP][ESS]</b><br/>Frequency: <b>2437</b><br/>Timestamp: <b>1512283572000</b><br/>Date: <b>2017-12-03 08:46:12</b>]]></description><styleUrl>#red</styleUrl>
+<Point>
+<coordinates>35.20913287,32.10214339</coordinates></Point>
+</Placemark>
+</Folder>
+</Document></kml>
