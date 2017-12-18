@@ -1,4 +1,4 @@
-package lesson9a;
+package lesson9a.logging;
 
 import java.util.ArrayList;
 
