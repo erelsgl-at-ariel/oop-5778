@@ -1,9 +1,9 @@
-package lesson9b;
+package lesson9b.singleton;
 
 import java.util.*;
 
 /**
- * An example of a singleton object.
+ * An example of a singleton class implemented as enum.
  * 
  * @author erelsgl
  */

@@ -1,13 +1,13 @@
-package lesson9b;
+package lesson9b.singleton;
 
 import java.util.*;
 
 /**
- * An example of a singleton object.
+ * An example of a singleton class.
  * 
  * @author erelsgl
  */
-public class Translator1 {
+public final class Translator1 {
 	public static final Translator1 INSTANCE = new Translator1();
 	
 	public String translateToEnglish(String hebrew) {

@@ -1,4 +1,4 @@
-package lesson9b;
+package lesson9b.singleton;
 
 public class TranslatorTest {
 
