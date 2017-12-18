@@ -34,6 +34,11 @@ public class Employee extends Object {
     @Override public String toString() {
 		return "Employee [name=" + name + ", salary=" + salary + "]";
 	}
+    
+    /* The code below generates a compiler error! */  
+//    public Class getClass() {
+//    	
+//    }
 
 	/**
      * Returns "true" if this employee has a lower rank than the 
