@@ -7,15 +7,28 @@ import java.time.LocalDate;
  * 
  * @author erelsgl
  */
-public class Employee extends Object {
-    String name;
-    double salary;
-    LocalDate joinDate;
+public class Employee  {
+    String name = "";
+    double salary = 0;
+    LocalDate joinDate = null;
+    
+//    // This happens behind the scenes
+//    public Employee() {}
+//    
+    public Employee(String name) {
+        setName(name);
+    	this.salary = 1000;
+    	this.joinDate = null;
+    }
 
     public Employee(String name, double salary) {
-        this.name = name;
+        setName(name);
         this.salary = salary;
         this.joinDate = null;  // currently not implemented
+    }
+    
+    public void setName(String name) {
+    	this.name = name.toUpperCase();
     }
 
     public void raiseSalary(double byPercent) {

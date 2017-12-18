@@ -44,6 +44,9 @@ public class EmployeeDemoOverloading {
 		System.out.println("C earns "+getSalary(e3));
 		employees.add(e3);
 
+		Employee e4 = e3;
+		System.out.println("C earns "+getSalary(e4));
+		
 		double totalSalary = 
 			employees
 			.stream()
@@ -51,9 +54,5 @@ public class EmployeeDemoOverloading {
 			.reduce((x,y)->x+y)
 			.getAsDouble();
 		System.out.println("total salaray = "+totalSalary);
-
-		
-//		Employee e4 = e3;
-//		System.out.println("C earns "+getSalary(e4));
 	}
 }
