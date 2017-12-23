@@ -1,4 +1,4 @@
-package lesson9a.employees;
+package lesson9.employees;
 
 import lesson9.employees.Employee;
 import lesson9.employees.Manager;

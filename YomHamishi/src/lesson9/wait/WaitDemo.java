@@ -1,4 +1,4 @@
-package lesson9a.wait;
+package lesson9.wait;
 
 import java.util.*;
 

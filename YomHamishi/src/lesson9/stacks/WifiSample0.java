@@ -1,4 +1,4 @@
-package lesson9a.stacks;
+package lesson9.stacks;
 
 import java.util.ArrayList;
 
@@ -8,14 +8,13 @@ import java.util.ArrayList;
  *      
  * @author erelsgl
  */
-public class WifiSample1  {
+public class WifiSample0 {
 	private ArrayList<String> list;
-	
-	public void addLat(Integer lat) {
-		list.add(0, lat.toString());
+	static final int TIME = 3;
+	public void add(String s) {
+		list.add(s);
 	}
-	
 	public String getTime() {
-		return list.get(3);
+		return list.get(TIME);
 	}
 }

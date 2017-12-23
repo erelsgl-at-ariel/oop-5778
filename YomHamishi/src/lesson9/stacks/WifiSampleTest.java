@@ -1,4 +1,4 @@
-package lesson9a.stacks;
+package lesson9.stacks;
 
 import lesson9.stacks.WifiSample0;
 import lesson9.stacks.WifiSample1;
