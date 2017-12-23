@@ -2,6 +2,8 @@ package lesson9a.employees;
 
 import java.util.List;
 
+import lesson9.employees.Employee;
+
 /**
  * Utility functions for handling lists of employees.
  * 

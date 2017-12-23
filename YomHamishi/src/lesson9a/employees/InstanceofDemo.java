@@ -1,5 +1,9 @@
 package lesson9a.employees;
 
+import lesson9.employees.Boss;
+import lesson9.employees.Employee;
+import lesson9.employees.Manager;
+
 public class InstanceofDemo {
 
 	public static void main(String[] args) {

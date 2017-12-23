@@ -1,4 +1,4 @@
-package lesson9a.stacks;
+package lesson9.stacks;
 
 public class StackTest {
 	public static void main(String[] args) {

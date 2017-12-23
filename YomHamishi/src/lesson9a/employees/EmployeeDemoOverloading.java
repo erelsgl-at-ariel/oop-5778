@@ -2,6 +2,10 @@ package lesson9a.employees;
 
 import java.util.*;
 
+import lesson9.employees.Employee;
+import lesson9.employees.Manager;
+import lesson9.employees.Programmer;
+
 /**
  * Demonstrates that method overloading does NOT work well with the Employee hierarchy.
  * 

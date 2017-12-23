@@ -1,4 +1,4 @@
-package lesson9a.stacks;
+package lesson9.stacks;
 
 
 import java.util.*;

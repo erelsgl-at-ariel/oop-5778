@@ -1,9 +1,9 @@
 package lesson9b.factory;
 
+import lesson9.employees.Employee;
+import lesson9.employees.Manager;
+import lesson9.employees.Programmer;
 import lesson9a.*;
-import lesson9a.employees.Employee;
-import lesson9a.employees.Manager;
-import lesson9a.employees.Programmer;
 
 public class EmployeeFactory {
 	public static Employee newEmployee(EmployeeRank rank, String name) {

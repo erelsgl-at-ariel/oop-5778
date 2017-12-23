@@ -2,6 +2,8 @@ package lesson9a.logging;
 
 import java.util.*;
 
+import lesson9.logging.ArrayListWithLogging;
+
 public class TestArrays {
 	public static void func(List<String> names) {
 		names.add("b");

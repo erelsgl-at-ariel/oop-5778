@@ -1,4 +1,4 @@
-package lesson9a.employees;
+package lesson9.employees;
 
 /**
  * A programmer is an employee that gets a reduction for writing too many lines.

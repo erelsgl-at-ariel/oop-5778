@@ -1,5 +1,8 @@
 package lesson9a.employees;
 
+import lesson9.employees.Employee;
+import lesson9.employees.Manager;
+
 /**
  * A manager is an employee that gets a bonus.
  * 

@@ -1,5 +1,8 @@
 package lesson9a.stacks;
 
+import lesson9.stacks.Stack0;
+import lesson9.stacks.Stack1;
+
 public class StackTest {
 	public static void main(String[] args) {
 		

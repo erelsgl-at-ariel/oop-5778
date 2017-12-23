@@ -1,5 +1,8 @@
 package lesson9a.employees;
 
+import lesson9.employees.Employee;
+import lesson9.employees.Manager;
+
 /**
  * A programmer is an employee that gets a reduction for writing too many lines.
  * 

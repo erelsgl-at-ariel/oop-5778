@@ -3,6 +3,8 @@ package lesson9a.logging;
 import java.util.ArrayList;
 import java.util.List;
 
+import lesson9.logging.ArrayListWithLogging;
+
 /**
  * Based on code by Cay S. Horstmann.
  * @author erelsgl

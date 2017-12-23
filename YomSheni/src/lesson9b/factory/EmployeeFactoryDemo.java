@@ -2,7 +2,7 @@ package lesson9b.factory;
 
 import java.util.*;
 
-import lesson9a.employees.Employee;
+import lesson9.employees.Employee;
 
 public class EmployeeFactoryDemo {
 

@@ -1,4 +1,4 @@
-package lesson9a.employees;
+package lesson9.employees;
 
 /**
  * A manager is an employee that gets a bonus.

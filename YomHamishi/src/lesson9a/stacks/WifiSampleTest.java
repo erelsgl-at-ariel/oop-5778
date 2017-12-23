@@ -1,5 +1,8 @@
 package lesson9a.stacks;
 
+import lesson9.stacks.WifiSample0;
+import lesson9.stacks.WifiSample1;
+
 public class WifiSampleTest {
 
 	public static void main(String[] args) {

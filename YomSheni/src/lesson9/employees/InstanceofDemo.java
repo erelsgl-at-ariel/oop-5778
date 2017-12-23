@@ -1,4 +1,4 @@
-package lesson9a.employees;
+package lesson9.employees;
 
 public class InstanceofDemo {
 

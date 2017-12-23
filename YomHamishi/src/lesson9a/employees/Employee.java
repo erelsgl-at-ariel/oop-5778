@@ -2,6 +2,8 @@ package lesson9a.employees;
 
 import java.time.LocalDate;
 
+import lesson9.employees.Employee;
+
 /**
  * Based on classes by Udi Lavi and Cay S. Horstmann.
  * 
