@@ -20,4 +20,8 @@ public class Stack0<T> extends ArrayList<T> {
 	public T pop() {
 		return remove(size()-1);
 	}
+	
+	@Override public void add(int index, T item) {
+		throw new UnsupportedOperationException("Cannot add to Stack in the middle");
+	}
 }

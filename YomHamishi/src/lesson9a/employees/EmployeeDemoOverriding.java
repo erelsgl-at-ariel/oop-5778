@@ -10,9 +10,9 @@ public class EmployeeDemoOverriding {
 	public static void main(String[] args) {
 		List<Employee> employees = new ArrayList<>();
 		
-		Employee e1 = new Employee("A", 100);
-		System.out.println("A earns "+e1.getSalary());
-		employees.add(e1);
+//		Employee e1 = new Employee("A", 100);
+//		System.out.println("A earns "+e1.getSalary());
+//		employees.add(e1);
 		
 		Programmer e2 = new Programmer("B", 100);
 		e2.delLines(10);
@@ -25,7 +25,6 @@ public class EmployeeDemoOverriding {
 		e3.setBonus(5);
 		System.out.println("C earns "+e3.getSalary());
 		employees.add(e3);
-
 		
 		double totalSalary = 
 			employees
@@ -34,6 +33,12 @@ public class EmployeeDemoOverriding {
 			.reduce( (x,y) -> x+y )
 			.getAsDouble();
 		System.out.println("total salary = "+totalSalary);
+		
+		employees
+		.stream()
+		.forEach(e -> System.out.println(e.getClass()));
+
+
 		
 //		Employee e5 = new Manager("abc",500);
 //		Manager m5 = (Manager)e5;

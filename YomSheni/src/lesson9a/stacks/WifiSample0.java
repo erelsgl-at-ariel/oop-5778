@@ -8,7 +8,7 @@ import java.util.ArrayList;
  *      
  * @author erelsgl
  */
-public class WifiSample extends ArrayList<String> {
+public class WifiSample0 extends ArrayList<String> {
 	public String getTime() {
 		return get(3);
 	}

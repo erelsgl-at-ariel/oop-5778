@@ -41,13 +41,12 @@ public class Employee extends Object {
     }
     
     public double getSalary() {
-        return salary;
+    	return salary;
     }
     
     @Override public String toString() {
 		return "Employee [name=" + name + ", salary=" + getSalary() + "]";
 	}
-    
     /* The code below generates a compiler error! */  
 //    public Class getClass() {
 //    	
@@ -62,13 +61,18 @@ public class Employee extends Object {
     	return this.joinDate.isAfter(other.joinDate);  
     }
     
+    
+    
+    
+    
+    
     public Employee getSupervisor() {
     	return null;   // NOT IMPLEMENTED YET  
     }
 
 	@Override
 	public int hashCode() {
-//		return 0; // possible but inefficient.
+//		return 0;   // correct but inefficient
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((joinDate == null) ? 0 : joinDate.hashCode());
@@ -79,7 +83,7 @@ public class Employee extends Object {
 		return result;
 	}
 
-    
+
     
 	@Override
 	public boolean equals(Object obj) {

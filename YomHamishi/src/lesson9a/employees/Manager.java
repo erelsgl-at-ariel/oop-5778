@@ -29,7 +29,7 @@ public class Manager extends Employee {
     
     @Override
     public double getSalary() { 
-        return super.getSalary() + bonus;
+        return super.salary + bonus;
     }
     
     @Override
@@ -38,14 +38,21 @@ public class Manager extends Employee {
     }
     
     
-//  /* This is a compilation error! */
+  /* This is a compilation error! 
+		This is overloading and not overriding! */
 //    @Override 
-//    public boolean lowerRankThan(Manager other) {
-//    	return this.bonus < other.bonus;
-//    }
+    public boolean lowerRankThan(Manager other) { 
+    	return this.bonus < other.bonus;
+    }
 
+    
+    
+    
+    
+    
+    
 	@Override public boolean lowerRankThan(Employee other) {
-		// return this.bonus < other.bonus;
+		//return this.bonus < other.bonus;
 		Manager otherManager1 = (Manager)other; // casting
 		if (other instanceof Manager) {
 			// ranks between managers are calculated based on their bonus:

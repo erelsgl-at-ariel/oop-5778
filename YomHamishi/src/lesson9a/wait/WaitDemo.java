@@ -11,19 +11,20 @@ public class WaitDemo {
 	public static void main(String[] args) throws InterruptedException {
 		Queue<String> queue = new LinkedList<>();
 		
-		// Thread A - "take()":
+		// In Thread A:
 		
 		synchronized (queue) {
 			while (queue.isEmpty())
-				queue.wait(); // release the lock on queue, and wait for notify
+				queue.wait();
 			String top = queue.remove();
 		}
 
-		// Thread B - "offer("abc")":
-
+		// In Thread B:
+		
+		
 		synchronized (queue) {
 			queue.add("abc");
-			queue.notifyAll(); // awaken all the threads that wait
+			queue.notifyAll();
 		}
 		
 		Object o;
