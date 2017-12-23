@@ -21,7 +21,6 @@ public class ObjectStreamDemo {
 		System.out.println(e1);
 
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		//OutputStream fos = Files.newOutputStream(Paths.get("test.bin"));
 		ObjectOutputStream oos = new ObjectOutputStream(baos);
 
 		oos.writeObject(e1);
@@ -29,7 +28,6 @@ public class ObjectStreamDemo {
 		System.out.println(Arrays.toString(bytes));
 		
 		ByteArrayInputStream bais = new ByteArrayInputStream(bytes);
-		//InputStream fis = Files.newInputStream(Paths.get("test.bin"));
 		ObjectInputStream ois = new ObjectInputStream(bais);
 		Employee e2 = (Employee) ois.readObject();
 		System.out.println(e2);

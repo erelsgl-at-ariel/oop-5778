@@ -11,9 +11,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Programmer extends Employee {
     int linesWritten;
 
-    public Programmer() {   // obligatory for JAXB
-    	super();
-    }
+//    public Programmer() {   // obligatory for JAXB
+//    	super();
+//    }
     
     public Programmer(String name, double salary) {
         super(name, salary);

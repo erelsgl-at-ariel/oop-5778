@@ -15,7 +15,7 @@ public class Employee implements Serializable {
     private double salary = 0;
     
     // This is obligatory for JAXB!
-    public Employee() {}
+    //public Employee() {}
 
     public Employee(String name, double salary) {
         setName(name);

@@ -14,11 +14,11 @@ public class Manager extends Employee {
     double bonus;
 	List<Employee> team;
     
-    public Manager() { // Obligatory for JAXB 
-    	super();
-        bonus = 0;
-        team = new ArrayList<>();
-    }
+//    public Manager() { // Obligatory for JAXB 
+//    	super();
+//        bonus = 0;
+//        team = new ArrayList<>();
+//    }
     
     public Manager(String name, double salary) {
         super(name, salary);
