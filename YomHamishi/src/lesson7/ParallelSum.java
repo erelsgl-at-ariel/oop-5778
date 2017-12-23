@@ -57,7 +57,7 @@ public class ParallelSum {
 		
 		{   /* SOLUTION 2.5 - PRODUCER-CONSUMER APP with BLOCKING QUEUE: */
 			Instant startTime = Instant.now();
-			BlockingQueue<Double> sums = new ArrayBlockingQueue<>(2);
+			final BlockingQueue<Double> sums = new ArrayBlockingQueue<>(2);
 			new Thread(() -> {
 				double sum = 0;
 				for (int i=0; i<array.length/2; ++i)
