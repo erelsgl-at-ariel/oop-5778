@@ -1,8 +1,13 @@
-# ariel-oop-course
-Example code for the course "Introduction to OOP programming" in Ariel University
+# &#x202b; סיכומים לקורס "מבוא לתיכנות מונחה עצמים" 
 
-## Moshe add this :+1: :clap:
+&#x202b; בתיקיה זו ישנם קבצים משלושה סוגים:
 
-Web of icon to GitHub readme :floppy_disk: https://gist.github.com/rxaviers/7360908
+* &#x202b; קבצי **odt** הם סיכומים מפורטים של השיעורים.
+הם נוצרו בתוכנת "ליברה-אופיס".
+ייתכן שאפשר לפתוח אותם גם ב"וורד" - לא בדקתי.
 
-## Nissan and Avital changed this! :computer: yo!
+* &#x202b; קבצי **odp** הם מצגות.
+הם נוצרו בתוכנת "ליברה-אופיס",
+ייתכן שאפשר לפתוח אותם גם ב"פאוור-פוינט".
+
+* &#x202b; קבצי **pdf** זהים לקבצי המצגות.

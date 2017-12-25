@@ -1,3 +1,7 @@
+# Temporary open-office files:
+*.odt#
+*.odp#
+
 # Compiled class file
 *.class
 
