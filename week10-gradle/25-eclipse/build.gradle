@@ -11,6 +11,6 @@ dependencies {
 
 task hello(type: JavaExec) {
 	group "run"
-  main "lesson10.Hello"
-  classpath sourceSets.main.runtimeClasspath
+	main "lesson10.Hello"
+	classpath sourceSets.main.runtimeClasspath
 }
