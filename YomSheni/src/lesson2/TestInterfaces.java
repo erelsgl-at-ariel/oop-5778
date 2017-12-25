@@ -3,6 +3,7 @@ package lesson2;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class TestInterfaces {
 	
@@ -60,13 +61,33 @@ public class TestInterfaces {
 		
 		Condition<String> condition2 = new Condition<String>() {
 			public boolean test(String s) {
-				if (s.charAt(0)=='b') return true;
+				if (s.charAt(1)=='b') return true;
 				else return false;
 			}
 		};
 		filteredStrings = filter(strings, condition2);
 		System.out.println(filteredStrings); // aaa,abc (only strings that start with a)
 		
-		Condition<String> condition3 = s -> s.charAt(0)=='c'; /* the string starts with  */;
+		//Condition<String> condition3 = s -> s.charAt(0)=='c'; /* the string starts with  */;
+		
+		System.out.println(condition1.test("abc"));
+		System.out.println(condition2.test("abc"));
+		System.out.println(condition1.test("abc") && condition2.test("abc"));
+		
+		// Solution 1: inline
+		Condition<String> condition4 = s -> 
+			condition1.test(s) && condition2.test(s);
+		
+			
+		System.out.println(filter(strings, condition4));
+		
+		// Solution 2: class
+		System.out.println(filter(strings, new AndCondition<String>(condition1,condition2)));
+		
+		// Solution 3: Use Java's Predicate class
+		Predicate<String> predicate1 = s -> s.charAt(0)=='a';
+		Predicate<String> predicate2 = s -> s.charAt(1)=='b';
+		Predicate<String> predicate3 = predicate1.and(predicate2);
+		
 	}
 }
