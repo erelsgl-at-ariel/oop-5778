@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.sparkjava:spark-core:+'
+}
+
+task hello(type: JavaExec) {
+	group "run"
+  main "lesson10.Hello"
+  classpath sourceSets.main.runtimeClasspath
+}
