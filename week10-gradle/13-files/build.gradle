@@ -1,0 +1,65 @@
+/* Demo of Copy task */
+
+task copyImages(type: Copy) {
+    from 'images'
+    into 'build'
+}
+
+task clean(type: Delete) {
+    delete 'build'
+}
+
+
+task copyJpegs(type: Copy) {
+    from 'images'
+    include '*.jpg'
+    //exclude '*.jpg'
+    into 'build'
+}
+
+task copyImageFolders(type: Copy) {
+    into 'build'
+    from('images') {
+        include '*.jpg'
+        into 'jpeg'
+    }
+    from('images') {
+        include '*.gif'
+        into 'gif'
+    }
+}
+
+task zipImages(type: Jar) {
+    baseName = 'images'
+    destinationDir = file('build')
+    from 'images'
+}
+
+task zipImageFolders(type: Zip) {
+    baseName 'images'
+    destinationDir file('build')
+    from('images') {
+        include '*.jpg'
+        into 'jpeg'
+    }
+    from('images') {
+        include '*.gif'
+        into 'gif'
+    }
+}
+
+task unzipImageFoldersBundle(type: Copy) {
+    from zipTree('build/images.zip')
+    into 'build/exploded'
+}
+
+task zipBuild(type: Zip) {
+  dependsOn copyImages
+  baseName = 'test'
+  destinationDir = file('.')
+  from 'build'
+}
+
+
+
+/* Demo of incremental build: change the input and run, change the output and run */

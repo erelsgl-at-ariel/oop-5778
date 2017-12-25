@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lesson10.points.PointTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-12-25T17:27:56" hostname="erelsgl-HP-EliteBook-840-G3" time="0.001">
+  <properties/>
+  <testcase name="test" classname="lesson10.points.PointTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

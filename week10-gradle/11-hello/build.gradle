@@ -1,0 +1,28 @@
+/* You can define a task in a java-like syntax: */
+
+project.task("hello1");
+hello1.description("My first task");
+hello1.group("Demo");
+hello1.doLast( {System.out.println("Hello world?")} );
+hello1.doLast( {System.out.println("Hello world!")} );
+
+
+/* Or in the more lenient Groovy syntax: */
+
+task "hello2"
+hello2.description "My second task"
+hello2.group "Demo"
+hello2.doLast {System.out.println("Hello world??")} 
+hello2.doLast {System.out.println("Hello world!!")} 
+
+
+/* This is the most common syntax: */
+
+task hello3 {
+    description "My third task"
+    group "Demo"
+    doLast {
+      println "Hello World???"
+      println "Hello World!!!"
+    }
+}

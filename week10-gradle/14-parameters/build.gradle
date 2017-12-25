@@ -1,0 +1,10 @@
+task greet {
+    doLast {println greeting+" world"}
+}
+
+/*
+Try:
+
+* Without -P
+* With "-Phi"
+*/

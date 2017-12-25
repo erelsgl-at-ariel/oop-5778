@@ -1,0 +1,41 @@
+apply plugin: "java"
+
+repositories {
+    mavenCentral()
+}
+
+// See here: https://mvnrepository.com/artifact/com.google.code.gson/gson/2.8.2
+dependencies {
+    compile    group: 'com.google.code.gson', name: 'gson', version: '+'
+}
+
+
+task GsonDemo(type: JavaExec) {
+    main = "lesson10.employees.GsonDemo"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+/* Try:
+    gradle GsonDemo
+*/
+
+
+task ObjectStreamDemo(type: JavaExec) {
+    main = "lesson10.employees.ObjectStreamDemo"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+
+/*
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile files('libs/foo.jar', 'libs/bar.jar')
+}
+
+*/
