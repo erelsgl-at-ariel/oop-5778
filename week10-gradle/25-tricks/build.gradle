@@ -19,9 +19,8 @@ task launch(type: JavaExec) {
 	classpath sourceSets.main.runtimeClasspath
 }
 
-
 // Adapted from here: https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Exec.html
 task deploy(type:Exec) {
-  dependsOn build
+  dependsOn build, wrapper
   commandLine "./deploy.sh"
 }
