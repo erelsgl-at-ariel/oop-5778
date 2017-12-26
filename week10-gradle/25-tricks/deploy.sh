@@ -6,4 +6,4 @@ echo -- pull --
 /usr/bin/git pull
 echo -- push --
 /usr/bin/git push
-ssh root@162.243.116.217 'cd ariel-oop-course/week10-gradle/25-tricks; git pull; ./gradlew --no-daemon hello launch'
+ssh root@162.243.116.217 'echo "\nUPDATING SERVER\n"; cd ariel-oop-course/week10-gradle/25-tricks; git pull; ./gradlew --no-daemon hello launch'
