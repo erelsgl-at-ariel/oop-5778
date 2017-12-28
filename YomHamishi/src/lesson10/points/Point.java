@@ -7,16 +7,16 @@ import java.io.Serializable;
  * @author erelsgl
  */
 public class Point implements Serializable {
-	private static final long serialVersionUID = 3;
+	private static final long serialVersionUID = 2L;
 
-	double x, y;
+	double[] xy = new double[2];
 	
 	public Point(double x, double y) {
-		this.x = x;
-		this.y = y;
+		this.xy[0] = x;
+		this.xy[1] = y;
 	}
 	
 	public String toString() {
-		return "("+x+","+y+")";
+		return "("+(int)xy[0]+","+(int)xy[1]+")";
 	}
 }

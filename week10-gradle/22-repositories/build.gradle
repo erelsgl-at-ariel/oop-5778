@@ -6,7 +6,7 @@ repositories {
 
 // See here: https://mvnrepository.com/artifact/com.google.code.gson/gson/2.8.2
 dependencies {
-    compile    group: 'com.google.code.gson', name: 'gson', version: '+'
+    compile    group: 'com.google.code.gson', name: 'gson', version: '1.+'
 }
 
 

@@ -4,7 +4,6 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
-
 /**
  * Demonstrates serialization and de-serialization using ObjectInput/OutputStream,
  *    into a file, when the version of an object changes. 

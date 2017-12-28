@@ -3,15 +3,15 @@ package lesson10.points;
 import java.io.Serializable;
 
 /**
- * Point - a class with three versions 
+ * Point - first version
  * @author erelsgl
+ *
  */
-public class Point implements Serializable {
-	private static final long serialVersionUID = 3;
-
+public class Point1 implements Serializable {
+	private static final long serialVersionUID = 1L;
 	double x, y;
 	
-	public Point(double x, double y) {
+	public Point1(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}

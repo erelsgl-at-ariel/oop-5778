@@ -10,7 +10,7 @@ task makeOrderInRoom {
 }
 
 task putOnSocks {
-	dependsOn makeOrderInRoom
+	dependsOn "makeOrderInRoom"
   doLast {println "Putting on Socks."}
 }
 
@@ -44,6 +44,12 @@ task getReady {
     dependsOn "takeShower", "eatBreakfast", "putOnShoes"
 }
 
+task putOnFragrance {
+  mustRunAfter takeShower
+  doLast {
+      println "Putting on fragrance."
+  }  
+}
 
 
 task getEquipped {

@@ -19,5 +19,8 @@ task read(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
 }
 
-task success {  doLast {println "All tests passed!"} }
+task success {  
+  doLast {println "All tests passed!"} 
+}
+
 test.finalizedBy(success)

@@ -2,7 +2,6 @@ package lesson10.employees;
 
 import java.io.Serializable;
 
-
 import javax.xml.bind.annotation.*;
 
 /**
