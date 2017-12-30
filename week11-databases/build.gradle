@@ -1,0 +1,31 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {     mavenCentral()   }
+dependencies {     compile 'org.xerial:sqlite-jdbc:+'   }
+
+task hello {
+  group "my"
+  doLast {println "Hello"}
+}
+
+task definition(type: JavaExec) {
+  group "my"
+  main "db.DataDefinitionDemo"
+  classpath sourceSets.main.runtimeClasspath
+}
+
+task manipulation(type: JavaExec) {
+  group "my"
+  dependsOn definition
+  main "db.DataManipulationDemo"
+  classpath sourceSets.main.runtimeClasspath
+}
+
+task query(type: JavaExec) {
+  group "my"
+  dependsOn definition, manipulation
+  main "db.DataQueryDemo"
+  classpath sourceSets.main.runtimeClasspath
+}
+

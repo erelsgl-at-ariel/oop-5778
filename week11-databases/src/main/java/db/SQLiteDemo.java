@@ -1,10 +1,15 @@
 package db;
-/**
- * This is a simple cose example for learning the basis of JDBC & DB & SQL
- * The code is based on this web  page: https://www.tutorialspoint.com/sqlite/sqlite_java.htm
- */
+
 import java.sql.*;
-public class SQlite_exmple2 {
+import org.sqlite.JDBC;
+
+/**
+ * This is a simple code example for learning the basis of JDBC & DB & SQL
+ * The code is based on this web  page: https://www.tutorialspoint.com/sqlite/sqlite_java.htm
+ * 
+ * @author benmo
+ */
+public class SQLiteDemo {
 	
 	   public static void main( String args[] ) {
 		 //  create_table();
@@ -88,7 +93,7 @@ public class SQlite_exmple2 {
 		      System.out.println("Opened database successfully");
 
 		      stmt = c.createStatement();
-		      ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
+		      ResultSet rs = stmt.executeQuery("SELECT * FROM COMPANY");
 		      
 		      while ( rs.next() ) {
 		         int id = rs.getInt("id");
