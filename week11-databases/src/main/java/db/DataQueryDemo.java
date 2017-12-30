@@ -3,7 +3,7 @@ package db;
 import java.sql.*;
 
 /**
- * A demo of creating tables and deleting tables in SQLite.
+ * A demo of selecting from tables in SQLite.
  * @author erelsgl
  */
 public class DataQueryDemo {

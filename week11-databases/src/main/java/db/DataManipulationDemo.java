@@ -3,7 +3,7 @@ package db;
 import java.sql.*;
 
 /**
- * A demo of creating tables and deleting tables in SQLite.
+ * A demo of inserting, deleting and updating rows in SQLite.
  * @author erelsgl
  */
 public class DataManipulationDemo {
@@ -11,7 +11,9 @@ public class DataManipulationDemo {
 		try (Connection connection = DriverManager.getConnection("jdbc:sqlite:company.db")) {
 			System.out.println("Opened database successfully");
 			try (Statement stmt = connection.createStatement()) {
-				int numRows = stmt.executeUpdate("DELETE FROM employees WHERE id IN (1,2,3,4)");
+				int numRows = stmt.executeUpdate(
+					"DELETE FROM employees WHERE id IN (1,2,3,4)"
+				);
 				System.out.println(numRows+" rows deleted");
 				
 				numRows = stmt.executeUpdate(
