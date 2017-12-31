@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 
 repositories {     mavenCentral()   }
-dependencies {     compile 'org.xerial:sqlite-jdbc:+'   }
+dependencies {     implementation 'org.xerial:sqlite-jdbc:+'   }
 
 task hello {
   group "my"

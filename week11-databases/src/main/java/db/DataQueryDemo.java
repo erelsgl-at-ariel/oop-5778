@@ -8,7 +8,7 @@ import java.sql.*;
  */
 public class DataQueryDemo {
 	public static void main( String args[] ) throws Throwable {
-		try (Connection connection = DriverManager.getConnection("jdbc:sqlite:company.db")) {
+		try (Connection connection = CompanyDatabase.getConnection()) {
 			System.out.println("Opened database successfully");
 			try (Statement stmt = connection.createStatement()) {
 				try (ResultSet rs = stmt.executeQuery("SELECT * FROM employees")) {
