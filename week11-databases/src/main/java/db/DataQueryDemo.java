@@ -31,7 +31,7 @@ public class DataQueryDemo {
 					}
 					System.out.println();
 				}
-				try (ResultSet rs = stmt.executeQuery("SELECT name,age,salary FROM employees WHERE salary>=20000")) {
+				try (ResultSet rs = stmt.executeQuery("SELECT name,age,salary FROM employees ORDER BY salary ASC")) {
 					while (rs.next()) {
 						System.out.println(
 							"name=" + rs.getString("name")+" "+
