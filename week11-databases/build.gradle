@@ -3,6 +3,8 @@ apply plugin: 'eclipse'
 
 repositories {     mavenCentral()   }
 dependencies {     implementation 'org.xerial:sqlite-jdbc:+'   }
+dependencies {     implementation 'mysql:mysql-connector-java:5.+'   }
+
 
 task hello {
   group "my"
