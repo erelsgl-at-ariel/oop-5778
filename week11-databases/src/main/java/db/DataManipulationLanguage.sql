@@ -16,3 +16,9 @@ UPDATE employees SET salary=25000 WHERE id=1 OR id=3;
 DELETE FROM employees WHERE id IN (1,2,3,4);
 
 
+/***********************************************/ 
+
+INSERT OR IGNORE INTO teams(manager,member)
+       VALUES (1,1), (1,2), (1,3), 
+              (3,3), (3,4);
+
