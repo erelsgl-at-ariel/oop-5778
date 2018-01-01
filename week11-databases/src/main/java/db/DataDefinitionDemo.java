@@ -11,13 +11,13 @@ public class DataDefinitionDemo {
 		try (Connection connection = CompanyDatabase.getConnection()) {
 			System.out.println("Opened database successfully");
 			try (Statement stmt = connection.createStatement()) {
-//				stmt.executeUpdate("DROP TABLE IF EXISTS employees;");
-//				System.out.println("Table dropped successfully");
+				stmt.executeUpdate("DROP TABLE IF EXISTS employees;");
+				System.out.println("Table dropped successfully");
 
 				stmt.executeUpdate(
 						"CREATE TABLE employees\n" + 
-						"(id        INT PRIMARY KEY     NOT NULL,\n" + 
-						" name      TEXT    NOT NULL,\n" + 
+						"(id        INT     NOT NULL,\n" + 
+						" name      TEXT PRIMARY KEY   NOT NULL,\n" + 
 						" age       INT     NOT NULL,\n" + 
 						" address   CHAR(50),\n" + 
 						" salary    REAL);\n" + 

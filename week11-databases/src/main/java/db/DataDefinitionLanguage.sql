@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS teams
 (manager   INT     NOT NULL,
  member    INT     NOT NULL
  );
- 
+
 DROP INDEX IF EXISTS teams_index;
 
 CREATE UNIQUE INDEX teams_index 

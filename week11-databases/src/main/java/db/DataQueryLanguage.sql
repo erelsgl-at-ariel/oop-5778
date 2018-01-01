@@ -19,12 +19,13 @@ GROUP BY age;
 /***********************************************/ 
 
 SELECT *
-FROM   employees INNER JOIN teams ON(employees.id=teams.member);
+FROM   employees 
+INNER JOIN teams ON(employees.id=teams.member);
 
 SELECT employees.*, teams.manager AS manager_id
 FROM   employees INNER JOIN teams ON(employees.id=teams.member);
 
-SELECT employees1.*, employees2.name AS manager_name
+SELECT employees1.name as member_name, employees2.name AS manager_name
 FROM   employees AS employees1
 INNER JOIN teams ON(employees1.id=teams.member)
 INNER JOIN employees AS employees2 ON(employees2.id=teams.manager);

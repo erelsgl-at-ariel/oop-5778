@@ -19,7 +19,7 @@ task definition(type: JavaExec) {
 
 task manipulation(type: JavaExec) {
   group "my"
-  dependsOn definition
+  //dependsOn definition
   main "db.DataManipulationDemo"
   classpath sourceSets.main.runtimeClasspath
 }
