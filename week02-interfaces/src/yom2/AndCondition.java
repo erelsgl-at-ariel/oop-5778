@@ -1,4 +1,4 @@
-package lesson2;
+package yom2;
 
 public class AndCondition<T> implements Condition<T> {
 	

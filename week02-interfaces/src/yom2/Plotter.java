@@ -1,4 +1,4 @@
-package lesson2;
+package yom2;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

@@ -1,4 +1,4 @@
-package lesson2;
+package yom2;
 
 public class XLnX implements Function {
 	public double apply(double x) {

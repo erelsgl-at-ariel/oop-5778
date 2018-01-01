@@ -1,4 +1,4 @@
-package lesson2;
+package yom2;
 
 /**
  * Represents the function y = sin(x)
