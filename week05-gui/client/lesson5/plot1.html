@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Polynom plotter</title>
+	<script src='jquery-3.2.1.min.js'></script>
+	<meta charset="utf-8"></meta>
+</head>
+
+<body>
+
+	<form style='border: solid 1px blue; margin: 10px; padding: 5px'>
+		<div>Polynom: <input id="polynom" size='40'  value='2x+1'/></div>
+		<div>From x:    <input id="xFrom"   size='10'  value='0'/>   
+		     To x:      <input id="xTo"     size='10'  value='10'/>  </div>
+		<div>From y:    <input id="yFrom"   size='10'  value='0'/>   
+		     To y:      <input id="yTo"     size='10'  value='10'/>  </div>
+		<button type="button">Submit</button>
+	</form>
+	
+	<div id='svg'  style='border: dashed 1px green; margin: 10px; padding: 5px'>
+		<svg width='400' height='200' style='border:solid 1px black'>
+		</svg>
+	</div>
+
+	<script>
+		var width = parseInt($("svg").attr("width"))
+		var height = parseInt($("svg").attr("height"))
+	
+		function plotPoint(x,y) {
+			$("svg").append(
+				'<circle cx="' + x + '" cy="' + y + '" r="5" style="fill:blue; stroke-width:0"/>'
+			)
+		}
+		
+		function repaint() {
+			$("div#svg").html($("div#svg").html());
+		}
+
+		$("button").click(function() {
+			var polynom = $("input#polynom").val()
+			var xFrom   = parseFloat($("input#xFrom").val())  
+			var xTo     = parseFloat($("input#xTo").val())
+			var xSize   = xTo-xFrom
+			var yFrom   = parseFloat($("input#yFrom").val())  
+			var yTo     = parseFloat($("input#yTo").val())
+			var ySize   = yTo-yFrom
+			$.ajax(
+				{
+					"url": encodeURI("/points?" + polynom+","+xFrom+","+xTo)
+				}
+			).then(
+				function(output) {
+					var points = JSON.parse(output)
+					$("div#svg circle").remove()
+					points.forEach ( p => {
+						var x = Math.round((p.x - xFrom)/xSize * width)
+						var y = height-Math.round((p.y - yFrom)/ySize * height)
+						console.log(x+","+y)
+						plotPoint(x,y)
+					})
+					repaint()
+				}
+			);
+			return false
+		})
+	</script>
+
+</body>
+</html>

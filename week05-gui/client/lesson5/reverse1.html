@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Test the Reversing Server</title>
+	<script src='jquery-3.2.1.min.js'></script>
+	<meta charset="utf-8"></meta>
+</head>
+
+<body>
+
+	<form style='border: solid 1px blue; margin: 10px; padding: 5px'>
+		Enter a string to reverse: <input></input>
+		<button>Submit</button>
+	</form>
+
+	<script>
+		$("button").click(
+			function() {
+				var input = $("input").val();
+				alert("The input is " + input);
+				return false
+			}
+		)
+	</script>
+
+</body>
+</html>

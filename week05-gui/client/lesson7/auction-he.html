@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir='rtl' lang='he'>
+
+<head>
+	<title>Auction</title>
+	<script src='jquery-3.2.1.min.js'></script>
+	<meta charset="utf-8"></meta>
+</head>
+
+<body>
+<h1>ברוכים הבאים למכרז !</h1>
+	<form style='border: solid 1px blue; margin: 10px; padding: 5px'>
+		<div>
+			שם:
+			<input id='name' style='width:30%'/>
+			הצעת מחיר באגורות:
+			<input id='bid' style='width:30%'/>
+		</div>
+		<div style='text-align:center'>
+			<button id='submit'>שליחה</button>
+		</div>
+	</form>
+	
+	<h2>ההצעות עד כה</h2>
+	<div id='output' style='border: dashed 1px green; margin: 10px; padding: 5px'>
+	</div>
+
+	<script>
+		$("button#submit").click(() => {
+			var name  = $("input#name").val();
+			var bid   = $("input#bid").val();
+			$.ajax(
+				{
+					"url": encodeURI("/bid?" + name+","+bid)
+				}
+			).then(
+				function(output) {
+					$("div#output").html(output)
+					$("div#output div").first().attr("style", "background:yellow; font-weight:900")
+				}
+			);
+			return false
+		})
+		
+	</script>
+
+</body>
+</html>

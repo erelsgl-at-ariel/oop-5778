@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Point plotter</title>
+	<script src='jquery-3.2.1.min.js'></script>
+	<meta charset="utf-8"></meta>
+</head>
+
+<body>
+
+	<form style='border: solid 1px blue; margin: 10px; padding: 5px'>
+		Enter a point:
+		<input id="x"/>
+		<input id="y"/>
+		<button type="button">Submit</button>
+	</form>
+	
+	<div id='svg'  style='border: dashed 1px green; margin: 10px; padding: 5px'>
+		<svg width='400' height='200'>
+		   <rect x="5" y="5" width="390" height="190" style="stroke:green; stroke-width:3; fill:yellow" />
+		   <!--  circle cx="50" cy="50" r="50" style="fill:red"/  -->
+		</svg>
+	</div>
+
+	<script>
+		function plotPoint(x,y) {
+			$("svg").append(
+				'<circle cx="' + x + '" cy="' + y + '" r="5" style="fill:blue; stroke-width:0"/>'
+			)
+		}
+		
+		function repaint() {
+			$("div#svg").html($("div#svg").html());
+		}
+		
+
+		$("button").click(function() {
+			var x = $("input#x").val();
+			var y = $("input#y").val();
+			plotPoint(x,y)
+			repaint();
+			return false
+		})
+	</script>
+
+</body>
+</html>
