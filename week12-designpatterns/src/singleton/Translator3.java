@@ -3,7 +3,7 @@ package singleton;
 import java.util.*;
 
 /**
- * A singleton class with lazy initialization.
+ * A factory+singleton class. Demonstrates lazy initialization.
  * 
  * @author erelsgl
  */

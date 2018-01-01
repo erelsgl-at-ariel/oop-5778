@@ -1,4 +1,4 @@
-package factory;
+package abstract_factory;
 
 import employees.*;
 
@@ -6,8 +6,8 @@ import employees.*;
  * A factory class for creating Employee objects by rank.
  * @author erelsgl
  */
-public class EmployeeFactory {
-	public static Employee newEmployee(EmployeeRank rank, String name) {
+public class CapitalistEmployeeFactory implements EmployeeFactory {
+	public Employee newEmployee(EmployeeRank rank, String name) {
 		switch(rank) {
 		case SIMPLE:  return new Employee(name, rank.INITIAL_SALARY);
 		case MANAGER: return new Manager(name, rank.INITIAL_SALARY);
