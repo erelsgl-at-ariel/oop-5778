@@ -11,8 +11,8 @@ public class DataDefinitionDemo {
 		try (Connection connection = CompanyDatabase.getConnection()) {
 			System.out.println("Opened database successfully");
 			try (Statement stmt = connection.createStatement()) {
-				stmt.executeUpdate("DROP TABLE IF EXISTS employees;");
-				System.out.println("Table dropped successfully");
+//				stmt.executeUpdate("DROP TABLE IF EXISTS employees;");
+//				System.out.println("Table dropped successfully");
 
 				stmt.executeUpdate(
 						"CREATE TABLE employees\n" + 
