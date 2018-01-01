@@ -1,8 +1,8 @@
-package lesson9b.factory;
+package factory;
 
 import java.util.*;
 
-import lesson9.employees.Employee;
+import employees.Employee;
 
 public class EmployeeFactoryDemo {
 

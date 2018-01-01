@@ -1,20 +1,20 @@
-package lesson9b.singleton;
+package singleton;
 
 import java.util.*;
 
 /**
- * An example of a singleton class.
+ * A singleton class implemented as enum.
  * 
  * @author erelsgl
  */
-public final class Translator1 {
-	public static final Translator1 INSTANCE = new Translator1();
+enum Translator2 {
+	INSTANCE;
 	
 	public String translateToEnglish(String hebrew) {
 		return dictionary.get(hebrew);
 	}
 	
-	private Translator1() {
+	private Translator2() {
 		this.dictionary = new HashMap<>();
 		dictionary.put("פרה", "cow");
 		dictionary.put("סוס", "horse");

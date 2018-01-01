@@ -1,9 +1,11 @@
-package lesson9b.factory;
+package factory;
 
-import lesson9.employees.Employee;
-import lesson9.employees.Manager;
-import lesson9.employees.Programmer;
+import employees.*;
 
+/**
+ * A factory class for creating Employee objects by rank.
+ * @author erelsgl
+ */
 public class EmployeeFactory {
 	public static Employee newEmployee(EmployeeRank rank, String name) {
 		double initialSalary = rank.initialSalary;

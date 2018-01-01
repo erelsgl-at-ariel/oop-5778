@@ -1,9 +1,9 @@
-package lesson9b.singleton;
+package singleton;
 
 import java.util.*;
 
 /**
- * An example of a singleton class with lazy initialization.
+ * A singleton class with lazy initialization.
  * 
  * @author erelsgl
  */

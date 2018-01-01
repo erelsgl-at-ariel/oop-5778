@@ -1,4 +1,4 @@
-package lesson9b.flyweight;
+package flyweight;
 
 /**
  * A point without a flyweight
@@ -15,9 +15,6 @@ public class Point0 {
 
     public int getX() { return x; }
     public int getY() { return y; }
-
-    public String toString() {
-        return "(" + x + ", " + y + ")";
-    }
+    public String toString() { return "(" + x + ", " + y + ")";  }
 }
 

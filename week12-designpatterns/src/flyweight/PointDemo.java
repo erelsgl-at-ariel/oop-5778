@@ -1,4 +1,4 @@
-package lesson9b.flyweight;
+package flyweight;
 
 /**
  * Demonstrates the difference between a class with or without flyweight.

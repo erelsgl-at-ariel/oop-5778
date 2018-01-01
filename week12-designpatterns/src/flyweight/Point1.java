@@ -1,4 +1,4 @@
-package lesson9b.flyweight;
+package flyweight;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -31,9 +31,6 @@ public class Point1 {
 
     public int getX() { return x; }
     public int getY() { return y; }
-
-    public String toString() {
-        return "(" + x + ", " + y + ")";
-    }
+    public String toString() { return "(" + x + ", " + y + ")";  }
 }
 

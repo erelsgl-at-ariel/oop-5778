@@ -1,4 +1,4 @@
-package lesson9b.flyweight;
+package flyweight;
 
 import java.io.*;
 
