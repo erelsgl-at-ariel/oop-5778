@@ -19,6 +19,5 @@ DELETE FROM employees WHERE id IN (1,2,3,4);
 /***********************************************/ 
 
 INSERT OR IGNORE INTO teams(manager,member)
-       VALUES (1,1), (1,2), (1,3), 
-              (3,3), (3,4);
+       VALUES (1,1), (1,2), (1,3), (3,3), (3,4);
 

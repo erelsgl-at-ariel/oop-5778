@@ -18,8 +18,7 @@ GROUP BY age;
 
 /***********************************************/ 
 
-SELECT *
-FROM   employees 
+SELECT * FROM   employees 
 INNER JOIN teams ON(employees.id=teams.member);
 
 SELECT employees.*, teams.manager AS manager_id
