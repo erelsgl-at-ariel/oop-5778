@@ -5,6 +5,7 @@
 	<title>Auction</title>
 	<script src='jquery-3.2.1.min.js'></script>
 	<meta charset="utf-8"></meta>
+	<link rel='stylesheet' href='style.css' />
 </head>
 
 <body>
@@ -26,30 +27,22 @@
 	</div>
 
 	<script>
-		function submitBid(name, bid) {
+		$("button#submit").click(() => {
+			var name  = $("input#name").val();
+			var bid   = $("input#bid").val();
 			$.ajax(
 				{
 					"url": encodeURI("/bid?" + name+","+bid)
 				}
-			).then(  output => {
-				$("div#output").html(output)
-				$("div#output div").first().attr("style", "background:yellow; font-weight:900")
-			});
-		}
-		
-		var inputName = 0, inputBid = 0
-		$("button#submit").click(() => {
-			inputName  = $("input#name").val();
-			inputBid   = $("input#bid").val();
-			submitBid(inputName,inputBid)
+			).then(
+				function(output) {
+					$("div#output").html(output)
+					$("div#output div").first().attr("style", "background:yellow; font-weight:900")
+				}
+			);
 			return false
 		})
 		
-		// Repeat the most recent submission every 5 seconds, to refresh the display:
-		setInterval ( () => {
-			if (inputName && inputBid)
-				submitBid(inputName,inputBid)
-		}, 5000);
 	</script>
 
 </body>
