@@ -1,0 +1,43 @@
+apply plugin: "java"
+
+
+/* Try:
+    gradle assemble
+*/
+
+
+task write(type: JavaExec) {
+    main = "lesson10.points.WritePoint"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task read(type: JavaExec) {
+    dependsOn write
+    main = "lesson10.points.ReadPoint"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task ObjectStreamDemo(type: JavaExec) {
+    dependsOn write
+    main = "lesson10.employees.ObjectStreamDemo"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task hello {
+  doLast({println "hello"})
+}
+
+task copyJar(type: Copy) {
+  from "build/libs"
+  into "experiment"
+  include "*.jar"
+}
+
+task goodbye {
+  doLast({println "goodbye"})
+}
+
+
+build.dependsOn(hello)
+build.finalizedBy(copyJar)
+copyJar.finalizedBy(goodbye)
