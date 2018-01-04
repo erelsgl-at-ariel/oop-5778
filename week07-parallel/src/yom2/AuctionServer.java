@@ -15,24 +15,29 @@ import com.sun.net.httpserver.HttpServer;
 /**
  * A web-server that solves the Partition problem.
  * 
- * Version 2 - uses an executor and a thread pool.
+ * Uses an executor and a thread pool.
  * This is more efficient than using raw threads.
  *
  * @author erelsgl
  */
 public class AuctionServer {
+   	// Map each bid (in agorot) to the set of users with that bid.
+	// Order the bids in decreasing order.
+	private static Map<Integer, Set<String>> bids = new TreeMap<>(
+   		(x,y) -> Integer.compare(y, x)
+   	);
+	
+	private static String bidsToString() {
+		StringBuilder outputBuilder = new StringBuilder();
+		for (int b: bids.keySet())
+			outputBuilder.append("<div>"+b+": "+bids.get(b)+"</div>");
+		return outputBuilder.toString();
+	}
+	
     public static void main(String[] args) throws Exception {
     	int port = 8003;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
     	ExecutorService executor = Executors.newCachedThreadPool();
-    	
-    	// Map each bid (in agorot) to the set of users with that bid.
-    	// Order the bids in decreasing order.
-    	Map<Integer, Set<String>> bids;
-    	//bids = new ConcurrentSkipListMap<>(
-    	bids = new TreeMap<>(
-    		(x,y) -> Integer.compare(y, x)  
-    	);
         
         server.createContext("/bid", request -> {
         	// The input is a list of values separated by commas, e.g, "1,2,3".
@@ -41,18 +46,22 @@ public class AuctionServer {
 	        	try {
 	            	final String input = request.getRequestURI().getQuery();
 	            	System.out.println("The input is: "+input);
-	        		String[] inputs = input.split(",");
-	        		String name = inputs[0];
-	        		int bid = Integer.valueOf(inputs[1]);
-	        		
-	        		synchronized(bids) {
-		        		bids.putIfAbsent(bid, new LinkedHashSet<>());
-		        		bids.get(bid).add(name);
-		        		StringBuilder outputBuilder = new StringBuilder();
-		        		for (int b: bids.keySet())
-		        			outputBuilder.append("<div>"+b+": "+bids.get(b)+"</div>");
-		        		output = outputBuilder.toString();
-	        		}
+	            	if (input.equals("getBids")) {   
+		        		output = bidsToString();
+	            	} else {
+		        		String[] inputs = input.split(",");
+		        		String name = inputs[0];
+		        		int bid = Integer.valueOf(inputs[1]);
+		        		
+		        		synchronized(bids) {
+			        		bids.putIfAbsent(bid, new LinkedHashSet<>());
+			        		bids.get(bid).add(name);
+			        		StringBuilder outputBuilder = new StringBuilder();
+			        		for (int b: bids.keySet())
+			        			outputBuilder.append("<div>"+b+": "+bids.get(b)+"</div>");
+			        		output = bidsToString();
+		        		}
+	            	}
 	        	} catch (Throwable ex) {
 	        		output = "Sorry, an error occured: "+ex;
 		        	System.out.println("  The output is: "+output);

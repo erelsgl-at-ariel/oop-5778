@@ -30,18 +30,23 @@
 		$("button#submit").click(() => {
 			var name  = $("input#name").val();
 			var bid   = $("input#bid").val();
-			$.ajax(
-				{
-					"url": encodeURI("/bid?" + name+","+bid)
-				}
-			).then(
-				function(output) {
+			$.ajax({"url": encodeURI("/bid?" + name+","+bid)})
+			 .then(output => {
 					$("div#output").html(output)
 					$("div#output div").first().attr("style", "background:yellow; font-weight:900")
 				}
 			);
 			return false
 		})
+		
+		// Do the code below every 5000 milliseconds:
+		setInterval ( () => {
+			$.ajax({"url": encodeURI("/bid?getBids")})
+			 .then(output => {
+				$("div#output").html(output)
+				$("div#output div").first().attr("style", "background:yellow; font-weight:900")
+			 });
+		}, 5000);   
 		
 	</script>
 
