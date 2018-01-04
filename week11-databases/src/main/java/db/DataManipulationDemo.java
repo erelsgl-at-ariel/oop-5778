@@ -12,10 +12,10 @@ public class DataManipulationDemo {
 			System.out.println("Opened database successfully");
 			try (Statement stmt = connection.createStatement()) {
 				int numRows;
-				numRows = stmt.executeUpdate(
-					"DELETE FROM employees"
-				);
-				System.out.println(numRows+" rows deleted");
+//				numRows = stmt.executeUpdate(
+//					"DELETE FROM employees"
+//				);
+//				System.out.println(numRows+" rows deleted");
 				
 				numRows = stmt.executeUpdate(
 						"INSERT INTO employees (id,name,age,address,salary)\n" + 
