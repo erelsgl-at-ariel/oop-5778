@@ -3,7 +3,7 @@ package singleton;
 import java.util.*;
 
 /**
- * A factory+singleton class. Demonstrates lazy initialization.
+ * A singleton class with factory method (lazy initialization).
  * 
  * @author erelsgl
  */
@@ -20,7 +20,7 @@ public final class Translator3 {
 		} 
 		return INSTANCE;
 	}
-	
+
 	public String translateToEnglish(String hebrew) {
 		return dictionary.get(hebrew);
 	}
@@ -28,7 +28,7 @@ public final class Translator3 {
 	private Translator3() {
 		this.dictionary = new HashMap<>();
 		dictionary.put("פרה", "cow");
-		dictionary.put("סוס", "horse");
+		dictionary.put("כבש", "lamb");
 		// ...
 	}
 	

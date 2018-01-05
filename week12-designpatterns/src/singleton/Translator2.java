@@ -17,7 +17,7 @@ enum Translator2 {
 	private Translator2() {
 		this.dictionary = new HashMap<>();
 		dictionary.put("פרה", "cow");
-		dictionary.put("סוס", "horse");
+		dictionary.put("כבש", "lamb");
 		// ...
 	}
 	

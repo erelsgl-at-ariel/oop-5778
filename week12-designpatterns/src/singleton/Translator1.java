@@ -17,7 +17,7 @@ public final class Translator1 {
 	private Translator1() {
 		this.dictionary = new HashMap<>();
 		dictionary.put("פרה", "cow");
-		dictionary.put("סוס", "horse");
+		dictionary.put("כבש", "lamb");
 		// ...
 	}
 	
