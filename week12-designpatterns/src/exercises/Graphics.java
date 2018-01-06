@@ -9,7 +9,10 @@ import java.util.*;
  *       only flat lists of squares.
  *       We would like it to handle recursive sets,
  *       e.g, lists of lists of squares.
- *       Refactor it using the Composite pattern.
+ *       
+ * EXERCISE: Refactor it using the Composite pattern.
+ * 
+ * @author erelsgl
  */
 public class Graphics {
 	public static void main(String[] args) {

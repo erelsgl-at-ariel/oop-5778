@@ -7,6 +7,8 @@ package exercises;
  *       shades of red, shades of green or shades of blue.
  *       
  * EXERCISE: refactor this class using the Factory pattern.
+ *
+ * @author erelsgl
  */
 public class Color {
 	private int red, green, blue;

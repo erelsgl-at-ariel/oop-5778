@@ -2,9 +2,11 @@ package exercises;
 
 /**
  * NOTE: There is code duplication in the "isApproved" method.
- *       Refactor the class hierarchy using the Template pattern.
+ * 
+ * EXERCISE: Refactor the class hierarchy using the Template pattern.
+ *
+ * @author erelsgl
  */
-
 public class Loan {
 	int duration;
 }
