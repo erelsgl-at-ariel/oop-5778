@@ -1,4 +1,4 @@
-package yom2;
+package exceptions;
 
 public class TestException1 {
 	static void p(String s) {System.out.println(s);}
@@ -13,6 +13,16 @@ public class TestException1 {
 		p("a1");
 		b();
 		p("a2");
+	}
+
+	static void aa() { 
+		p("aa1");
+		try {
+			b();
+		} catch (NullPointerException ex) {
+			System.out.println(ex);
+		}
+		p("aa2");
 	}
 	
 	static void b() { 

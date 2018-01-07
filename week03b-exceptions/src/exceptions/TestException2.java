@@ -1,6 +1,7 @@
-package yom5;
+package exceptions;
 
 import java.util.logging.*;
+
 import java.io.*;
 
 public class TestException2 {
@@ -21,11 +22,11 @@ public class TestException2 {
 		} catch (ArithmeticException ex) {
 			System.out.println("Did you divide by zero? "+ex);
 		} catch (RuntimeException ex) {
-			System.out.println("What did you do? "+ex);
-			Logger.getGlobal().severe(ex.toString());
-//			StringWriter w = new StringWriter();
-//			ex.printStackTrace(new PrintWriter(w));
-//			Logger.getGlobal().severe(w.toString());
+//			System.out.println("What did you do? "+ex);
+//			Logger.getGlobal().severe(ex.toString());
+			StringWriter w = new StringWriter();
+			ex.printStackTrace(new PrintWriter(w));
+			Logger.getGlobal().severe(w.toString());
 		}
 		p("a2");
 	}

@@ -1,4 +1,4 @@
-package yom5;
+package exceptions;
 
 public class TestAssert {
 	

@@ -1,4 +1,4 @@
-package yom2;
+package exceptions;
 
 public class IllegalColorException extends RuntimeException {
 	public IllegalColorException() {super();}
