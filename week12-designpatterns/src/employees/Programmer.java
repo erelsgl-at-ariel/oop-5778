@@ -8,7 +8,7 @@ package employees;
 public class Programmer extends Employee {
     int linesWritten;
 
-    public Programmer(String name, double salary) {
+    Programmer(String name, double salary) {
         super(name, salary);
         linesWritten = 0;
     }

@@ -1,7 +1,7 @@
 package composite;
 
 public abstract class Node {
-	private int weight;
+	int weight;
 	public int getWeight() { return weight; }
 	
 	/**

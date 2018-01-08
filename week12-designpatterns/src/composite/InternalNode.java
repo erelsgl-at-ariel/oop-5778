@@ -6,6 +6,8 @@ public class InternalNode extends Node {
 	List<Node> children;
 	int sum() {
 		return this.getWeight() + 
-			children.stream().mapToInt(n -> n.getWeight()).sum();
+			children
+			.stream()
+			.mapToInt(n -> n.sum()).sum();
 	}
 }
