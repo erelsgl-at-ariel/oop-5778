@@ -1,4 +1,4 @@
-package abstract_factory;
+package employees;
 
 import employees.*;
 
@@ -6,7 +6,7 @@ import employees.*;
  * A factory class for creating Employee objects by level.
  * @author erelsgl
  */
-public class CommunistEmployeeFactory implements EmployeeFactory {
+public class CommunistEmployeeFactory implements AbstractEmployeeFactory {
 	public Employee newEmployee(String name, int level) {
 		if (0<=level && level<=9)
 			return new PartyMember(name, 0);
