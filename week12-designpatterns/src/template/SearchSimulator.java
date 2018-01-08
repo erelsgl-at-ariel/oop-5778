@@ -3,6 +3,11 @@ package template;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * A class with a Template Method
+ * @author Student
+ *
+ */
 public abstract class SearchSimulator {
 	public abstract void sort(List<Integer> list);
 	public abstract int find(List<Integer> haystack, int needle);
