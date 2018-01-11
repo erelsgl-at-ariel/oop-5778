@@ -21,6 +21,14 @@ public class Employee extends Object {
     	this.joinDate = null;
     }
 
+    public Employee(String name, int level) {
+    	if (level<20)
+        setName(name);
+    	this.salary = 1000;
+    	this.joinDate = null;
+    }
+
+
     public Employee(String name, double salary) {
         setName(name);
         this.salary = salary;

@@ -9,7 +9,7 @@ import java.util.*;
  */
 public final class Translator3 {
 	private static volatile Translator3 INSTANCE = null;
-	
+
 	public static final Translator3 getInstance() {
 		if (INSTANCE==null) {
 			synchronized(Translator3.class) {
@@ -17,7 +17,7 @@ public final class Translator3 {
 					INSTANCE = new Translator3();
 				}
 			}
-		} 
+		}
 		return INSTANCE;
 	}
 

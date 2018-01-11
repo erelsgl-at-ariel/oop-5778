@@ -15,8 +15,10 @@ public class SquareList implements Shape {
 	
 	@Override
 	public void plot() {
+		System.out.println("Square list start:");
 		for (Square s: squares)
 			s.plot();
+		System.out.println("Square list end.");
 	}
 	
 	public void addSquare(Square s) {

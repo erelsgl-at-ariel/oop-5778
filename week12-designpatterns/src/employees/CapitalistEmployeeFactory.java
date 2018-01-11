@@ -1,7 +1,5 @@
 package employees;
 
-import employees.*;
-
 /**
  * A factory class for creating Employee objects by level.
  * @author erelsgl

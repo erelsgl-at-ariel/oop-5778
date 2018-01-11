@@ -14,7 +14,9 @@ public class Point1 {
 
         public static Point1 get(int x, int y) {
             String key = x + "," + y;
-            instances.putIfAbsent(key, new Point1(x, y));
+            //instances.putIfAbsent(key, new Point1(x, y));
+            if (!instances.containsKey(key))
+            	instances.put(key, new Point1(x, y));
             return instances.get(key);
         }
 

@@ -10,9 +10,9 @@ public class SuperClient implements Observer {
 	}
 
 	@Override
-	public void update(Subject subject) {
-		System.out.println("Super client!!!");
-		System.out.println("BEEP!!!");
+	public void update(Subject room) {
+		String msg = (String) room.getUpdate(this);
+		System.out.println("BEEP!! "+name+":: A new message::"+msg);
 		
 	}
 

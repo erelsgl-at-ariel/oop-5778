@@ -12,8 +12,10 @@ public class PrototypeDemo {
 	}
 	
 	static void simpleTest() {
-		plotShapeFamily(new Square(5,"blue"), 10,20);
+		Shape s = new Square(5,"blue");
+		plotShapeFamily(s, 10,20);
 		plotShapeFamily(new Triangle(6,"green"), 10,20);
+		s.plot();
 	}
 	
 	static void complexTest() {
@@ -33,6 +35,6 @@ public class PrototypeDemo {
 	}
 	
 	public static void main(String[] args) {
-		simpleTest();
+		complexTest();
 	}
 }

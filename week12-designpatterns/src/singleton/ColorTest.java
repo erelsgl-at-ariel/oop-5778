@@ -7,5 +7,7 @@ public class ColorTest {
 		
 		c = Color.valueOf("GREEN");
 		System.out.println(c == Color.GREEN);
+		
+		Color.GREEN.paintSquare();
 	}
 }

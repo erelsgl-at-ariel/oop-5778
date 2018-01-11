@@ -13,6 +13,7 @@ public class ObserverDemo {
 		
 		//now send message to subject
 		room.postMessage("New Message");
+		room.postMessage("Message 2");
 	}
 
 }

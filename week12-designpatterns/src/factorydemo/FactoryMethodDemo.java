@@ -1,6 +1,9 @@
-package employees;
+package factorydemo;
 
 import java.util.*;
+
+import employees.Employee;
+import employees.EmployeeFactory;
 
 public class FactoryMethodDemo {
 	public static void main(String[] args) {

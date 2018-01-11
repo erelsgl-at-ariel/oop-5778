@@ -14,7 +14,6 @@ public class IteratorIterableAdapter<T> implements Iterable<T> {
 	IteratorIterableAdapter(Iterator<T> it) {
 		this.it = it;
 	}
-	
 	@Override public Iterator<T> iterator() {
 		return this.it;
 	}
