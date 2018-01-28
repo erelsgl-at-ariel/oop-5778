@@ -17,6 +17,8 @@ public class TestCSV {
 		    String name = record.get("Name");
 		    String phone = record.get("Phone");
 		    System.out.println(name+" "+phone);
+			
+			int a = 6;
 		}	
 	}
 
